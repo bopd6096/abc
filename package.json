@@ -16,5 +16,22 @@
   "bugs": {
     "url": "https://github.com/bopd6096/abc/issues"
   },
-  "homepage": "https://github.com/bopd6096/abc#readme"
+  "homepage": "https://github.com/bopd6096/abc#readme",
+  "dependencies": {
+    "axios": "^1.8.2",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cheerio": "^1.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "csurf": "^1.10.0",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "puppeteer": "^24.4.0",
+    "winston": "^3.17.0"
+  }
 }

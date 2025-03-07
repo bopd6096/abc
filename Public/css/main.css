@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #f8f8f8;
+  --accent-color: #ff6347;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 12px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search {
+  position: relative;
+}
+
+#searchInput {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#searchResults {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#searchResults .result-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#searchResults .result-item:hover {
+  background-color: #f0f0f0;
+}
+
+#darkModeToggle {
+  padding: 8px 12px;
+  border: none;
+  background-color: var(--accent-color);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+main {
+  padding: 20px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  width: calc(25% - 15px);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%;
+  }
+}
