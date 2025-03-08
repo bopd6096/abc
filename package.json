@@ -31,7 +31,9 @@
     "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.12.1",
+    "node-fetch": "^2.7.0",
     "puppeteer": "^24.4.0",
-    "winston": "^3.17.0"
+    "winston": "^3.17.0",
+    "xml2js": "^0.6.2"
   }
 }
