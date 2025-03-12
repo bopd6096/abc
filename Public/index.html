@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ABCwear – Інтернет-магазин</title>
+  <title>ABCwear – Головна</title>
   <link rel="stylesheet" href="css/main.css">
-  <script defer src="/js/main.js"></script>
-  <script defer src="/js/search.js"></script>
-  <script defer src="/js/cart.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 <body>
   <header>
@@ -18,23 +16,22 @@
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="cart.html">Кошик</a></li>
         <li><a href="login.html">Вхід</a></li>
+        <li><a href="register.html">Реєстрація</a></li>
+        <li><a href="dashboard.html">Особистий кабінет</a></li>
+        <li><a href="admin/index.html">Адмін</a></li>
       </ul>
     </nav>
-    <div class="search">
-      <input type="text" id="searchInput" placeholder="Пошук товарів...">
-      <div id="searchResults"></div>
-    </div>
-    <button id="darkModeToggle">Темна тема</button>
   </header>
 
   <main>
-    <section id="home-section">
-      <div class="promo">
-        <h1>Ласкаво просимо до ABCwear!</h1>
-        <p>Модний інтернет-магазин з найкращими пропозиціями.</p>
-      </div>
+    <section class="promo">
+      <h1>Ласкаво просимо до ABCwear!</h1>
+      <p>Модний інтернет-магазин з найкращими пропозиціями.</p>
+    </section>
+    <section class="featured">
+      <h2>Рекомендовані товари</h2>
       <div id="product-container" class="product-grid">
-        <!-- Товари завантажуються через JS -->
+        <!-- Товари завантажуються через js/main.js -->
       </div>
     </section>
   </main>

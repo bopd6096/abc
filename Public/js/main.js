@@ -1,14 +1,24 @@
+// frontend/js/main.js
 import { debounce } from 'lodash';
 
 let currentPage = 1;
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadProducts(currentPage);
-  document.getElementById('darkModeToggle').addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-  });
+  // Якщо на сторінці є контейнер для товарів, завантажуємо їх
+  const productContainer = document.getElementById('product-container');
+  if (productContainer) {loadProducts(currentPage);
+  }
+  
+  // Переключення темного режиму
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  }
 });
 
+// Завантаження товарів з бекенду (API)
 async function loadProducts(page) {
   try {
     const response = await fetch(`/api/products?page=${page}`);
@@ -21,6 +31,8 @@ async function loadProducts(page) {
 
 function renderProducts(products) {
   const container = document.getElementById('product-container');
+  if (!container) return;
+  
   products.forEach(product => {
     const card = document.createElement('div');
     card.className = 'product-card';
@@ -52,7 +64,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Динамічний пошук
-document.getElementById('searchInput').addEventListener('input', debounce(async function() {
+document.getElementById('searchInput')?.addEventListener('input', debounce(async function() {
   const query = this.value;
   if (query.length < 3) return;
   
@@ -66,3 +78,9 @@ document.getElementById('searchInput').addEventListener('input', debounce(async 
     console.error('Error searching products:', error);
   }
 }, 300));
+
+
+
+
+
+

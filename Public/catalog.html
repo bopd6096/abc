@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABCwear – Каталог товарів</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/catalog.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">ABCwear</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="cart.html">Кошик</a></li>
+        <li><a href="login.html">Вхід</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Каталог товарів</h1>
+    <div class="filter-bar">
+      <input type="text" id="catalogSearch" placeholder="Пошук...">
+      <select id="categoryFilter">
+        <option value="">Всі категорії</option>
+        <option value="women">Жіночий</option>
+        <option value="men">Чоловічий</option>
+        <option value="kids">Дитячий</option>
+      </select>
+      <select id="sortOptions">
+        <option value="new">Новинки</option>
+        <option value="priceAsc">Ціна: за зростанням</option>
+        <option value="priceDesc">Ціна: за спаданням</option>
+      </select>
+    </div><div id="catalogContainer" class="product-grid">
+      <!-- Товари завантажуються через js/catalog.js -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ABCwear. Усі права захищені.</p>
+  </footer>
+</body>
+</html>

@@ -2,7 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const helmet = require('helmet');
-const csrf = require('csurf');
+// const csrf = require('csurf');
 const cookieParser = require('cookie-parser');
 const connectDB = require('./config/db');
 const path = require('path');
@@ -18,8 +18,8 @@ app.use(cookieParser());
 app.use(cors());
 app.use(helmet());
 
-const csrfProtection = csrf({ cookie: true });
-app.use(csrfProtection);
+// const csrfProtection = csrf({ cookie: true });
+// app.use(csrfProtection);
 
 // Використовуємо статичні файли фронтенду (без EJS)
 app.use(express.static(path.join(__dirname, './Public')));

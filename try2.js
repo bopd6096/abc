@@ -29,7 +29,7 @@ async function getProducts(url) {
 
     return products;
   } catch (error) {
-    console.error(`Ошибка: ${error}`);
+    console.error(`Ошибка: ${error}`;
     return [];
   }
 }
