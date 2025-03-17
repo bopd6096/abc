@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/bopd6096/abc#readme",
   "dependencies": {
+    "@types/puppeteer": "^5.4.7",
     "async": "^3.2.6",
     "axios": "^1.8.2",
     "bcrypt": "^5.1.1",
@@ -31,6 +32,7 @@
     "express": "^4.21.2",
     "fs-extra": "^11.3.0",
     "helmet": "^8.0.0",
+    "jsdom": "^26.0.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.12.1",
     "node-fetch": "^2.7.0",
@@ -38,6 +40,8 @@
     "puppeteer": "^24.4.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-proxy": "^1.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
     "winston": "^3.17.0",
     "xml2js": "^0.6.2"
   }
