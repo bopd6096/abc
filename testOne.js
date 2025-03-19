@@ -1,78 +1,59 @@
-"use strict";
-
-const fs = require("fs");
-const puppeteer = require("puppeteer");
+const fs = require('fs');
+const puppeteer = require('puppeteer');
 
 (async () => {
-const results = []; // здесь будем собирать итоговые объекты
+  const websitesFile = 'b1f0_nike_product_urls.txt';
+  const outputFile = 'b1f3_nike_discriptions.json';
 
-try {
-// Читаем ссылки из файла links.txt (каждая ссылка с новой строки)
-const linksData = fs.readFileSync("output.txt", "utf-8");
-const links = linksData
-.split("\n")
-.map(url => url.trim())
-.filter(url => url.length > 0);
+  // Чтение списка сайтов
+  const websites = fs.readFileSync(websitesFile, 'utf8')
+    .split('\n')
+    .map(url => url.trim())
+    .filter(url => url.length > 0);
+  
+  // Добавляем общее количество для расчета прогресса
+  const totalCount = websites.length;
 
- 
- const browser = await puppeteer.launch({
-        executablePath: "/snap/bin/chromium", // Укажи свой путь, если нужно
-        headless: true,
-        args: ["--no-sandbox", "--disable-setuid-sandbox"],
-    });
-
-
-// Обрабатываем ссылки последовательно, чтобы порядок не нарушился
-for (let url of links) {
-  console.log(`Обрабатывается: ${url}`);
-
-  // Инициализируем объект с данными для данной ссылки.
-  // По умолчанию data пустой, если произойдёт ошибка – так и останется.
-  let resultItem = { url, data: {} };
-
-  try {
-    const page = await browser.newPage();
-    // Устанавливаем viewport для альбомной ориентации (например, 1280x720)
-    await page.setViewport({ width: 1280, height: 720 });
-
-    // Переходим на страницу и ждем окончания загрузки динамически подгружаемого контента
-    // await page.goto(url, { waitUntil: "networkidle2", timeout: 3000 });
-               await page.goto(url, {
-    waitUntil: 'networkidle0'  // дожидаемся, когда сети будут «тихими»
+  const browser = await puppeteer.launch({
+    executablePath: "/snap/bin/chromium",
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
+  const results = [];
 
-    // Выполняем скрипт в контексте страницы, чтобы собрать атрибуты src у всех img,
-    // которые находятся внутри div с классом "css-1vt9b1c"
-    const imageSrcs = await page.evaluate(() => {
-      const containers = document.querySelectorAll("div.css-1vt9b1c");
-      const srcArray = [];
-      containers.forEach(container => {
-        const imgs = container.querySelectorAll("img");
-        imgs.forEach(img => {
-          if (img.src) {
-            srcArray.push(img.src);
-          }
-        });
+  // Обработка каждого URL из списка
+  for (let index = 0; index < websites.length; index++) {
+    const url = websites[index];
+    const currentItem = index + 1;
+    const progress = ((currentItem / totalCount) * 100).toFixed(2);
+
+    // Выводим URL и прогресс
+    console.log(`Обработка: ${url}`);
+    console.log(`Прогресс: ${currentItem}/${totalCount} (${progress}%)`);
+
+    const page = await browser.newPage();
+    try {
+      await page.goto(url, {
+        waitUntil: 'networkidle0'
       });
-      return srcArray;
-    });
 
-    // Если изображения найдены, запишем их в поле data
-    resultItem.data = { images: imageSrcs };
-    await page.close();
-  } catch (pageError) {
-    console.error(`Ошибка при обработке ${url}:`, pageError);
-    // Оставляем resultItem.data пустым, если произошла ошибка
+      const content = await page.evaluate(() => {
+        const selector = 'body #experience-wrapper #__next[data-reactroot] main.d-sm-flx.flx-dir-sm-c.flx-jc-sm-c.flx-ai-sm-c .nds-grid.pdp-grid.css-qqclnk.ehf3nt20 .grid-item.price.pl6-lg.z1.css-1jk6ulu.nds-grid-item #product-description-container.pt7-sm[data-testid="product-description-container"] p.nds-text.css-pxxozx.e1yhcai00.text-align-start.appearance-body1.color-primary.weight-regular';
+        const element = document.querySelector(selector);
+        return element ? element.innerText.trim() : null;
+      });
+      results.push({ url, content });
+    } catch (error) {
+      console.error(`Ошибка при обработке ${url}:`, error);
+      results.push({ url, content: null, error: error.toString() });
+    } finally {
+      await page.close();
+    }
   }
 
-  // Добавляем объект результата в итоговый массив
-  results.push(resultItem);
-}
+  await browser.close();
 
-await browser.close();
-
-// Сохраняем результат в JSON-файл (форматируем с отступами для удобства чтения)
-fs.writeFileSync("output.json", JSON.stringify(results, null, 2), "utf-8");
-console.log("Парсинг завершён. Результаты сохранены в output.json");
-} catch (error) { console.error("Произошла общая ошибка:", error); } })();
+  fs.writeFileSync(outputFile, JSON.stringify(results, null, 2));
+  console.log(`Результаты сохранены в ${outputFile}`);
+})();
