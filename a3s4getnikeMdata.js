@@ -2,7 +2,7 @@ const fs = require('fs');
 const puppeteer = require('puppeteer');
 
 (async () => {
-  const websitesFile = 'test_b2f0_nike_product_urls.txt';
+  const websitesFile = 'b2f0_nike_product_urls.txt';
   const outputFile = "test2_b1f3_nike_discriptions.json"; 
 
   const websites = fs.readFileSync(websitesFile, 'utf8')
@@ -11,7 +11,7 @@ const puppeteer = require('puppeteer');
     .filter(url => url.length > 0);
 
   const totalCount = websites.length; // Общее количество всех URL-ов
-  const batchSize = 5;
+  const batchSize = 20;
   let results = fs.existsSync(outputFile) ? JSON.parse(fs.readFileSync(outputFile, 'utf8')) : [];
   const processedUrls = new Set(results.map(r => r.url));
   const websitesToProcess = websites.filter(url => !processedUrls.has(url));
@@ -29,7 +29,7 @@ const puppeteer = require('puppeteer');
     });
     try {
       await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 67000 });
-      await page.setViewport({ width: 1280, height: 720 });
+      // await page.setViewport({ width: 1280, height: 720 });
       const content = await page.evaluate(() => {
         const selector = 'body #experience-wrapper #__next[data-reactroot] main.d-sm-flx.flx-dir-sm-c.flx-jc-sm-c.flx-ai-sm-c .nds-grid.pdp-grid.css-qqclnk.ehf3nt20 .grid-item.price.pl6-lg.z1.css-1jk6ulu.nds-grid-item #product-description-container.pt7-sm[data-testid="product-description-container"] p.nds-text.css-pxxozx.e1yhcai00.text-align-start.appearance-body1.color-primary.weight-regular';
         const element = document.querySelector(selector);
