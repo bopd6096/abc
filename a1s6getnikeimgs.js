@@ -56,6 +56,11 @@ for (let url of links) {
         });
       });
       return srcArray;
+      
+            // const selector = 'div.css-1vt9b1c img';
+            // const elements = document.querySelectorAll(selector);
+            // return elements ? Array.from(elements).map(element => element.src) : null;
+
     });
 
     // Если изображения найдены, запишем их в поле data
