@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer');
 
 (async () => {
     const websitesFile = 'test_b1f0_nike_product_urls.txt';
-    const outputFile = "test_b1f3_nike_discriptions.json";
+    const outputFile = "b1f1_nikeIMG.json";
 
     const websites = fs.readFileSync(websitesFile, 'utf8')
         .split('\n')
@@ -53,7 +53,7 @@ const puppeteer = require('puppeteer');
 
             // Многократные клики с проверкой новых изображений
             let previousImageCount = 0;
-            const maxClicks = 10; // Максимальное количество кликов
+            const maxClicks = 8; // Максимальное количество кликов
             for (let i = 0; i < maxClicks; i++) {
                 try {
                     await page.click(buttonSelector);
