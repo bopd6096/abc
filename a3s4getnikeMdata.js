@@ -2,13 +2,8 @@ const fs = require('fs');
 const puppeteer = require('puppeteer');
 
 (async () => {
-<<<<<<< Updated upstream
-  const websitesFile = 'b2f0_nike_product_urls.txt';
-  const outputFile = "test2_b1f3_nike_discriptions.json"; 
-=======
   const websitesFile = 'errors.txt';
   const outputFile = "test3_b1f3_nike_discriptions.json"; 
->>>>>>> Stashed changes
 
   const websites = fs.readFileSync(websitesFile, 'utf8')
     .split('\n')
@@ -16,11 +11,7 @@ const puppeteer = require('puppeteer');
     .filter(url => url.length > 0);
 
   const totalCount = websites.length; // Общее количество всех URL-ов
-<<<<<<< Updated upstream
-  const batchSize = 20;
-=======
   const batchSize = 15;
->>>>>>> Stashed changes
   let results = fs.existsSync(outputFile) ? JSON.parse(fs.readFileSync(outputFile, 'utf8')) : [];
   const processedUrls = new Set(results.map(r => r.url));
   const websitesToProcess = websites.filter(url => !processedUrls.has(url));

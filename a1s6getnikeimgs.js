@@ -8,7 +8,8 @@ const results = []; // здесь будем собирать итоговые �
 
 try {
 // Читаем ссылки из файла links.txt (каждая ссылка с новой строки)
-const linksData = fs.readFileSync("b1f0_nike_product_urls.txt", "utf-8");
+// const linksData = fs.readFileSync("b1f0_nike_product_urls.txt", "utf-8");
+        const linksData = fs.readFileSync('test_p_urls.txt', 'utf-8');
 const links = linksData
 .split("\n")
 .map(url => url.trim())
@@ -36,9 +37,9 @@ for (let url of links) {
     await page.setViewport({ width: 1280, height: 720 });
 
     // Переходим на страницу и ждем окончания загрузки динамически подгружаемого контента
-    // await page.goto(url, { waitUntil: "networkidle2", timeout: 3000 });
+    // await page.goto(url, { waitUntil: "domcontentloaded", timeout: 3000 });
                await page.goto(url, {
-    waitUntil: 'networkidle0'  // дожидаемся, когда сети будут «тихими»
+    waitUntil: 'domcontentloaded'  // дожидаемся, когда сети будут «тихими»
   });
 
     const imageSrcs = await page.evaluate(() => {
@@ -46,7 +47,7 @@ for (let url of links) {
     // которые находятся внутри div с классом "css-1vt9b1c"
     
       const containers = document.querySelectorAll("div.css-1vt9b1c");
-      const srcArray = [];
+      const srcArray = []; 
       containers.forEach(container => {
         const imgs = container.querySelectorAll("img");
         imgs.forEach(img => {
