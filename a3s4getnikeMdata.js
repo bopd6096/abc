@@ -2,8 +2,8 @@ const fs = require('fs');
 const puppeteer = require('puppeteer');
 
 (async () => {
-  // const websitesFile = 'b1f0_nike_product_urls.txt';
-    const websitesFile = 'test_b1f0_nike_product_urls.txt';
+  const websitesFile = 'b1f0_nike_product_urls.txt';
+    // const websitesFile = 'test_b1f0_nike_product_urls.txt';
   // const outputFile = 'b1f3_nike_discriptions.json';
     const outputFile = "test_b1f3_nike_discriptions.json"; 
 
@@ -13,7 +13,7 @@ const puppeteer = require('puppeteer');
     .filter(url => url.length > 0);
 
   const totalCount = websites.length;
-  const batchSize = 3;
+  const batchSize = 25;
   let results = fs.existsSync(outputFile) ? JSON.parse(fs.readFileSync(outputFile, 'utf8')) : [];
   const processedUrls = new Set(results.map(r => r.url));
   const websitesToProcess = websites.filter(url => !processedUrls.has(url));
