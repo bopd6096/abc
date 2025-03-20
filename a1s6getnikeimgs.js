@@ -41,10 +41,10 @@ for (let url of links) {
     waitUntil: 'networkidle0'  // дожидаемся, когда сети будут «тихими»
   });
 
-
+    const imageSrcs = await page.evaluate(() => {
     // Выполняем скрипт в контексте страницы, чтобы собрать атрибуты src у всех img,
     // которые находятся внутри div с классом "css-1vt9b1c"
-    const imageSrcs = await page.evaluate(() => {
+    
       const containers = document.querySelectorAll("div.css-1vt9b1c");
       const srcArray = [];
       containers.forEach(container => {
