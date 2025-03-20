@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 const fs = require("fs");
 const puppeteer = require("puppeteer");
@@ -69,10 +69,10 @@ for (let url of links) {
   // Добавляем объект результата в итоговый массив
   results.push(resultItem);
 }
-
 await browser.close();
 
-// Сохраняем результат в JSON-файл (форматируем с отступами для удобства чтения)
-fs.writeFileSync("b1f5_nike_images.json", JSON.stringify(results, null, 2), "utf-8");
-console.log("Парсинг завершён. Результаты сохранены в output.json");
-} catch (error) { console.error("Произошла общая ошибка:", error); } })();
+        // Сохраняем результат в JSON-файл (форматируем с отступами для удобства чтения)
+        fs.writeFileSync("b1f5_nike_images.json", JSON.stringify(results, null, 2), "utf-8");
+        console.log("Парсинг завершён. Результаты сохранены в output.json");
+    } catch (error) { console.error("Произошла общая ошибка:", error); } })();
+
