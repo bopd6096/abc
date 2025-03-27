@@ -2,8 +2,8 @@ const fs = require('fs');
 const puppeteer = require('puppeteer');
 
 (async () => {
-  const websitesFile = 'b1f0_nike_product_urls.txt';
-  const outputFile = "b1f3_nikeIMG.json"; 
+  const websitesFile = 'links_part_1.txt';
+  const outputFile = "b2f1_nikeIMGS.json"; 
 
   const websites = fs.readFileSync(websitesFile, 'utf8')
     .split('\n')
@@ -11,7 +11,7 @@ const puppeteer = require('puppeteer');
     .filter(url => url.length > 0);
 
   const totalCount = websites.length; // Общее количество всех URL-ов
-  const batchSize = 15;
+  const batchSize = 20;
   let results = fs.existsSync(outputFile) ? JSON.parse(fs.readFileSync(outputFile, 'utf8')) : [];
   const processedUrls = new Set(results.map(r => r.url));
   const websitesToProcess = websites.filter(url => !processedUrls.has(url));
@@ -91,7 +91,7 @@ const puppeteer = require('puppeteer');
   }
 
   const browser = await puppeteer.launch({
-    executablePath: "/usr/bin/chromium-browser",
+    executablePath: "/snap/bin/chromium",
     headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
