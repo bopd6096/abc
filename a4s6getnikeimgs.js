@@ -3,7 +3,7 @@ const fs = require('fs').promises;
 
 async function parseWebsites() {
 
-    const urls = (await fs.readFile('test_b1f0_nike_product_urls.txt', 'utf-8'))
+    const urls = (await fs.readFile('links_part_1.txt', 'utf-8'))
 
         .split('\n')
         .filter(url => url.trim() !== '');
@@ -19,14 +19,13 @@ async function parseWebsites() {
     for (const url of urls) {
         try {
             const page = await browser.newPage();
+             await page.setViewport({ width: 1280, height: 720 });
             await page.goto(url, { 
                 waitUntil: 'networkidle2',
                 timeout: 30000 
             });
 
-            await page.setViewport({ width: 1280, height: 720 });
-
-            // Ждем возможной динамической загрузки (до 5 секунд)
+           
 
             const siteData = await page.evaluate(() => {
                 // Диагностика для imgMain
@@ -83,7 +82,7 @@ async function parseWebsites() {
     await browser.close();
 
     await fs.writeFile(
-        'b1f1_nikeIMG.json',
+        'b3f1_nikeIMG.json',
         JSON.stringify(results, null, 2),
         'utf-8'
     );
