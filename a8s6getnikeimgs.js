@@ -8,7 +8,7 @@ function updateProgressBar(processed, total) {
     const width = 55;
     const percent = (processed / total) * 100;
     const filled = Math.round((width * processed) / total);
-    const bar = '█'.repeat(filled) + '.'.repeat(width - filled);
+    const bar = '█'.repeat(filled) + '…'.repeat(width - filled);
     
     // Перемещаем курсор в нижнюю строку и обновляем прогресс-бар
     readline.cursorTo(process.stdout, 0, process.stdout.rows - 1);
