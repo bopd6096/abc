@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const inputFile = './b1f0_nike_product_urls.txt'; // Исходный файл
-const numParts = 6; // Количество частей
+const numParts = 5; // Количество частей
 
 // Читаем файл
 fs.readFile(inputFile, 'utf8', (err, data) => {
