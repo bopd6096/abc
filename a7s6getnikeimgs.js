@@ -1,7 +1,5 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
-const ProgressBar = require('progress');
-
 const chunkArray = (array, size) => array.reduce((acc, _, i) => i % size === 0 ? [...acc, array.slice(i, i + size)] : acc, []);
 
 async function parseWebsites() {
@@ -10,17 +8,7 @@ async function parseWebsites() {
         .split('\n')
         .filter(url => url.trim() !== '');
 
-    const totalUrls = urls.length;
-
-    // Инициализация прогресс-бара
-    const bar = new ProgressBar('Парсинг [:bar] :percent (:current/:total) ETA: :etas', {
-        total: totalUrls,
-        width: 40, // Ширина полосы
-        complete: '█', // Заполненный символ
-        incomplete: '░', // Незаполненный символ
-    });
-
-    // Запуск браузера
+    // Запуск браузера один раз
     const browser = await puppeteer.launch({
         executablePath: "/snap/bin/chromium",
         headless: true,
@@ -28,7 +16,8 @@ async function parseWebsites() {
     });
 
     const results = [];
-    const concurrencyLimit = 5;
+    const concurrencyLimit = 20;
+    // Ограничение параллельных страниц
     const urlChunks = chunkArray(urls, concurrencyLimit);
 
     // Обработка URL по частям
@@ -39,8 +28,8 @@ async function parseWebsites() {
                 page = await browser.newPage();
                 await page.setViewport({ width: 1280, height: 720 });
                 await page.goto(url, { 
-                    waitUntil: 'networkidle2',
-                    timeout: 30000 
+                    waitUntil: 'domcontentloaded',
+                    timeout: 60000 
                 });
 
                 const siteData = await page.evaluate(() => {
@@ -79,15 +68,15 @@ async function parseWebsites() {
                     error: error.message
                 };
             } finally {
-                if (page) await page.close();
-                bar.tick(); // Обновление прогресс-бара
+                if (page) await page.close(); // Гарантированное закрытие страницы
             }
         });
 
+        // Ожидание завершения обработки текущей партии
         const chunkResults = await Promise.all(chunkPromises);
         results.push(...chunkResults);
 
-        // Промежуточная запись результатов
+        // Промежуточная запись результатов для экономии памяти
         await fs.writeFile(
             'b3f1_nikeIMG.json',
             JSON.stringify(results, null, 2),
@@ -96,7 +85,7 @@ async function parseWebsites() {
     }
 
     await browser.close();
-    console.log('\nПарсинг завершен, результаты сохранены в b3f1_nikeIMG.json');
+    console.log('Парсинг завершен, результаты сохранены в b3f1_nikeIMG.json');
 }
 
 parseWebsites()
