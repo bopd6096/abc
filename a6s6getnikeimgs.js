@@ -31,12 +31,12 @@ const puppeteer = require('puppeteer');
         /////////
     
             const page = await browser.newPage();
+            await page.setViewport({ width: 1280, height: 720 });
             await page.goto(url, { 
-                waitUntil: 'networkidle2',
+                waitUntil: 'domcontentloaded',
                 timeout: 67000 
             });
 
-            await page.setViewport({ width: 1280, height: 720 });
 
             // Ждем возможной динамической загрузки (до 5 секунд)
 

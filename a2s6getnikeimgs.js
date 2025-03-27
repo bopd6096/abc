@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer');
 
 (async () => {
     const websitesFile = 'test_b1f0_nike_product_urls.txt';
-    const outputFile = "b1f1_nikeIMG.json";
+    const outputFile = "test_b1f3_nike_discriptions.json";
 
     const websites = fs.readFileSync(websitesFile, 'utf8')
         .split('\n')
