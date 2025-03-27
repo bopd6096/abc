@@ -63,7 +63,7 @@ async function parseWebsites() {
                 await page.setViewport({ width: 1280, height: 720 });
                 await page.goto(url, { 
                     waitUntil: 'domcontentloaded',
-                    timeout: 60000 
+                    timeout: 67000 
                 });
 
                 const siteData = await page.evaluate(() => {
