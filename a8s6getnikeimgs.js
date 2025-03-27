@@ -31,7 +31,7 @@ function updateProgressBar(processed, total, times) {
 }
 
 async function parseWebsites() {
-    const urls = (await fs.readFile('links_part_1.txt', 'utf-8'))
+    const urls = (await fs.readFile('links_part_2.txt', 'utf-8'))
         .split('\n')
         .filter(url => url.trim() !== '');
 
@@ -115,7 +115,7 @@ async function parseWebsites() {
         results.push(...chunkResults);
 
         await fs.writeFile(
-            'b3f1_nikeIMG.json',
+            'b3f2_nikeIMG.json',
             JSON.stringify(results, null, 2),
             'utf-8'
         );
