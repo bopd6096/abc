@@ -5,15 +5,15 @@ const readline = require('readline');
 const chunkArray = (array, size) => array.reduce((acc, _, i) => i % size === 0 ? [...acc, array.slice(i, i + size)] : acc, []);
 
 function updateProgressBar(processed, total) {
-    const width = 40;
+    const width = 55;
     const percent = (processed / total) * 100;
     const filled = Math.round((width * processed) / total);
-    const bar = '█'.repeat(filled) + '░'.repeat(width - filled);
+    const bar = '█'.repeat(filled) + '.'.repeat(width - filled);
     
     // Перемещаем курсор в нижнюю строку и обновляем прогресс-бар
     readline.cursorTo(process.stdout, 0, process.stdout.rows - 1);
     readline.clearLine(process.stdout, 0);
-    process.stdout.write(`Парсинг [${bar}] ${percent.toFixed(2)}% (${processed}/${total})`);
+    process.stdout.write(`Progress [${bar}] ${percent.toFixed(2)}% (${processed}/${total})`);
     
     // Возвращаем курсор вверх для логов
     readline.cursorTo(process.stdout, 0, process.stdout.rows - 2);
