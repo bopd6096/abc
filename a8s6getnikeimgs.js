@@ -51,7 +51,7 @@ async function parseWebsites() {
     });
 
     const results = [];
-    const concurrencyLimit = 10;
+    const concurrencyLimit = 15;
     const urlChunks = chunkArray(urls, concurrencyLimit);
 
     for (const chunk of urlChunks) {
