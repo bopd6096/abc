@@ -31,7 +31,7 @@ function updateProgressBar(processed, total, times) {
 }
 
 async function parseWebsites() {
-    const urls = (await fs.readFile('links_part_5.txt', 'utf-8'))
+    const urls = (await fs.readFile('links_part_3.txt', 'utf-8'))
         .split('\n')
         .filter(url => url.trim() !== '');
 
@@ -51,7 +51,7 @@ async function parseWebsites() {
     });
 
     const results = [];
-    const concurrencyLimit = 15;
+    const concurrencyLimit = 10;
     const urlChunks = chunkArray(urls, concurrencyLimit);
 
     for (const chunk of urlChunks) {
@@ -115,7 +115,7 @@ async function parseWebsites() {
         results.push(...chunkResults);
 
         await fs.writeFile(
-            'b3f5_nikeIMG.json',
+            'b3f3_nikeIMG.json',
             JSON.stringify(results, null, 2),
             'utf-8'
         );
