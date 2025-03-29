@@ -1,3 +1,5 @@
+//// Первый общий парс. Голый код (исходник первого шага)
+
 const axios = require('axios');
 const fs = require('fs');
 
