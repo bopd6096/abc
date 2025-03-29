@@ -1,3 +1,8 @@
+///// Основа
+//// Парс основных даных (работет) 
+/// изменения не предвидятся
+// повтор не требуется
+
 const fs = require('fs');
 const axios = require('axios');
 const https = require('https');
