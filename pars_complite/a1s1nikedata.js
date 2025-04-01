@@ -25,8 +25,11 @@ const HEADERS = {
 // Отключаем валидацию SSL (если проблемы с сертификатами)
 const agent = new https.Agent({ rejectUnauthorized: false });
 
+const outputFile = "../JSON/b0f1_nike_fetchData.json";
+
+
 async function fetchNikeProducts() {
-    let allProducts = [];
+    let allProducts = fs.existsSync(outputFile) ? JSON.parse(fs.readFileSync(outputFile, 'utf8')) : [];
 
     for (let i = 0; i < TOTAL_REQUESTS; i++) {
         let anchor = 24 + i * 24;
