@@ -22,7 +22,7 @@ async function fetchNikeProducts() {
   const queryType = 'PRODUCTS';
   const options = 'r:01';
   let anchor = 0;           // Начальная точка пагинации
-  const count = 24;        // Количество продуктов за запрос
+  const count = 100;        // Количество продуктов за запрос
   let allProducts = [];     // Массив для хранения всех продуктов
   let hasMore = true;       // Флаг для проверки наличия данных
 

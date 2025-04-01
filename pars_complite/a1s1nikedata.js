@@ -11,7 +11,7 @@ const fs = require('fs');
 const axios = require('axios');
 const https = require('https');
 
-const TOTAL_REQUESTS = 428; // Количество запросов
+const TOTAL_REQUESTS = 1; // Количество запросов
 const BASE_URL = "https://api.nike.com/discover/product_wall/v1/marketplace/US/language/en/consumerChannelId/d9a5bc42-4b9c-4976-858a-f159cf99c647";
 
 const HEADERS = {
@@ -32,8 +32,8 @@ async function fetchNikeProducts() {
     let allProducts = fs.existsSync(outputFile) ? JSON.parse(fs.readFileSync(outputFile, 'utf8')) : [];
 
     for (let i = 0; i < TOTAL_REQUESTS; i++) {
-        let anchor = 24 + i * 24;
-        let url = `${BASE_URL}?path=/w&queryType=PRODUCTS&options=r:03&anchor=${anchor}&count=24`;
+        let anchor = 100 + i * 100;
+        let url = `${BASE_URL}?path=/w&queryType=PRODUCTS&options=r:01&anchor=${anchor}&count=100`;
 
         try {
             console.log(`Запрос #${i + 1}: ${url}`);
@@ -71,7 +71,8 @@ async function fetchNikeProducts() {
                         promotions: product.promotions,
                         customization: product.customization,
                         badgeAttribute: product.badgeAttribute,
-                        badgeLabel: product.badgeLabel
+                        badgeLabel: product.badgeLabel,
+                        try: data 
                     }));
 
                     allProducts = allProducts.concat(destructuredProducts);
@@ -128,7 +129,7 @@ async function fetchNikeProducts() {
         await new Promise(resolve => setTimeout(resolve, 1000));
     }
 
-  //  fs.writeFileSync('../JSON/b0f1_nike_predata.json', JSON.stringify(allProducts, null, 2));
+   fs.writeFileSync('../JSON/b0f1_nike_fetchData.json', JSON.stringify(allProducts, null, 2));
     
     console.log(`Данные сохранены в ${outputFile}`);
 }
