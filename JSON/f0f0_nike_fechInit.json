@@ -1,0 +1,4586 @@
+[
+  {
+    "searchTerm": null,
+    "canonicalUrl": "https://www.nike.com/w",
+    "title": null,
+    "primaryHeading": null,
+    "attributeIds": null,
+    "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+    "marketplace": "US",
+    "locationId": null,
+    "language": "en",
+    "selectedFiltersCount": null,
+    "mlModels": [
+      "NONE"
+    ],
+    "analyzer": null,
+    "contentData": null,
+    "navigation": null,
+    "productGroupings": [
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "1Fcpa8bH",
+            "productCode": "FB2348-201",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "5b8d07dd-48cf-4b1c-ad8f-75789bf3c82f",
+            "internalPid": "1014765926",
+            "merchProductId": "82be4468-eb41-57f7-800b-5e8b4be09c6d",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Air Force 1 Wild",
+              "subTitle": "Women's Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Brown",
+                "hex": "6C5627"
+              },
+              "colorDescription": "Sesame/Baroque Brown/Khaki/Sesame"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 87.97,
+              "employeePrice": 52.78,
+              "initialPrice": 145,
+              "discountPercentage": 39,
+              "employeeDiscountPercentage": 63
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/c9d6d008-1ad2-400d-b5a3-c7ba1d8b14d9/W+AIR+FORCE+1+WILD.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/26078ec6-8299-4eec-97bc-e44bd50d527a/W+AIR+FORCE+1+WILD.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/air-force-1-wild-womens-shoes-1Fcpa8bH/FB2348-201",
+              "path": "/t/air-force-1-wild-womens-shoes-1Fcpa8bH/FB2348-201"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "1Fcpa8bH",
+            "productCode": "FB2348-002",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "83697cd5-31fc-492b-9894-cc29e1048996",
+            "internalPid": "1012743074",
+            "merchProductId": "ee3abc9a-e908-5d85-99bc-847621d5a4af",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Air Force 1 Wild",
+              "subTitle": "Women's Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Grey",
+                "hex": "808080"
+              },
+              "colorDescription": "Phantom/Light Orewood Brown/Luminous Green/Phantom"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 79.97,
+              "employeePrice": 47.98,
+              "initialPrice": 145,
+              "discountPercentage": 44,
+              "employeeDiscountPercentage": 66
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/b889b034-dcc0-4885-9b72-524966c032cf/W+AIR+FORCE+1+WILD.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/0fe771b3-c1bf-403b-a5da-b2836c52e185/W+AIR+FORCE+1+WILD.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/air-force-1-wild-womens-shoes-1Fcpa8bH/FB2348-002",
+              "path": "/t/air-force-1-wild-womens-shoes-1Fcpa8bH/FB2348-002"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "1Fcpa8bH",
+            "productCode": "FZ2600-200",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "9e5aed06-434f-4861-a0b9-7f28b3f522dc",
+            "internalPid": "1015621391",
+            "merchProductId": "f2929a5f-8ca7-5786-bdd5-edabb7229ed6",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Air Force 1 Wild",
+              "subTitle": "Women's Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Grey",
+                "hex": "808080"
+              },
+              "colorDescription": "Light Violet Ore/Hyper Magenta/Black/Dark Raisin"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 94.97,
+              "employeePrice": 56.98,
+              "initialPrice": 145,
+              "discountPercentage": 34,
+              "employeeDiscountPercentage": 60
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/53a8632f-94ea-4e6b-85b4-3f7115e2ab78/W+AIR+FORCE+1+WILD.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/a8e9cb56-0bbd-42d2-bd83-d1bd69763910/W+AIR+FORCE+1+WILD.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/air-force-1-wild-womens-shoes-1Fcpa8bH/FZ2600-200",
+              "path": "/t/air-force-1-wild-womens-shoes-1Fcpa8bH/FZ2600-200"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "RPAFnzFO",
+            "productCode": "DA4086-100",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "09073b12-9baf-3171-af7a-a5d61295de73",
+            "internalPid": "13029266",
+            "merchProductId": "55f75d72-12ff-5349-9043-010a1300981a",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Blazer Mid '77",
+              "subTitle": "Big Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Total Orange/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 59.97,
+              "employeePrice": 35.98,
+              "initialPrice": 85,
+              "discountPercentage": 29,
+              "employeeDiscountPercentage": 57
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/7f2528f8-eca7-48d5-8ce1-ade41e06381b/NIKE+BLAZER+MID+%2777+%28GS%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/d77c8f9a-c6e8-40a5-8332-910312bc86a5/NIKE+BLAZER+MID+%2777+%28GS%29.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/blazer-mid-77-big-kids-shoes-RPAFnzFO/DA4086-100",
+              "path": "/t/blazer-mid-77-big-kids-shoes-RPAFnzFO/DA4086-100"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "RPAFnzFO",
+            "productCode": "DA4086-106",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "f529ac6c-990c-4223-a6ff-87434c3061cd",
+            "internalPid": "14095986",
+            "merchProductId": "ab745d58-17f9-55d0-88b0-93d1351119e4",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Blazer Mid '77",
+              "subTitle": "Big Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "Summit White/Coconut Milk/Honeydew/Pink Foam"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 51.97,
+              "employeePrice": 31.18,
+              "initialPrice": 85,
+              "discountPercentage": 38,
+              "employeeDiscountPercentage": 63
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/b3d3b940-5e1b-4791-842d-fe4e726269d2/NIKE+BLAZER+MID+%2777+%28GS%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/b22c0fbd-91f2-4207-a50b-73eaa8640961/NIKE+BLAZER+MID+%2777+%28GS%29.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/blazer-mid-77-big-kids-shoes-RPAFnzFO/DA4086-106",
+              "path": "/t/blazer-mid-77-big-kids-shoes-RPAFnzFO/DA4086-106"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "RPAFnzFO",
+            "productCode": "DA4086-119",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "06543604-fa78-415d-9225-a11d183c4b0e",
+            "internalPid": "1015583722",
+            "merchProductId": "b6e71fe0-cbc4-5398-a863-e572ef0f5391",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Blazer Mid '77",
+              "subTitle": "Big Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Saturn Gold/Burgundy Crush"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 55.97,
+              "employeePrice": 33.58,
+              "initialPrice": 85,
+              "discountPercentage": 34,
+              "employeeDiscountPercentage": 60
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/5db2d875-6a8a-477b-9bcf-dff34b2ea2fd/NIKE+BLAZER+MID+%2777+%28GS%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/b0583cf6-1a4a-4ab1-8942-240e5a273d45/NIKE+BLAZER+MID+%2777+%28GS%29.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/blazer-mid-77-big-kids-shoes-RPAFnzFO/DA4086-119",
+              "path": "/t/blazer-mid-77-big-kids-shoes-RPAFnzFO/DA4086-119"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "RPAFnzFO",
+            "productCode": "DA4086-002",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "42cdaf54-def6-320c-9fe7-43f32d5a3670",
+            "internalPid": "13029278",
+            "merchProductId": "8182e663-d49b-5b2f-94ef-c95999953ec0",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Blazer Mid '77",
+              "subTitle": "Big Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/White/Team Orange/Sail"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 51.97,
+              "employeePrice": 31.18,
+              "initialPrice": 85,
+              "discountPercentage": 38,
+              "employeeDiscountPercentage": 63
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/2d3517db-f50e-4ba5-ad03-5530f2ea0919/NIKE+BLAZER+MID+%2777+%28GS%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/9106922c-a532-482d-a4d8-700a3f91df44/NIKE+BLAZER+MID+%2777+%28GS%29.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/blazer-mid-77-big-kids-shoes-RPAFnzFO/DA4086-002",
+              "path": "/t/blazer-mid-77-big-kids-shoes-RPAFnzFO/DA4086-002"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "RPAFnzFO",
+            "productCode": "DA4086-123",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "271ac363-7ca9-4ffd-af2e-8d1225e96429",
+            "internalPid": "1015625579",
+            "merchProductId": "18b566e4-9a04-5abb-9544-13c7da3ae1c1",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Blazer Mid '77",
+              "subTitle": "Big Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Royal Pulse"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 59.97,
+              "employeePrice": 35.98,
+              "initialPrice": 85,
+              "discountPercentage": 29,
+              "employeeDiscountPercentage": 57
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/0b38f8dd-d0c9-466e-8d85-f6590ee0c449/NIKE+BLAZER+MID+%2777+%28GS%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/ff9b3a03-9160-45eb-9015-abeb031d256a/NIKE+BLAZER+MID+%2777+%28GS%29.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/blazer-mid-77-big-kids-shoes-RPAFnzFO/DA4086-123",
+              "path": "/t/blazer-mid-77-big-kids-shoes-RPAFnzFO/DA4086-123"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "RPAFnzFO",
+            "productCode": "DA4086-128",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "44ea2e75-4e11-45c2-bc78-1ad6f79c94bd",
+            "internalPid": "1015663311",
+            "merchProductId": "d6160631-9d89-5058-837d-4645c1b7b1f0",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Blazer Mid '77",
+              "subTitle": "Big Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Sail/Echo Pink"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 59.97,
+              "employeePrice": 35.98,
+              "initialPrice": 85,
+              "discountPercentage": 29,
+              "employeeDiscountPercentage": 57
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/03d0a8c9-0634-473d-827a-13b09277deda/NIKE+BLAZER+MID+%2777+%28GS%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/2e804831-c1b5-4ae7-a88e-40b47b6e7b58/NIKE+BLAZER+MID+%2777+%28GS%29.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/blazer-mid-77-big-kids-shoes-RPAFnzFO/DA4086-128",
+              "path": "/t/blazer-mid-77-big-kids-shoes-RPAFnzFO/DA4086-128"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "XXM9xm",
+            "productCode": "SX6898-100",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "bc3ccb6f-dea0-39ec-9a2f-7774e5bf3b00",
+            "internalPid": "12476865",
+            "merchProductId": "faa59aae-0047-5073-bec7-03394d0ba9e2",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training No-Show Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/e14330cb-6673-42ae-b4f1-074adbd6b68a/U+NK+ED+PLUS+CUSH+NS+6PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/gpikqlmftdhjizkopas3/U+NK+ED+PLUS+CUSH+NS+6PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-100",
+              "path": "/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-100"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "XXM9xm",
+            "productCode": "SX6898-010",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "68977b96-6234-3a6a-87ed-cbadf6ac47f6",
+            "internalPid": "12476863",
+            "merchProductId": "390c6015-ba81-54d8-b0ac-1628135a8625",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training No-Show Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/031971fd-95ea-4e4c-a4f3-0e704964655d/U+NK+ED+PLUS+CUSH+NS+6PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/akozf5uxpbkeslputi8j/U+NK+ED+PLUS+CUSH+NS+6PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-010",
+              "path": "/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-010"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "XXM9xm",
+            "productCode": "SX6898-964",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "78fb3699-5007-34bb-9edc-5d990beeec49",
+            "internalPid": "13148860",
+            "merchProductId": "740e258c-b9e1-544c-a1e9-12d41026d50c",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training No-Show Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/e6d0e881-6c5a-407a-8882-ce7b099a91e2/U+NK+ED+PLUS+CUSH+NS+6PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/63121d3c-b6f3-4974-8c6a-3c357cd26c14/U+NK+ED+PLUS+CUSH+NS+6PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-964",
+              "path": "/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-964"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "XXM9xm",
+            "productCode": "SX6898-904",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "2b27b5d5-d337-423a-a4b1-9504bcbf7e9b",
+            "internalPid": "1015689723",
+            "merchProductId": "ec195807-49d9-5258-bebd-fe48a001aef6",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training No-Show Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/51121d39-6bf3-41dc-91c5-3c4408e3d399/U+NK+ED+PLUS+CUSH+NS+6PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/1bf98c54-a5a0-491f-8c57-283c03c9b86a/U+NK+ED+PLUS+CUSH+NS+6PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER",
+              "JUST_IN"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-904",
+              "path": "/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-904"
+            },
+            "isNewUntil": "2025-04-03T14:00:00.000Z",
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "JUST_IN",
+            "badgeLabel": "Just In"
+          },
+          {
+            "groupKey": "XXM9xm",
+            "productCode": "SX6898-937",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "8005a87b-5dbd-4b16-abd7-00f759df91ee",
+            "internalPid": "1015689727",
+            "merchProductId": "0fcc3c66-f2a4-593c-a2f0-49731e316e4b",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training No-Show Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/113313d0-6cea-4131-8da7-c2c34f038193/U+NK+ED+PLUS+CUSH+NS+6PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/2da92399-997f-445b-a980-bc4f10fa8e60/U+NK+ED+PLUS+CUSH+NS+6PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER",
+              "JUST_IN"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-937",
+              "path": "/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-937"
+            },
+            "isNewUntil": "2025-04-03T14:00:00.000Z",
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "JUST_IN",
+            "badgeLabel": "Just In"
+          },
+          {
+            "groupKey": "XXM9xm",
+            "productCode": "SX6898-968",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "d679160c-92dd-473f-bc40-e5c9d733df68",
+            "internalPid": "1015710079",
+            "merchProductId": "d52ff032-1f0e-5a93-ab7a-94904ad6cfc2",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training No-Show Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/bd397f51-b0be-4034-b5ea-f41bd58e4bfd/U+NK+ED+PLUS+CUSH+NS+6PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/bfe8e7af-13c1-4a97-a91d-ee26e41f0040/U+NK+ED+PLUS+CUSH+NS+6PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER",
+              "JUST_IN"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-968",
+              "path": "/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-968"
+            },
+            "isNewUntil": "2025-04-03T14:00:00.000Z",
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "JUST_IN",
+            "badgeLabel": "Just In"
+          },
+          {
+            "groupKey": "XXM9xm",
+            "productCode": "SX6898-969",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "f1462367-2dd2-4f10-92e3-34d98a5588a2",
+            "internalPid": "1015710080",
+            "merchProductId": "02aeabc2-ba67-5ad0-8075-783213b8b63d",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training No-Show Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/12392909-b650-4c95-857e-0cc4aa2ba8ad/U+NK+ED+PLUS+CUSH+NS+6PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/778ab6c3-e796-44ba-8602-81243cb427cd/U+NK+ED+PLUS+CUSH+NS+6PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER",
+              "JUST_IN"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-969",
+              "path": "/t/everyday-plus-cushioned-training-no-show-socks-6-pairs-XXM9xm/SX6898-969"
+            },
+            "isNewUntil": "2025-04-03T14:00:00.000Z",
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "JUST_IN",
+            "badgeLabel": "Just In"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "5osMXU3b",
+            "productCode": "DV4356-400",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "3a12c758-5ee9-4b52-a6e2-2018eacf83ab",
+            "internalPid": "1015584930",
+            "merchProductId": "764dbe2d-7d8c-5b00-b3ec-03e059413754",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Jr. Tiempo Legend 10 Club",
+              "subTitle": "Little Kids' Multi-Ground Low Top Soccer Cleats"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Blue",
+                "hex": "1F4090"
+              },
+              "colorDescription": "Soar/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 24.97,
+              "employeePrice": 14.98,
+              "initialPrice": 35,
+              "discountPercentage": 28,
+              "employeeDiscountPercentage": 57
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/aaf82409-ee58-46bb-901c-3c9358f520f5/JR+LEGEND+10+CLUB+FG%2FMG+PS+%28V%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/71031241-8df9-44db-b17b-72804fa80654/JR+LEGEND+10+CLUB+FG%2FMG+PS+%28V%29.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/jr-tiempo-legend-10-club-little-kids-multi-ground-low-top-soccer-cleats-5osMXU3b/DV4356-400",
+              "path": "/t/jr-tiempo-legend-10-club-little-kids-multi-ground-low-top-soccer-cleats-5osMXU3b/DV4356-400"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "5osMXU3b",
+            "productCode": "DV4356-001",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "1dbdf27b-0790-4c7e-b3b3-4fd18c513c98",
+            "internalPid": "1015699860",
+            "merchProductId": "e7db3842-d5ef-5570-91a5-1aa8dfd09955",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Jr. Tiempo Legend 10 Club",
+              "subTitle": "Little Kids' Multi-Ground Low Top Soccer Cleats"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/Volt"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 35,
+              "employeePrice": 21,
+              "initialPrice": 35,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/c11bfd18-58b3-4fd0-85ee-1d0ed6ffe227/JR+LEGEND+10+CLUB+FG%2FMG+PS+%28V%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/ea661eba-df3f-4c76-98a9-b99ad91162bf/JR+LEGEND+10+CLUB+FG%2FMG+PS+%28V%29.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/jr-tiempo-legend-10-club-little-kids-multi-ground-low-top-soccer-cleats-5osMXU3b/DV4356-001",
+              "path": "/t/jr-tiempo-legend-10-club-little-kids-multi-ground-low-top-soccer-cleats-5osMXU3b/DV4356-001"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "5osMXU3b",
+            "productCode": "DV4356-600",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "42990c3c-ab7b-4076-9b07-dc2f889aa6ec",
+            "internalPid": "1015651064",
+            "merchProductId": "8a7f5ebc-633c-5c9f-b603-24c2e7a3c3a4",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Jr. Tiempo Legend 10 Club",
+              "subTitle": "Little Kids' Multi-Ground Low Top Soccer Cleats"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Pink",
+                "hex": "FF00FF"
+              },
+              "colorDescription": "Fierce Pink/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 35,
+              "employeePrice": 21,
+              "initialPrice": 35,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/cac1a8a8-d398-4373-9ed1-6322601154e9/JR+LEGEND+10+CLUB+FG%2FMG+PS+%28V%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/ca0aa936-1e0b-48d7-aadf-d4b49f39640b/JR+LEGEND+10+CLUB+FG%2FMG+PS+%28V%29.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/jr-tiempo-legend-10-club-little-kids-multi-ground-low-top-soccer-cleats-5osMXU3b/DV4356-600",
+              "path": "/t/jr-tiempo-legend-10-club-little-kids-multi-ground-low-top-soccer-cleats-5osMXU3b/DV4356-600"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "8zWsC4",
+            "productCode": "DD1096-008",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "87ffa5fb-9e89-495c-bdbe-086752454fc3",
+            "internalPid": "1010165767",
+            "merchProductId": "430c10a8-d168-5d19-a25c-375b106379aa",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Revolution 6",
+              "subTitle": "Big Kids' Road Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Grey",
+                "hex": "808080"
+              },
+              "colorDescription": "Cool Grey/Deep Royal Blue/Pure Platinum/Photo Blue"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 50.97,
+              "employeePrice": 30.58,
+              "initialPrice": 65,
+              "discountPercentage": 21,
+              "employeeDiscountPercentage": 52
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/8928fec0-8923-473a-8527-ce3336dae2b6/NIKE+REVOLUTION+6+NN+%28GS%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/1d329c16-8a84-4554-b8d2-a3fd830a1f11/NIKE+REVOLUTION+6+NN+%28GS%29.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/revolution-6-big-kids-road-running-shoes-8zWsC4/DD1096-008",
+              "path": "/t/revolution-6-big-kids-road-running-shoes-8zWsC4/DD1096-008"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "8zWsC4",
+            "productCode": "DD1096-007",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "3a482686-b911-4aff-964e-26a70feaabb9",
+            "internalPid": "13976118",
+            "merchProductId": "de46d164-6b8b-5bef-ad9a-f4a9cab20af8",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Revolution 6",
+              "subTitle": "Big Kids' Road Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/Pink Foam/Hyper Pink"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 45.97,
+              "employeePrice": 27.58,
+              "initialPrice": 65,
+              "discountPercentage": 29,
+              "employeeDiscountPercentage": 57
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/ac951820-df8c-4ea0-b3c5-fe4eb94018ef/NIKE+REVOLUTION+6+NN+%28GS%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/5364121c-7575-4637-8b8d-7c12f198dbaa/NIKE+REVOLUTION+6+NN+%28GS%29.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/revolution-6-big-kids-road-running-shoes-8zWsC4/DD1096-007",
+              "path": "/t/revolution-6-big-kids-road-running-shoes-8zWsC4/DD1096-007"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "ptK5V9",
+            "productCode": "DR6084-010",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "74ad814e-9caa-475b-8a33-643fc5da72cc",
+            "internalPid": "1003840909",
+            "merchProductId": "6ac48f4f-6e1a-5482-9196-802ab506e9b2",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Elemental",
+              "subTitle": "Kids' Backpack (20L)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/Black/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 31.97,
+              "employeePrice": 19.18,
+              "initialPrice": 37,
+              "discountPercentage": 13,
+              "employeeDiscountPercentage": 48
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/682b7b6a-ca9a-474e-8b8f-e21c123ae668/Y+NK+ELMNTL+BKPK.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/8fc71638-b326-4ad5-bf71-f10cd3a480b5/Y+NK+ELMNTL+BKPK.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/elemental-kids-backpack-20l-ptK5V9/DR6084-010",
+              "path": "/t/elemental-kids-backpack-20l-ptK5V9/DR6084-010"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "ptK5V9",
+            "productCode": "DR6084-480",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "48c5721b-4f72-4f1b-9347-c3aa4ccacc17",
+            "internalPid": "1015603757",
+            "merchProductId": "8abf16ff-1826-5eb6-a14a-d2947552ca1a",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Elemental",
+              "subTitle": "Kids' Backpack (20L)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Blue",
+                "hex": "1F4090"
+              },
+              "colorDescription": "Game Royal/Game Royal/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 27.97,
+              "employeePrice": 16.78,
+              "initialPrice": 37,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/421c9666-91d3-4ead-8feb-2a384274c5a2/Y+NK+ELMNTL+BKPK.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/21872bef-cf87-475d-82e7-83c8fd325068/Y+NK+ELMNTL+BKPK.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/elemental-kids-backpack-20l-ptK5V9/DR6084-480",
+              "path": "/t/elemental-kids-backpack-20l-ptK5V9/DR6084-480"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "ptK5V9",
+            "productCode": "DR6084-646",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "4bf4e5b9-8efb-4e2b-baa0-3fa149d500ae",
+            "internalPid": "1015593253",
+            "merchProductId": "27cd5237-1a5e-51f0-8f41-95cf18ca6a66",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Elemental",
+              "subTitle": "Kids' Backpack (20L)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Pink",
+                "hex": "FF00FF"
+              },
+              "colorDescription": "Magic Flamingo/Magic Flamingo/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 37,
+              "employeePrice": 22.2,
+              "initialPrice": 37,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 39
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/fae07a28-0d33-4d33-b3b4-6b010a196cd6/Y+NK+ELMNTL+BKPK.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/b1cd8826-8be9-4f13-a8d4-2e30c130d549/Y+NK+ELMNTL+BKPK.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/elemental-kids-backpack-20l-ptK5V9/DR6084-646",
+              "path": "/t/elemental-kids-backpack-20l-ptK5V9/DR6084-646"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "OcIArbbp",
+            "productCode": "DA5381-102",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "abcb3d96-3ef6-365a-85c4-8769a763da61",
+            "internalPid": "13144080",
+            "merchProductId": "3b147da3-f036-54e7-9b89-45e62556b485",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Court Legacy",
+              "subTitle": "Little Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Desert Ochre/Gum Light Brown/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 45,
+              "employeePrice": 27,
+              "initialPrice": 45,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/2a3b1721-2428-498b-ab17-f962ff6294d1/NIKE+COURT+LEGACY+%28PSV%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/b7a86d7b-b214-4213-9eba-ebbe8c587087/NIKE+COURT+LEGACY+%28PSV%29.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/court-legacy-little-kids-shoes-OcIArbbp/DA5381-102",
+              "path": "/t/court-legacy-little-kids-shoes-OcIArbbp/DA5381-102"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "OcIArbbp",
+            "productCode": "DA5381-126",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "4060d559-337a-437d-9ac2-fbed98ffeeb1",
+            "internalPid": "1015624399",
+            "merchProductId": "4efb93e5-ae94-54dc-809f-b194dc5d013c",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Court Legacy",
+              "subTitle": "Little Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Black/Hemp"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 33.97,
+              "employeePrice": 20.38,
+              "initialPrice": 45,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/a1f3a53d-f2b6-4431-9342-ebc9343caccb/NIKE+COURT+LEGACY+%28PSV%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/7e374d77-956f-4668-b5a2-89cd1cab821b/NIKE+COURT+LEGACY+%28PSV%29.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/court-legacy-little-kids-shoes-OcIArbbp/DA5381-126",
+              "path": "/t/court-legacy-little-kids-shoes-OcIArbbp/DA5381-126"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "OcIArbbp",
+            "productCode": "DA5381-124",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "e206b89a-016b-47a7-8467-6bcf9b5a0407",
+            "internalPid": "1015583739",
+            "merchProductId": "6d691bfe-6619-5c97-83b0-6b1c5969c03a",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Court Legacy",
+              "subTitle": "Little Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Laser Fuchsia"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 45,
+              "employeePrice": 27,
+              "initialPrice": 45,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/9ad139a7-769b-463f-9d22-185398bb6219/NIKE+COURT+LEGACY+%28PSV%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/181c30eb-4600-4f2a-97aa-20811a3e0984/NIKE+COURT+LEGACY+%28PSV%29.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/court-legacy-little-kids-shoes-OcIArbbp/DA5381-124",
+              "path": "/t/court-legacy-little-kids-shoes-OcIArbbp/DA5381-124"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "OcIArbbp",
+            "productCode": "DA5381-104",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "7a6288b7-6cb7-3023-82ce-8945bf0ec228",
+            "internalPid": "13196633",
+            "merchProductId": "0d601f95-697f-5f88-b0bc-6f05f4673638",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Court Legacy",
+              "subTitle": "Little Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 45,
+              "employeePrice": 27,
+              "initialPrice": 45,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/d7b10332-b449-4934-8a43-693b68dc191f/NIKE+COURT+LEGACY+%28PSV%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/5e8b10c8-19f1-4770-8d3a-40d6b8d11e34/NIKE+COURT+LEGACY+%28PSV%29.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/court-legacy-little-kids-shoes-OcIArbbp/DA5381-104",
+              "path": "/t/court-legacy-little-kids-shoes-OcIArbbp/DA5381-104"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "OcIArbbp",
+            "productCode": "DA5381-401",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "28f6b2d4-9242-43c1-a48d-a1291fcc4cce",
+            "internalPid": "1015652364",
+            "merchProductId": "df45c595-f94d-545c-ae17-39cd2186154f",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Court Legacy",
+              "subTitle": "Little Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Blue",
+                "hex": "1F4090"
+              },
+              "colorDescription": "Thunder Blue/Gum Light Brown/Sail"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 45,
+              "employeePrice": 27,
+              "initialPrice": 45,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/c0e4b735-e1fa-40de-a60d-cbecb8b949fa/NIKE+COURT+LEGACY+%28PSV%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/b02859ad-974d-481d-91d3-029826014fdb/NIKE+COURT+LEGACY+%28PSV%29.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/court-legacy-little-kids-shoes-OcIArbbp/DA5381-401",
+              "path": "/t/court-legacy-little-kids-shoes-OcIArbbp/DA5381-401"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "zE8Je3",
+            "productCode": "942837-001",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "340b4684-477a-3a8c-8783-27e8c2662925",
+            "internalPid": "12113354",
+            "merchProductId": "a7e91c46-7012-5f99-9813-25929c354837",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Free RN 2018",
+              "subTitle": "Women's Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 65.97,
+              "employeePrice": 39.58,
+              "initialPrice": 100,
+              "discountPercentage": 34,
+              "employeeDiscountPercentage": 60
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/sbiq31vi0wmsudafojec/WMNS+NIKE+FREE+RN+2018.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/otbsyhtpw0qfnc60nkyw/WMNS+NIKE+FREE+RN+2018.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/free-rn-2018-womens-running-shoes-zE8Je3/942837-001",
+              "path": "/t/free-rn-2018-womens-running-shoes-zE8Je3/942837-001"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "zE8Je3",
+            "productCode": "942837-100",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "7cdecc39-f910-3ab5-84d3-15c4fecad391",
+            "internalPid": "12113357",
+            "merchProductId": "4c9c28d9-2373-5c8d-9e13-990e23836252",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Free RN 2018",
+              "subTitle": "Women's Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 65.97,
+              "employeePrice": 39.58,
+              "initialPrice": 100,
+              "discountPercentage": 34,
+              "employeeDiscountPercentage": 60
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/kk2bq2kee03x779zgtbo/WMNS+NIKE+FREE+RN+2018.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/lpedh5gu9bxuvsohuxma/WMNS+NIKE+FREE+RN+2018.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/free-rn-2018-womens-running-shoes-zE8Je3/942837-100",
+              "path": "/t/free-rn-2018-womens-running-shoes-zE8Je3/942837-100"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "zE8Je3",
+            "productCode": "942837-003",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "bbaac3e3-f1cf-3e83-951b-2a64d1cc00a8",
+            "internalPid": "12113356",
+            "merchProductId": "74609ae8-3dfc-5caf-8010-b7c943b41ce9",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Free RN 2018",
+              "subTitle": "Women's Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Grey",
+                "hex": "808080"
+              },
+              "colorDescription": "Wolf Grey/White/Volt/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 65.97,
+              "employeePrice": 39.58,
+              "initialPrice": 100,
+              "discountPercentage": 34,
+              "employeeDiscountPercentage": 60
+            },
+            "colorwayImages": {
+              "portraitURL": null,
+              "squarishURL": "https://static.nike.com/a/images/t_default/uiz8paxcasknm0zgwzzz/WMNS+NIKE+FREE+RN+2018.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/free-rn-2018-womens-running-shoes-zE8Je3/942837-003",
+              "path": "/t/free-rn-2018-womens-running-shoes-zE8Je3/942837-003"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "vlRw4Q",
+            "productCode": "SX6897-907",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "d747faf1-16af-4a56-8c3f-44f319022e88",
+            "internalPid": "1015450708",
+            "merchProductId": "da20c612-fdba-533c-b7d8-64527cd76cf3",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 21.97,
+              "employeePrice": 13.18,
+              "initialPrice": 28,
+              "discountPercentage": 21,
+              "employeeDiscountPercentage": 52
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/4e8796f2-6423-47b5-b308-f40d58b68271/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/53ff795b-d4ef-4912-ad01-f2d586d073b0/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-907",
+              "path": "/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-907"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "vlRw4Q",
+            "productCode": "SX6897-966",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "5d7b7db9-79a4-4e9d-be0e-afe689ab16ea",
+            "internalPid": "1015605461",
+            "merchProductId": "f8cd8ee8-8d8d-5cf4-b43a-3c8764639c6d",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 21.97,
+              "employeePrice": 13.18,
+              "initialPrice": 28,
+              "discountPercentage": 21,
+              "employeeDiscountPercentage": 52
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/18d8c9bf-98fb-4538-a41a-1ed29e448289/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/ec927994-cbb5-48f9-a173-e13be83fcb77/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-966",
+              "path": "/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-966"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "vlRw4Q",
+            "productCode": "SX6897-967",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "3d9978a9-2a0f-49d7-80b8-c08956746463",
+            "internalPid": "1015605493",
+            "merchProductId": "e643e24c-ccf2-5881-b986-185ff9a54a6d",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 21.97,
+              "employeePrice": 13.18,
+              "initialPrice": 28,
+              "discountPercentage": 21,
+              "employeeDiscountPercentage": 52
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/f4e95136-6011-43e8-92d7-19314e7cb676/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/7a801e5d-aff9-42ff-80c5-c079d62f047e/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-967",
+              "path": "/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-967"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "vlRw4Q",
+            "productCode": "SX6897-010",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "5fb53848-80cb-3f53-af30-64ad0ecc6094",
+            "internalPid": "12476897",
+            "merchProductId": "ae0ae0ff-039e-5871-8133-6352d45fc174",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/0c7302c0-9d23-4170-bca0-e67dd522add4/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/qvpzseudso1po6hdsv9j/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-010",
+              "path": "/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-010"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "vlRw4Q",
+            "productCode": "SX6897-965",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "e9e0a82a-6b4a-4881-bcd1-42eab031960b",
+            "internalPid": "13643627",
+            "merchProductId": "b2390639-3e33-58fa-96fb-c0492bb14884",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/6e6f752b-8bc6-412b-83dc-38d9668d67f9/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/5cf08450-f3bb-4a3f-90d7-d5f82e738d5e/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-965",
+              "path": "/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-965"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "vlRw4Q",
+            "productCode": "SX6897-100",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "34693478-0586-3a55-a18a-fb54217b1f5d",
+            "internalPid": "12476899",
+            "merchProductId": "4608dcf0-6fbb-5894-b745-6755df52b6f4",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/72c6228c-4597-4718-80c6-252c07246557/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/kze9nz89cay3xy4qzqst/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-100",
+              "path": "/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-100"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "vlRw4Q",
+            "productCode": "SX6897-903",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "f1ecd0e7-b4f1-4074-9f64-38e1b32ef2b2",
+            "internalPid": "13798389",
+            "merchProductId": "ffb73245-a0a1-5e33-a928-6ae9621e6165",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/57d77620-67f2-493f-a9b5-f5eac1c341ef/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/589c5fd1-7498-4551-ab8e-e245f343e260/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-903",
+              "path": "/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-903"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "vlRw4Q",
+            "productCode": "SX6897-904",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "3f3459eb-4fe6-4729-8efc-ef8b7204359c",
+            "internalPid": "13798387",
+            "merchProductId": "590cbf16-561b-5120-a268-e1ae52b4eeda",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/35c348b9-8a7b-4ef3-8772-4bed7f7ef6ae/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/76ebb7bc-863a-49bf-b3c7-f0f155359432/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-904",
+              "path": "/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-904"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "vlRw4Q",
+            "productCode": "SX6897-968",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "8ca5f3eb-7071-4686-acd2-6d931b1a678d",
+            "internalPid": "1015710082",
+            "merchProductId": "f2e225fe-f460-5daa-b391-1dd139ebc718",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/a1e61163-423d-431b-9fd4-3e7cef4b5972/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/327a1225-d715-4619-9fe0-b018bb52303c/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER",
+              "JUST_IN"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-968",
+              "path": "/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-968"
+            },
+            "isNewUntil": "2025-04-03T14:00:00.000Z",
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "JUST_IN",
+            "badgeLabel": "Just In"
+          },
+          {
+            "groupKey": "vlRw4Q",
+            "productCode": "SX6897-936",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "8de30eed-2065-4c69-9c08-5317f61b0075",
+            "internalPid": "1015687241",
+            "merchProductId": "eb72d315-f4c9-5feb-bbf0-a1f5fef12840",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/ce5ea538-9c93-4be2-9e24-b9749928cec3/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/805d27da-f1fb-4526-80ff-9ee6d085c02d/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-936",
+              "path": "/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-936"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "vlRw4Q",
+            "productCode": "SX6897-937",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "e277a558-2cb3-4081-a53e-80ae99778383",
+            "internalPid": "1015687589",
+            "merchProductId": "13f44ea4-5556-5951-9869-c4b75075a9aa",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/af6e71b2-121f-4bdd-b59a-88ccdcf54812/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/6bab7042-ee26-42fb-8036-e5fae0892c24/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-937",
+              "path": "/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-937"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "vlRw4Q",
+            "productCode": "SX6897-991",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "62a45f46-ec15-4fa2-832a-7eac0992ec84",
+            "internalPid": "1011972368",
+            "merchProductId": "dfc3a529-90d9-5ef5-84bb-f1c02c96bec2",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 28,
+              "employeePrice": 16.8,
+              "initialPrice": 28,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/1b3fff91-9cbb-459b-8ef6-9df92ef1f498/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/f9055618-6541-4b4f-acfe-a8b38ac7dbd4/U+NK+ED+PLS+CSH+CRW+6PR+-+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-991",
+              "path": "/t/everyday-plus-cushioned-training-crew-socks-6-pairs-vlRw4Q/SX6897-991"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "14Z62l",
+            "productCode": "CD0197-002",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "c4d8291f-2480-3a2d-a1a2-127e5addd148",
+            "internalPid": "12784676",
+            "merchProductId": "35c82d0a-aae9-5bd3-9f92-811fc9f18227",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Flex Control 4",
+              "subTitle": "Men's Workout Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/Dark Smoke Grey/Smoke Grey/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 64.97,
+              "employeePrice": 38.98,
+              "initialPrice": 70,
+              "discountPercentage": 7,
+              "employeeDiscountPercentage": 44
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/b032abc3-ec58-4857-a216-81b36a9f8fdd/NIKE+FLEX+CONTROL+TR4.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/4291821d-5bd2-44db-8e32-67195aea4da8/NIKE+FLEX+CONTROL+TR4.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/flex-control-4-mens-workout-shoes-14Z62l/CD0197-002",
+              "path": "/t/flex-control-4-mens-workout-shoes-14Z62l/CD0197-002"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "14Z62l",
+            "productCode": "CD0197-001",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "113ef586-40dc-3fe9-b4b2-4082b6574f40",
+            "internalPid": "12784019",
+            "merchProductId": "45b64f1d-d63e-5850-b8c4-47c8ec09ddca",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Flex Control 4",
+              "subTitle": "Men's Workout Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Grey",
+                "hex": "808080"
+              },
+              "colorDescription": "Light Smoke Grey/Smoke Grey/Dark Smoke Grey/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 64.97,
+              "employeePrice": 38.98,
+              "initialPrice": 70,
+              "discountPercentage": 7,
+              "employeeDiscountPercentage": 44
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/71e7d7f9-88b1-48ff-8ad7-a7b699cf869c/NIKE+FLEX+CONTROL+TR4.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/d7eb6ba1-e536-40de-9780-b4ba18ba1c73/NIKE+FLEX+CONTROL+TR4.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/flex-control-4-mens-workout-shoes-14Z62l/CD0197-001",
+              "path": "/t/flex-control-4-mens-workout-shoes-14Z62l/CD0197-001"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "14Z62l",
+            "productCode": "CD0197-100",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "8877a962-6144-3d6a-814f-38212473ac11",
+            "internalPid": "12784020",
+            "merchProductId": "ec3c39df-06ea-5cf0-aa45-f776888ab794",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Flex Control 4",
+              "subTitle": "Men's Workout Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Smoke Grey/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 64.97,
+              "employeePrice": 38.98,
+              "initialPrice": 70,
+              "discountPercentage": 7,
+              "employeeDiscountPercentage": 44
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/1d55c75b-d673-4fe5-bd3d-c6e7f8507808/NIKE+FLEX+CONTROL+TR4.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/e91623bb-e3c9-4452-883d-9d12d5544752/NIKE+FLEX+CONTROL+TR4.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/flex-control-4-mens-workout-shoes-14Z62l/CD0197-100",
+              "path": "/t/flex-control-4-mens-workout-shoes-14Z62l/CD0197-100"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "OcIArbbp",
+            "productCode": "DA5380-102",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "ad47c272-c280-38f4-a795-d8b55d685449",
+            "internalPid": "13149344",
+            "merchProductId": "9cb4f8fd-2a8e-5f13-a97e-d75498a63721",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Court Legacy",
+              "subTitle": "Big Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Desert Ochre/Gum Light Brown/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 55,
+              "employeePrice": 33,
+              "initialPrice": 55,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/e2e3972e-86fb-4f53-a3e9-0b900117deab/NIKE+COURT+LEGACY+%28GS%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/572b6904-101f-4fb0-a894-8d0a3136f341/NIKE+COURT+LEGACY+%28GS%29.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/court-legacy-big-kids-shoes-OcIArbbp/DA5380-102",
+              "path": "/t/court-legacy-big-kids-shoes-OcIArbbp/DA5380-102"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "OcIArbbp",
+            "productCode": "DA5380-002",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "64840a04-69f4-34c6-b7fb-c07c4d90db2f",
+            "internalPid": "13220606",
+            "merchProductId": "65069411-8d75-521f-afe8-216c7dbbfba5",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Court Legacy",
+              "subTitle": "Big Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/Gum Light Brown/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 41.97,
+              "employeePrice": 25.18,
+              "initialPrice": 55,
+              "discountPercentage": 23,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/ed3405f0-962b-48a3-b4de-43c3dced7f96/NIKE+COURT+LEGACY+%28GS%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/a49983f5-88b2-4e57-9cd4-c7b3ac21c911/NIKE+COURT+LEGACY+%28GS%29.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/court-legacy-big-kids-shoes-OcIArbbp/DA5380-002",
+              "path": "/t/court-legacy-big-kids-shoes-OcIArbbp/DA5380-002"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "OcIArbbp",
+            "productCode": "DA5380-129",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "7c1d3c77-9cc8-4826-b247-ebd6c68fb08e",
+            "internalPid": "1015663380",
+            "merchProductId": "fe3968c1-46b7-5d4f-abbf-370ce02e8a07",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Court Legacy",
+              "subTitle": "Big Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Sail/Blue Tint"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 46.97,
+              "employeePrice": 28.18,
+              "initialPrice": 55,
+              "discountPercentage": 14,
+              "employeeDiscountPercentage": 48
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/b52139ff-746c-4c71-b113-6ac6d7bcd88b/NIKE+COURT+LEGACY+%28GS%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/f6320127-b0d4-4c70-89f7-605ccfc07001/NIKE+COURT+LEGACY+%28GS%29.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/court-legacy-big-kids-shoes-OcIArbbp/DA5380-129",
+              "path": "/t/court-legacy-big-kids-shoes-OcIArbbp/DA5380-129"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "OcIArbbp",
+            "productCode": "DA5380-401",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "9e840c71-5fa0-4611-bdc2-05e4abc9ce52",
+            "internalPid": "1015652787",
+            "merchProductId": "b41d8711-3fe4-581c-969a-8659f1b24695",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Court Legacy",
+              "subTitle": "Big Kids' Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Blue",
+                "hex": "1F4090"
+              },
+              "colorDescription": "Thunder Blue/Gum Light Brown/Sail"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 46.97,
+              "employeePrice": 28.18,
+              "initialPrice": 55,
+              "discountPercentage": 14,
+              "employeeDiscountPercentage": 48
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/8a3c6850-f657-4cee-9d03-71d105267e9a/NIKE+COURT+LEGACY+%28GS%29.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/a9389d11-7bd3-47db-9d85-710c88436ec4/NIKE+COURT+LEGACY+%28GS%29.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/court-legacy-big-kids-shoes-OcIArbbp/DA5380-401",
+              "path": "/t/court-legacy-big-kids-shoes-OcIArbbp/DA5380-401"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "nQSpJ7",
+            "productCode": "FJ2530-102",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "c8841371-3007-4562-88d0-af3d8e4fc41f",
+            "internalPid": "1015621402",
+            "merchProductId": "1b4614c9-ae88-5c3c-b28d-b39e6fbd1094",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Cortez Vintage Suede",
+              "subTitle": "Women's Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "Summit White/Muslin/Gum Medium Brown/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 65.97,
+              "employeePrice": 39.58,
+              "initialPrice": 100,
+              "discountPercentage": 34,
+              "employeeDiscountPercentage": 60
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/9919a5c7-8cf4-4135-a7d5-706800cc3394/W+NIKE+CORTEZ+VNTG.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/4476847f-411d-4068-9184-b276c703d74b/W+NIKE+CORTEZ+VNTG.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/cortez-vintage-suede-womens-shoes-nQSpJ7/FJ2530-102",
+              "path": "/t/cortez-vintage-suede-womens-shoes-nQSpJ7/FJ2530-102"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "nQSpJ7",
+            "productCode": "FJ2530-200",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "d2eda2f4-4d3b-4ec6-a661-5a2a11dd1228",
+            "internalPid": "1015642688",
+            "merchProductId": "589a51b8-6df6-5c12-abb5-ad277ad7543e",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Cortez Vintage Suede",
+              "subTitle": "Women's Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Brown",
+                "hex": "6C5627"
+              },
+              "colorDescription": "Mink Brown/Gum Medium Brown/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 75.97,
+              "employeePrice": 45.58,
+              "initialPrice": 100,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/60ca3dd5-cf34-465a-92bf-d6b90c401b21/W+NIKE+CORTEZ+VNTG.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/418c7b28-8764-4167-9102-a44d6b202a01/W+NIKE+CORTEZ+VNTG.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/cortez-vintage-suede-womens-shoes-nQSpJ7/FJ2530-200",
+              "path": "/t/cortez-vintage-suede-womens-shoes-nQSpJ7/FJ2530-200"
+            },
+            "isNewUntil": null,
+            "promotions": {
+              "promotionId": "001P_DPMUS1505",
+              "visibilities": [
+                {
+                  "visibilityType": "PW",
+                  "visibilityStartDate": "2025-01-15T23:09:00.000Z",
+                  "visibilityEndDate": "2026-01-01T20:00:00.000Z",
+                  "contentThreadId": "3a0c3d06-97f3-435f-a3f2-8c77c5d6645c",
+                  "title": "New Markdown",
+                  "subtitle": ""
+                }
+              ]
+            },
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "nQSpJ7",
+            "productCode": "FJ2530-301",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "03652a80-44c4-4f00-b050-273fc9f5195c",
+            "internalPid": "1015621313",
+            "merchProductId": "a15cc413-3c37-5efb-9d68-939f06b82a4d",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Cortez Vintage Suede",
+              "subTitle": "Women's Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Green",
+                "hex": "007A44"
+              },
+              "colorDescription": "Vintage Green/Gum Medium Brown/Muslin"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 75.97,
+              "employeePrice": 45.58,
+              "initialPrice": 100,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/5fdb1586-7439-46ee-8aaf-7d654beb0f5c/W+NIKE+CORTEZ+VNTG.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/b22f2eb7-4105-4602-bf45-e4df0d531cf8/W+NIKE+CORTEZ+VNTG.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/cortez-vintage-suede-womens-shoes-nQSpJ7/FJ2530-301",
+              "path": "/t/cortez-vintage-suede-womens-shoes-nQSpJ7/FJ2530-301"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "nQSpJ7",
+            "productCode": "FJ2530-302",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "65ce3353-eb4e-4bd6-b7ee-816a088fc844",
+            "internalPid": "1015651425",
+            "merchProductId": "04087b55-b4c0-57ab-90d9-e3fefe340f7f",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Cortez Vintage Suede",
+              "subTitle": "Women's Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Green",
+                "hex": "007A44"
+              },
+              "colorDescription": "Light Army/Light Army/Sail"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 75.97,
+              "employeePrice": 45.58,
+              "initialPrice": 100,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/08b409b8-b572-4caa-9656-a43623c05ea0/W+NIKE+CORTEZ+VNTG.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/626bad08-75d7-4361-acd3-7b9c93832587/W+NIKE+CORTEZ+VNTG.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/cortez-vintage-suede-womens-shoes-nQSpJ7/FJ2530-302",
+              "path": "/t/cortez-vintage-suede-womens-shoes-nQSpJ7/FJ2530-302"
+            },
+            "isNewUntil": null,
+            "promotions": {
+              "promotionId": "001P_DPMUS1505",
+              "visibilities": [
+                {
+                  "visibilityType": "PW",
+                  "visibilityStartDate": "2025-01-15T23:09:00.000Z",
+                  "visibilityEndDate": "2026-01-01T20:00:00.000Z",
+                  "contentThreadId": "3a0c3d06-97f3-435f-a3f2-8c77c5d6645c",
+                  "title": "New Markdown",
+                  "subtitle": ""
+                }
+              ]
+            },
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "nQSpJ7",
+            "productCode": "FJ2530-400",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "04f04ff0-36be-4e56-a668-99386ff8639b",
+            "internalPid": "1015651715",
+            "merchProductId": "750b650f-6de1-5172-991d-2e5da136bb9e",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Cortez Vintage Suede",
+              "subTitle": "Women's Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Blue",
+                "hex": "1F4090"
+              },
+              "colorDescription": "Aluminum/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 75.97,
+              "employeePrice": 45.58,
+              "initialPrice": 100,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/e615dc56-ecb4-4fb2-b363-5d4093c8e74d/W+NIKE+CORTEZ+VNTG.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/259177e0-6dbe-421c-995a-e68d11516712/W+NIKE+CORTEZ+VNTG.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/cortez-vintage-suede-womens-shoes-nQSpJ7/FJ2530-400",
+              "path": "/t/cortez-vintage-suede-womens-shoes-nQSpJ7/FJ2530-400"
+            },
+            "isNewUntil": null,
+            "promotions": {
+              "promotionId": "001P_DPMUS1505",
+              "visibilities": [
+                {
+                  "visibilityType": "PW",
+                  "visibilityStartDate": "2025-01-15T23:09:00.000Z",
+                  "visibilityEndDate": "2026-01-01T20:00:00.000Z",
+                  "contentThreadId": "3a0c3d06-97f3-435f-a3f2-8c77c5d6645c",
+                  "title": "New Markdown",
+                  "subtitle": ""
+                }
+              ]
+            },
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "nhgSHx",
+            "productCode": "AR6029-010",
+            "productType": "APPAREL",
+            "productSubType": "STANDARD",
+            "globalProductId": "e3f04344-fd3c-3372-85c3-fe93fb7e0a8d",
+            "internalPid": "12468360",
+            "merchProductId": "e13561fb-228d-50b0-a93e-8e78a0f64581",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Dri-FIT",
+              "subTitle": "Men's Fitness T-Shirt"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22.97,
+              "employeePrice": 13.78,
+              "initialPrice": 30,
+              "discountPercentage": 23,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/kxjgqmbim9zxricso57p/M+NK+DF+TEE+DFC+CREW+SOLID.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/y0pys5jfozblhxlsqzxq/M+NK+DF+TEE+DFC+CREW+SOLID.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-010",
+              "path": "/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-010"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "nhgSHx",
+            "productCode": "AR6029-100",
+            "productType": "APPAREL",
+            "productSubType": "STANDARD",
+            "globalProductId": "cbd9c0a3-1334-3f59-8fc4-00ba50cbe1fa",
+            "internalPid": "12468242",
+            "merchProductId": "5223f406-f58e-5c10-9fdc-08f616e342ac",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Dri-FIT",
+              "subTitle": "Men's Fitness T-Shirt"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22.97,
+              "employeePrice": 13.78,
+              "initialPrice": 30,
+              "discountPercentage": 23,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/ylfy1desh7d7fzidimas/M+NK+DF+TEE+DFC+CREW+SOLID.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/e0ifdacemu8dbiyveth6/M+NK+DF+TEE+DFC+CREW+SOLID.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-100",
+              "path": "/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-100"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "nhgSHx",
+            "productCode": "AR6029-091",
+            "productType": "APPAREL",
+            "productSubType": "STANDARD",
+            "globalProductId": "4a021bad-a437-34a2-8436-1b8e9c1c4825",
+            "internalPid": "12468241",
+            "merchProductId": "97ccee26-a740-5b62-98a0-396e2439229c",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Dri-FIT",
+              "subTitle": "Men's Fitness T-Shirt"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Grey",
+                "hex": "808080"
+              },
+              "colorDescription": "Carbon Heather/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22.97,
+              "employeePrice": 13.78,
+              "initialPrice": 30,
+              "discountPercentage": 23,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/92bfca7a-0b70-407c-bb77-7385c0bb5ce8/M+NK+DF+TEE+DFC+CREW+SOLID.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/ddc564cb-648d-4774-bcf2-3e0a49b42da6/M+NK+DF+TEE+DFC+CREW+SOLID.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-091",
+              "path": "/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-091"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "nhgSHx",
+            "productCode": "AR6029-473",
+            "productType": "APPAREL",
+            "productSubType": "STANDARD",
+            "globalProductId": "8b586c94-47bf-352c-9972-0cfa9052ea20",
+            "internalPid": "12468250",
+            "merchProductId": "10ac3223-e727-5f43-aa54-06e7cc0c5852",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Dri-FIT",
+              "subTitle": "Men's Fitness T-Shirt"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Blue",
+                "hex": "1F4090"
+              },
+              "colorDescription": "Obsidian Heather/Matte Silver"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22.97,
+              "employeePrice": 13.78,
+              "initialPrice": 30,
+              "discountPercentage": 23,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/y3mk9wyof9l6eq0qx1of/M+NK+DF+TEE+DFC+CREW+SOLID.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/cfofhtrfjdczzdj3cmmo/M+NK+DF+TEE+DFC+CREW+SOLID.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-473",
+              "path": "/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-473"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "nhgSHx",
+            "productCode": "AR6029-515",
+            "productType": "APPAREL",
+            "productSubType": "STANDARD",
+            "globalProductId": "8ce1427f-b404-4c1d-9c0a-3c825a38d88d",
+            "internalPid": "1015706580",
+            "merchProductId": "7446f57f-2015-5480-b22d-6aa331bbb8f1",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Dri-FIT",
+              "subTitle": "Men's Fitness T-Shirt"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Purple",
+                "hex": "472B7E"
+              },
+              "colorDescription": "Hydrangeas"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 30,
+              "employeePrice": 18,
+              "initialPrice": 30,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/f870271b-fe23-4585-9c3a-850016b4deda/M+NK+DF+TEE+DFC+CREW+SOLID.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/edaf3b43-9157-4872-9e78-f503424daa93/M+NK+DF+TEE+DFC+CREW+SOLID.png"
+            },
+            "featuredAttributes": [
+              "JUST_IN"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-515",
+              "path": "/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-515"
+            },
+            "isNewUntil": "2025-04-03T14:00:00.000Z",
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "JUST_IN",
+            "badgeLabel": "Just In"
+          },
+          {
+            "groupKey": "nhgSHx",
+            "productCode": "AR6029-322",
+            "productType": "APPAREL",
+            "productSubType": "STANDARD",
+            "globalProductId": "bcac08fb-2b17-4b60-9c56-82b361a30f83",
+            "internalPid": "1015656487",
+            "merchProductId": "1b565f35-9570-51a4-bb0a-f084485b06af",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Dri-FIT",
+              "subTitle": "Men's Fitness T-Shirt"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Green",
+                "hex": "007A44"
+              },
+              "colorDescription": "Light Army"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 30,
+              "employeePrice": 18,
+              "initialPrice": 30,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/2a20dd06-0ce1-441b-9d48-681f50725db2/M+NK+DF+TEE+DFC+CREW+SOLID.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/e300450e-3f45-4341-a5c0-f7f0b2ad96a1/M+NK+DF+TEE+DFC+CREW+SOLID.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-322",
+              "path": "/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-322"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          },
+          {
+            "groupKey": "nhgSHx",
+            "productCode": "AR6029-844",
+            "productType": "APPAREL",
+            "productSubType": "STANDARD",
+            "globalProductId": "3ccd1b76-b4f9-457e-81e8-ac3c904668d9",
+            "internalPid": "1015656319",
+            "merchProductId": "e5b9aa35-970d-507f-8869-5473f017c5e5",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Dri-FIT",
+              "subTitle": "Men's Fitness T-Shirt"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Orange",
+                "hex": "E1533D"
+              },
+              "colorDescription": "Apricot Agate/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 30,
+              "employeePrice": 18,
+              "initialPrice": 30,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/999fe5a1-00d1-4fb3-ab04-337f6f7073fb/M+NK+DF+TEE+DFC+CREW+SOLID.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/ef0731c0-5ac9-4a90-9e47-e82eacdaeaed/M+NK+DF+TEE+DFC+CREW+SOLID.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-844",
+              "path": "/t/dri-fit-mens-fitness-t-shirt-nhgSHx/AR6029-844"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "5pRnnD",
+            "productCode": "HF1516-200",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "bea21bf4-2a7d-4195-be69-ed7a9a7c113e",
+            "internalPid": "1015583851",
+            "merchProductId": "0e0dd7a3-f906-5921-8047-fd9868d7ba26",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Air Max 1 Essential Premium",
+              "subTitle": "Men's Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Brown",
+                "hex": "6C5627"
+              },
+              "colorDescription": "Neutral Olive/Cargo Khaki/Cacao Wow/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 105.97,
+              "employeePrice": 63.58,
+              "initialPrice": 150,
+              "discountPercentage": 29,
+              "employeeDiscountPercentage": 57
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/c04b0d59-7f2b-4fbd-a0b2-a6f7df116cd8/NIKE+AIR+MAX+1+ESS+PRM.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/8de611bf-8270-4789-a44a-96b0c933396d/NIKE+AIR+MAX+1+ESS+PRM.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/air-max-1-essential-premium-mens-shoes-5pRnnD/HF1516-200",
+              "path": "/t/air-max-1-essential-premium-mens-shoes-5pRnnD/HF1516-200"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "Xp40hf",
+            "productCode": "CZ1884-001",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "efa55ce9-e216-30d0-a657-0a0766003f61",
+            "internalPid": "13348229",
+            "merchProductId": "3b4e32f6-57b4-53ee-9429-1eb97e137134",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Free Run 5.0",
+              "subTitle": "Men's Road Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/Dark Smoke Grey/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 79.97,
+              "employeePrice": 47.98,
+              "initialPrice": 100,
+              "discountPercentage": 20,
+              "employeeDiscountPercentage": 52
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/3b27eb2b-da90-4a12-bb43-a093ca26b4a3/NIKE+FREE+RN+5.0+NEXT+NATURE.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/a17ff9a8-3b6d-4331-abee-e50aecf0438f/NIKE+FREE+RN+5.0+NEXT+NATURE.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/free-run-5-mens-road-running-shoes-Xp40hf/CZ1884-001",
+              "path": "/t/free-run-5-mens-road-running-shoes-Xp40hf/CZ1884-001"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "Xp40hf",
+            "productCode": "CZ1884-010",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "d54996f6-289e-4daa-973b-23793128454c",
+            "internalPid": "13932459",
+            "merchProductId": "09c5afe0-fc00-5d1e-81fe-a2fecde05e1a",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Free Run 5.0",
+              "subTitle": "Men's Road Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Grey",
+                "hex": "808080"
+              },
+              "colorDescription": "Phantom/Sail/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 79.97,
+              "employeePrice": 47.98,
+              "initialPrice": 100,
+              "discountPercentage": 20,
+              "employeeDiscountPercentage": 52
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/076f12da-c8f4-4035-874b-5a26e1f2ceae/NIKE+FREE+RN+5.0+NEXT+NATURE.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/a16d459f-b08c-432f-aa54-dcc6eac80543/NIKE+FREE+RN+5.0+NEXT+NATURE.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/free-run-5-mens-road-running-shoes-Xp40hf/CZ1884-010",
+              "path": "/t/free-run-5-mens-road-running-shoes-Xp40hf/CZ1884-010"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "QrMX1x",
+            "productCode": "SX6890-100",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "63d234f0-e832-3501-8cbe-227d6931946c",
+            "internalPid": "12476895",
+            "merchProductId": "64b7abe6-8c1f-5be2-9cd0-7f3efa6f5127",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Ankle Socks (3 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/2d116240-77c8-4f5b-91f9-f44d8b6f347f/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/vqnnnyqlus8vksngi3ya/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-100",
+              "path": "/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-100"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "QrMX1x",
+            "productCode": "SX6890-967",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "3f55eb25-d258-4318-9ba3-d73dec52af2b",
+            "internalPid": "1015450684",
+            "merchProductId": "07c456af-7a57-56cb-ae41-0d7a84298ce7",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Ankle Socks (3 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 16.97,
+              "employeePrice": 10.18,
+              "initialPrice": 22,
+              "discountPercentage": 22,
+              "employeeDiscountPercentage": 53
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/9f44f860-bce0-45b0-a6e8-32b26022e32f/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/662ae688-acf5-46f9-b7dc-83b09b87a254/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-967",
+              "path": "/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-967"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "QrMX1x",
+            "productCode": "SX6890-010",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "c23e1452-f7b9-351a-ad9a-d31a061b3245",
+            "internalPid": "12476861",
+            "merchProductId": "450e572c-ce22-5330-bf83-daa3639b63b7",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Ankle Socks (3 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/40934dfc-0af5-4bfc-abfa-2a67b50d49d8/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/sflhz8r0r0gjuyf7vuzs/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-010",
+              "path": "/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-010"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "QrMX1x",
+            "productCode": "SX6890-968",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "6d1ee0ef-8a7d-45de-9e44-62f962dfe580",
+            "internalPid": "1015450711",
+            "merchProductId": "b92d72bf-ca1d-5340-b4e8-8054d4d2f2e3",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Ankle Socks (3 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/b82d6549-693f-48a0-8792-1b423d9fa963/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/c8c39e58-b154-4c06-ba06-2e37c954f78e/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-968",
+              "path": "/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-968"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "QrMX1x",
+            "productCode": "SX6890-965",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "4fdd421d-cb0e-42b5-894f-9d546b039667",
+            "internalPid": "1015450693",
+            "merchProductId": "fe99f03a-1a5b-5e07-ae46-853a72ee081f",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Ankle Socks (3 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/a2fd658d-917b-4619-bd08-de35c9a9efb5/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/8dc1f16a-f32f-43bd-863d-1abad7094953/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-965",
+              "path": "/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-965"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "QrMX1x",
+            "productCode": "SX6890-994",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "04a9b6f9-8e30-4499-b934-0664b232d24a",
+            "internalPid": "1015608058",
+            "merchProductId": "a05014a2-9587-59f1-8bf7-122d3f554d9c",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Ankle Socks (3 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/1c8589ba-5bcc-4eb2-abfa-dda5ca574b01/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/9591ad11-a458-4851-ba9b-1f0d6750e40e/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-994",
+              "path": "/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-994"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "QrMX1x",
+            "productCode": "SX6890-995",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "0f9c9be9-3ae4-43c2-963a-e7210faa7e39",
+            "internalPid": "1015608046",
+            "merchProductId": "ccaba6f6-76a7-5df5-a5ec-e26f9cba6f46",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Ankle Socks (3 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/228e02de-b4ba-459b-a16e-3f3cab98f153/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/df396c4f-97ad-4f9e-b690-6a90c37f26d4/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-995",
+              "path": "/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-995"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "QrMX1x",
+            "productCode": "SX6890-969",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "803b55ed-c705-4dcc-a25f-7cf3e09f4fc4",
+            "internalPid": "1015709346",
+            "merchProductId": "2e2b9e1e-1c5e-5796-b687-7cba0f759124",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Ankle Socks (3 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/d6a2a1ac-2f38-4886-833e-09ce44317288/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/4af5341b-fdbb-4a04-93f2-29e72a90f4c6/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER",
+              "JUST_IN"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-969",
+              "path": "/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-969"
+            },
+            "isNewUntil": "2025-04-03T14:00:00.000Z",
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "JUST_IN",
+            "badgeLabel": "Just In"
+          },
+          {
+            "groupKey": "QrMX1x",
+            "productCode": "SX6890-901",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "fc5f6d70-d434-4d13-94dc-44ea2d219491",
+            "internalPid": "1015628665",
+            "merchProductId": "d8c77770-0ace-5343-af0b-bd89d64a3c68",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Ankle Socks (3 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/752ff14d-8fd7-4891-b140-68f21ac6b6f9/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/25443d12-33c3-40cf-9f80-abdfd3035fb7/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-901",
+              "path": "/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-901"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "QrMX1x",
+            "productCode": "SX6890-936",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "53a0a3d2-fcd2-40e6-9011-6b71abb94e04",
+            "internalPid": "1015687236",
+            "merchProductId": "97e68509-93ce-5b6e-b8a1-175a46f4c1d0",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Ankle Socks (3 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/ee5e36fc-836e-4ec7-bd93-395382650f60/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/58fcbecc-b5b9-4ef0-88e2-c2165ad538c2/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-936",
+              "path": "/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-936"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "QrMX1x",
+            "productCode": "SX6890-937",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "b86d2c4e-d15b-4c2d-bf83-ef0e9808d9bf",
+            "internalPid": "1015687225",
+            "merchProductId": "f11a458f-c8ae-5e14-8318-925a80a234db",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Ankle Socks (3 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/03c3cbfe-d2c5-4264-94db-3e2e3443b20a/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/1983c592-cea7-4f7a-97bf-c38766dddb01/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-937",
+              "path": "/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-937"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "QrMX1x",
+            "productCode": "SX6890-996",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "dcfcf41b-f798-43c3-823f-54241697062d",
+            "internalPid": "1015688447",
+            "merchProductId": "21d7b002-3826-5691-8d98-5d14966a02ed",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday Plus Cushioned",
+              "subTitle": "Training Ankle Socks (3 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/e166b522-ca96-41de-85be-60b7a4cfd6d7/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/2c8c1574-7f6e-432c-8dfa-60a84d04204a/U+NK+EVRY+PLS+CSH+ANK+3PR+132.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-996",
+              "path": "/t/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x/SX6890-996"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "RRT9elMk",
+            "productCode": "942838-101",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "12bf26be-e986-3c0a-997e-dd44abb49ca6",
+            "internalPid": "12113404",
+            "merchProductId": "da477238-d164-5a72-8198-d66e41bf6fbf",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Free Run Flyknit 2018",
+              "subTitle": "Men's Road Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Grey/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 89.97,
+              "employeePrice": 53.98,
+              "initialPrice": 120,
+              "discountPercentage": 25,
+              "employeeDiscountPercentage": 55
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/zf6zoyxo4wzsjwxwxen1/NIKE+FREE+RN+FLYKNIT+2018.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/lstznmmah3ytjqo8ddgd/NIKE+FREE+RN+FLYKNIT+2018.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/free-run-flyknit-2018-mens-road-running-shoes-RRT9elMk/942838-101",
+              "path": "/t/free-run-flyknit-2018-mens-road-running-shoes-RRT9elMk/942838-101"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "75ljqX",
+            "productCode": "DH3162-100",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "78085252-14e6-4dcf-b709-667540d46265",
+            "internalPid": "13828729",
+            "merchProductId": "a6cd8698-3a3a-55d2-9aee-be1f91eb871b",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Court Legacy",
+              "subTitle": "Men's Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Desert Ochre/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 55.97,
+              "employeePrice": 33.58,
+              "initialPrice": 70,
+              "discountPercentage": 20,
+              "employeeDiscountPercentage": 52
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/ece27fc1-1c28-43b2-ae8e-fb39db26c71c/NIKE+COURT+LEGACY+NN.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/aaac8e7b-b62e-4023-9844-7ac4a0577f0a/NIKE+COURT+LEGACY+NN.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/court-legacy-mens-shoes-75ljqX/DH3162-100",
+              "path": "/t/court-legacy-mens-shoes-75ljqX/DH3162-100"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "75ljqX",
+            "productCode": "DH3162-101",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "25837065-648f-4637-b189-b0986479fba4",
+            "internalPid": "13829974",
+            "merchProductId": "5f62cc29-03e3-54b8-8632-39695db080aa",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Court Legacy",
+              "subTitle": "Men's Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Black/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 52.97,
+              "employeePrice": 31.78,
+              "initialPrice": 70,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/f0e2da9f-f646-4104-8a87-2760b66720d2/NIKE+COURT+LEGACY+NN.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/cf4a5556-6163-4abf-9b83-0f89b4766100/NIKE+COURT+LEGACY+NN.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/court-legacy-mens-shoes-75ljqX/DH3162-101",
+              "path": "/t/court-legacy-mens-shoes-75ljqX/DH3162-101"
+            },
+            "isNewUntil": null,
+            "promotions": {
+              "promotionId": "001P_DPMUS1505",
+              "visibilities": [
+                {
+                  "visibilityType": "PW",
+                  "visibilityStartDate": "2025-01-15T23:09:00.000Z",
+                  "visibilityEndDate": "2026-01-01T20:00:00.000Z",
+                  "contentThreadId": "3a0c3d06-97f3-435f-a3f2-8c77c5d6645c",
+                  "title": "New Markdown",
+                  "subtitle": ""
+                }
+              ]
+            },
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "bt34Qq",
+            "productCode": "FB2208-003",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "302ea4a5-51f9-4905-a760-a3bd37afd733",
+            "internalPid": "1013272188",
+            "merchProductId": "b7c29cee-9ef6-516f-ab9d-cb9a32bcaf00",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Revolution 7",
+              "subTitle": "Women's Road Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 52.97,
+              "employeePrice": 31.78,
+              "initialPrice": 70,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/26d05b2f-e8d3-47f3-89d4-5055f1f9d179/W+NIKE+REVOLUTION+7.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/bf5af5bb-ae08-48af-a022-b765d1e1bb33/W+NIKE+REVOLUTION+7.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/revolution-7-womens-road-running-shoes-bt34Qq/FB2208-003",
+              "path": "/t/revolution-7-womens-road-running-shoes-bt34Qq/FB2208-003"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "bt34Qq",
+            "productCode": "FB2208-100",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "2571efe8-1b18-4cf7-a9c0-2031c2a9efcb",
+            "internalPid": "1013330238",
+            "merchProductId": "04a92488-7348-5d55-9705-d2be02802715",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Revolution 7",
+              "subTitle": "Women's Road Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 52.97,
+              "employeePrice": 31.78,
+              "initialPrice": 70,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/d76b79fd-e11d-458d-8177-fa1746921e21/W+NIKE+REVOLUTION+7.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/d0e15fdf-cd8f-4020-8235-f31a0e07068e/W+NIKE+REVOLUTION+7.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/revolution-7-womens-road-running-shoes-bt34Qq/FB2208-100",
+              "path": "/t/revolution-7-womens-road-running-shoes-bt34Qq/FB2208-100"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "bt34Qq",
+            "productCode": "FB2208-002",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "fc6efd98-2578-4e5e-b373-0d27e37a4b00",
+            "internalPid": "1013280817",
+            "merchProductId": "aa6c55dd-8e32-5e16-88fc-127857d3589d",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Revolution 7",
+              "subTitle": "Women's Road Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/Off Noir"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 52.97,
+              "employeePrice": 31.78,
+              "initialPrice": 70,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/88587c4e-efba-4360-b26a-75d876007319/W+NIKE+REVOLUTION+7.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/cab1127e-19ea-44de-b530-67c7aa72071c/W+NIKE+REVOLUTION+7.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/revolution-7-womens-road-running-shoes-bt34Qq/FB2208-002",
+              "path": "/t/revolution-7-womens-road-running-shoes-bt34Qq/FB2208-002"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "bt34Qq",
+            "productCode": "FB2208-104",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "063ba704-1d8d-41e9-83db-3c1292b4f741",
+            "internalPid": "1015620940",
+            "merchProductId": "09153c05-2839-582a-a874-54259ae4eb43",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Revolution 7",
+              "subTitle": "Women's Road Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Beyond Pink/Black/Hyper Crimson"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 52.97,
+              "employeePrice": 31.78,
+              "initialPrice": 70,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/5f38c967-dec3-4dad-8f7c-327d44bef738/W+NIKE+REVOLUTION+7.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/acd9a3e5-da56-4218-936d-4e519fd6e9ad/W+NIKE+REVOLUTION+7.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/revolution-7-womens-road-running-shoes-bt34Qq/FB2208-104",
+              "path": "/t/revolution-7-womens-road-running-shoes-bt34Qq/FB2208-104"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "bt34Qq",
+            "productCode": "FB2208-106",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "7eb79322-a490-4d87-82dd-55a0e2721fb6",
+            "internalPid": "1015704150",
+            "merchProductId": "81e703c7-ca39-56eb-a24d-3b934eb2ffc5",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Revolution 7",
+              "subTitle": "Women's Road Running Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/University Gold/Magic Ember"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 52.97,
+              "employeePrice": 31.78,
+              "initialPrice": 70,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/5a839742-a28d-4ba3-b5be-f7bb7a837aab/W+NIKE+REVOLUTION+7.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/6b62d203-4ee4-4d50-9f09-b909e08ff013/W+NIKE+REVOLUTION+7.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/revolution-7-womens-road-running-shoes-bt34Qq/FB2208-106",
+              "path": "/t/revolution-7-womens-road-running-shoes-bt34Qq/FB2208-106"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "0FZSGV",
+            "productCode": "FB6877-100",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "c5a72647-f118-463b-9696-55a856dd5da9",
+            "internalPid": "1014186201",
+            "merchProductId": "2ef51822-5313-5397-b47d-aaf91de20b12",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Cortez 23 Premium Leather",
+              "subTitle": "Shoes"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 71.97,
+              "employeePrice": 43.18,
+              "initialPrice": 110,
+              "discountPercentage": 34,
+              "employeeDiscountPercentage": 60
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/089ad523-cf8f-4124-a695-1444e059a8b4/W+NIKE+CORTEZ+23+PREMIUM.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/ccbf11db-ea81-499f-bd82-a36b34195bd0/W+NIKE+CORTEZ+23+PREMIUM.png"
+            },
+            "featuredAttributes": null,
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/cortez-23-premium-leather-shoes-0FZSGV/FB6877-100",
+              "path": "/t/cortez-23-premium-leather-shoes-0FZSGV/FB6877-100"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": null,
+            "badgeLabel": null
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "6TqkfJ",
+            "productCode": "HV4837-492",
+            "productType": "APPAREL",
+            "productSubType": "STANDARD",
+            "globalProductId": "f808623e-f3de-4188-81a3-d3ce5a46acdd",
+            "internalPid": "1015702676",
+            "merchProductId": "6e18344b-81a5-5c13-ba04-6f52c649286a",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike DNA",
+              "subTitle": "Men's Dri-FIT 6\" Woven Basketball Shorts"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Blue",
+                "hex": "1F4090"
+              },
+              "colorDescription": "Blue Void/Midnight Navy/Light Crimson"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 45.97,
+              "employeePrice": 27.58,
+              "initialPrice": 65,
+              "discountPercentage": 29,
+              "employeeDiscountPercentage": 57
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/f642cdf8-6794-410f-9f09-7140a41fd011/M+NK+DF+DNA+WVN+6IN+ASW+BAY.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/74ce72b4-ea56-46cc-bde3-b674ea6e3b2c/M+NK+DF+DNA+WVN+6IN+ASW+BAY.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS",
+              "JUST_IN"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/dna-mens-dri-fit-6-woven-basketball-shorts-6TqkfJ/HV4837-492",
+              "path": "/t/dna-mens-dri-fit-6-woven-basketball-shorts-6TqkfJ/HV4837-492"
+            },
+            "isNewUntil": "2025-04-04T07:00:00.000Z",
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "JUST_IN",
+            "badgeLabel": "Just In"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "2JfqZezQ",
+            "productCode": "DV4348-400",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "d582b256-dbfb-4c12-a940-e3a257be2c24",
+            "internalPid": "1015585015",
+            "merchProductId": "0a53b8da-f035-512c-bcdb-651ca3902f36",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Jr. Tiempo Legend 10 Academy",
+              "subTitle": "Little/Big Kids' Multi-Ground Low-Top Soccer Cleats"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Blue",
+                "hex": "1F4090"
+              },
+              "colorDescription": "Soar/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 37.97,
+              "employeePrice": 22.78,
+              "initialPrice": 57,
+              "discountPercentage": 33,
+              "employeeDiscountPercentage": 60
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/e1762894-9c3a-42b3-95a0-47f0e17a2fd4/JR+LEGEND+10+ACADEMY+FG%2FMG.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/7aaa015b-75c5-4993-9f91-93f08e6e34ea/JR+LEGEND+10+ACADEMY+FG%2FMG.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/jr-tiempo-legend-10-academy-little-big-kids-multi-ground-low-top-soccer-cleats-2JfqZezQ/DV4348-400",
+              "path": "/t/jr-tiempo-legend-10-academy-little-big-kids-multi-ground-low-top-soccer-cleats-2JfqZezQ/DV4348-400"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "2JfqZezQ",
+            "productCode": "DV4348-002",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "299f034f-b632-4fdb-be8b-aa801c8be77a",
+            "internalPid": "1015585244",
+            "merchProductId": "06df1f57-1a3a-573b-b8c7-aa851f9c822b",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Jr. Tiempo Legend 10 Academy",
+              "subTitle": "Little/Big Kids' Multi-Ground Low-Top Soccer Cleats"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/Deep Jungle/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 42.97,
+              "employeePrice": 25.78,
+              "initialPrice": 57,
+              "discountPercentage": 24,
+              "employeeDiscountPercentage": 54
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/1506de16-6bbd-4711-adb2-770bedd138f8/JR+LEGEND+10+ACADEMY+FG%2FMG.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/a2523679-854c-4a94-91d7-e7f91c005056/JR+LEGEND+10+ACADEMY+FG%2FMG.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/jr-tiempo-legend-10-academy-little-big-kids-multi-ground-low-top-soccer-cleats-2JfqZezQ/DV4348-002",
+              "path": "/t/jr-tiempo-legend-10-academy-little-big-kids-multi-ground-low-top-soccer-cleats-2JfqZezQ/DV4348-002"
+            },
+            "isNewUntil": null,
+            "promotions": {
+              "promotionId": "001P_DPMUS1505",
+              "visibilities": [
+                {
+                  "visibilityType": "PW",
+                  "visibilityStartDate": "2025-01-15T23:09:00.000Z",
+                  "visibilityEndDate": "2026-01-01T20:00:00.000Z",
+                  "contentThreadId": "3a0c3d06-97f3-435f-a3f2-8c77c5d6645c",
+                  "title": "New Markdown",
+                  "subtitle": ""
+                }
+              ]
+            },
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "2JfqZezQ",
+            "productCode": "DV4348-001",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "b5bf2968-e386-4757-9e8e-4571cbf67305",
+            "internalPid": "1015621830",
+            "merchProductId": "c4f7bb77-0ee4-543d-b4bd-8cba5add8534",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Jr. Tiempo Legend 10 Academy",
+              "subTitle": "Little/Big Kids' Multi-Ground Low-Top Soccer Cleats"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Grey",
+                "hex": "808080"
+              },
+              "colorDescription": "Metallic Silver/Volt/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 57,
+              "employeePrice": 34.2,
+              "initialPrice": 57,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 39
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/cb00a709-a5e0-4b30-8ecb-f9e9f04e2671/JR+LEGEND+10+ACADEMY+FG%2FMG.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/aea98d74-3e58-45f2-84da-334266a47148/JR+LEGEND+10+ACADEMY+FG%2FMG.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/jr-tiempo-legend-10-academy-little-big-kids-multi-ground-low-top-soccer-cleats-2JfqZezQ/DV4348-001",
+              "path": "/t/jr-tiempo-legend-10-academy-little-big-kids-multi-ground-low-top-soccer-cleats-2JfqZezQ/DV4348-001"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          },
+          {
+            "groupKey": "2JfqZezQ",
+            "productCode": "DV4348-800",
+            "productType": "FOOTWEAR",
+            "productSubType": "STANDARD",
+            "globalProductId": "bf085a6c-dbd7-428b-975c-a8bec703180a",
+            "internalPid": "1015650919",
+            "merchProductId": "f8a610b2-c83b-5286-9108-762eea8a7b4a",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Jr. Tiempo Legend 10 Academy",
+              "subTitle": "Little/Big Kids' Multi-Ground Low-Top Soccer Cleats"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Pink",
+                "hex": "FF00FF"
+              },
+              "colorDescription": "Hot Lava/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 57,
+              "employeePrice": 34.2,
+              "initialPrice": 57,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 39
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/4b972a8b-6287-41bf-a86f-a77514ce49a4/JR+LEGEND+10+ACADEMY+FG%2FMG.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/592f003e-36c0-477c-a429-5b17e5711a7f/JR+LEGEND+10+ACADEMY+FG%2FMG.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/jr-tiempo-legend-10-academy-little-big-kids-multi-ground-low-top-soccer-cleats-2JfqZezQ/DV4348-800",
+              "path": "/t/jr-tiempo-legend-10-academy-little-big-kids-multi-ground-low-top-soccer-cleats-2JfqZezQ/DV4348-800"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "SUSTAINABLE_MATERIALS",
+            "badgeLabel": "Sustainable Materials"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "pvTjozMg",
+            "productCode": "SX6910-100",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "6c7ab49c-acd9-31b7-a6cd-70ed1f23eff4",
+            "internalPid": "12001779",
+            "merchProductId": "8ca4c6d2-1935-5e4b-aca5-1df2663c0479",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday",
+              "subTitle": "Kids' Cushioned Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "White/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/cb8d316e-795a-4a9b-99e6-e8e73a46c970/Y+NK+EVERYDY+CUSH+CREW+6PR+108.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/2f83ff67-8853-45b5-b84a-f05c7994fa7a/Y+NK+EVERYDY+CUSH+CREW+6PR+108.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-kids-cushioned-crew-socks-6-pairs-pvTjozMg/SX6910-100",
+              "path": "/t/everyday-kids-cushioned-crew-socks-6-pairs-pvTjozMg/SX6910-100"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "pvTjozMg",
+            "productCode": "SX6910-010",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "83a5c5fe-c0da-3273-a2bf-c01827494155",
+            "internalPid": "12001777",
+            "merchProductId": "3fe36359-e129-5409-890b-a35767a3457b",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday",
+              "subTitle": "Kids' Cushioned Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/e092c5cd-629d-44fa-a846-a383c0b068a0/Y+NK+EVERYDY+CUSH+CREW+6PR+108.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/ter1euq2eyaouoetndcx/Y+NK+EVERYDY+CUSH+CREW+6PR+108.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-kids-cushioned-crew-socks-6-pairs-pvTjozMg/SX6910-010",
+              "path": "/t/everyday-kids-cushioned-crew-socks-6-pairs-pvTjozMg/SX6910-010"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          },
+          {
+            "groupKey": "pvTjozMg",
+            "productCode": "SX6910-903",
+            "productType": "EQUIPMENT",
+            "productSubType": "STANDARD",
+            "globalProductId": "081b6153-89d8-4260-847f-196846534098",
+            "internalPid": "1015688458",
+            "merchProductId": "b764725f-e951-52d7-b0e1-1ec4482598c6",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Everyday",
+              "subTitle": "Kids' Cushioned Crew Socks (6 Pairs)"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Multi-Color",
+                "hex": "FFFFFF"
+              },
+              "colorDescription": "Multi-Color"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 22,
+              "employeePrice": 13.2,
+              "initialPrice": 22,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/b029ff71-7b30-4de2-aa88-1f549edf29ac/Y+NK+EVERYDY+CUSH+CREW+6PR+108.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/18c94a08-56b4-4f54-9e94-da6a960ad15f/Y+NK+EVERYDY+CUSH+CREW+6PR+108.png"
+            },
+            "featuredAttributes": [
+              "BEST_SELLER"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/everyday-kids-cushioned-crew-socks-6-pairs-pvTjozMg/SX6910-903",
+              "path": "/t/everyday-kids-cushioned-crew-socks-6-pairs-pvTjozMg/SX6910-903"
+            },
+            "isNewUntil": null,
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "BEST_SELLER",
+            "badgeLabel": "Best Seller"
+          }
+        ]
+      },
+      {
+        "cardType": "default",
+        "properties": null,
+        "products": [
+          {
+            "groupKey": "773D4z",
+            "productCode": "HJ6351-010",
+            "productType": "APPAREL",
+            "productSubType": "STANDARD",
+            "globalProductId": "8012936f-673c-4b37-a43d-ff55e7649146",
+            "internalPid": "1015651509",
+            "merchProductId": "b3447c56-2fe8-5e84-b894-0bc9c23ef945",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Icon",
+              "subTitle": "Men's 6\" Woven Basketball Shorts"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Black",
+                "hex": "27292B"
+              },
+              "colorDescription": "Black/White/Black/White"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 32.97,
+              "employeePrice": 19.78,
+              "initialPrice": 45,
+              "discountPercentage": 26,
+              "employeeDiscountPercentage": 56
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/f2fa25d0-7a01-4a02-9532-313d5be7b9a9/M+NK+DF+WVN+ICON+6IN+SHORT+STF.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/3cefdcf1-482f-4f00-8f33-a2dce9c30b50/M+NK+DF+WVN+ICON+6IN+SHORT+STF.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS",
+              "JUST_IN"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/icon-mens-6-woven-basketball-shorts-773D4z/HJ6351-010",
+              "path": "/t/icon-mens-6-woven-basketball-shorts-773D4z/HJ6351-010"
+            },
+            "isNewUntil": "2025-04-03T14:00:00.000Z",
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "JUST_IN",
+            "badgeLabel": "Just In"
+          },
+          {
+            "groupKey": "773D4z",
+            "productCode": "HJ6351-113",
+            "productType": "APPAREL",
+            "productSubType": "STANDARD",
+            "globalProductId": "f8fde5e4-0972-4c65-8f5b-93592ff6cd8c",
+            "internalPid": "1015711492",
+            "merchProductId": "bb92ba4b-0d2c-5a25-a2f5-87488e4ff0bb",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Icon",
+              "subTitle": "Men's 6\" Woven Basketball Shorts"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "White",
+                "hex": "EEF3FF"
+              },
+              "colorDescription": "Coconut Milk/Washed Coral/Sail/Black"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 45,
+              "employeePrice": 27,
+              "initialPrice": 45,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/74e413c5-0a0a-43af-a2ec-c2f0799c1588/M+NK+DF+WVN+ICON+6IN+SHORT+STF.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/b16d7e79-5413-4bc0-9c2c-79028f9ea044/M+NK+DF+WVN+ICON+6IN+SHORT+STF.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS",
+              "JUST_IN"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/icon-mens-6-woven-basketball-shorts-773D4z/HJ6351-113",
+              "path": "/t/icon-mens-6-woven-basketball-shorts-773D4z/HJ6351-113"
+            },
+            "isNewUntil": "2025-04-08T18:57:00.000Z",
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "JUST_IN",
+            "badgeLabel": "Just In"
+          },
+          {
+            "groupKey": "773D4z",
+            "productCode": "HJ6351-539",
+            "productType": "APPAREL",
+            "productSubType": "STANDARD",
+            "globalProductId": "3ed6a4dd-7538-49b5-9b4f-01ff63f66836",
+            "internalPid": "1015711547",
+            "merchProductId": "58bf161f-9305-5ef0-a16c-cc0a485403e0",
+            "consumerChannelId": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+            "copy": {
+              "title": "Nike Icon",
+              "subTitle": "Men's 6\" Woven Basketball Shorts"
+            },
+            "displayColors": {
+              "simpleColor": {
+                "label": "Purple",
+                "hex": "472B7E"
+              },
+              "colorDescription": "Deep Night/Picante Red/Dusty Cactus/Dusty Cactus"
+            },
+            "prices": {
+              "currency": "USD",
+              "currentPrice": 45,
+              "employeePrice": 27,
+              "initialPrice": 45,
+              "discountPercentage": 0,
+              "employeeDiscountPercentage": 40
+            },
+            "colorwayImages": {
+              "portraitURL": "https://static.nike.com/a/images/t_default/0588a1a7-f96c-4983-b10e-50e0dc505e45/M+NK+DF+WVN+ICON+6IN+SHORT+STF.png",
+              "squarishURL": "https://static.nike.com/a/images/t_default/d8f412be-ecf0-47ab-aba7-a3f43c1d5f80/M+NK+DF+WVN+ICON+6IN+SHORT+STF.png"
+            },
+            "featuredAttributes": [
+              "SUSTAINABLE_MATERIALS",
+              "JUST_IN"
+            ],
+            "pdpUrl": {
+              "url": "https://www.nike.com/t/icon-mens-6-woven-basketball-shorts-773D4z/HJ6351-539",
+              "path": "/t/icon-mens-6-woven-basketball-shorts-773D4z/HJ6351-539"
+            },
+            "isNewUntil": "2025-04-03T14:00:00.000Z",
+            "promotions": null,
+            "customization": null,
+            "badgeAttribute": "JUST_IN",
+            "badgeLabel": "Just In"
+          }
+        ]
+      }
+    ],
+    "pages": {
+      "next": "/discover/product_wall/v1/marketplace/US/language/en/consumerChannelId/d9a5bc42-4b9c-4976-858a-f159cf99c647?path=/w&queryType=PRODUCTS&options=r:01&anchor=24&count=24",
+      "prev": "",
+      "totalPages": 428,
+      "totalResources": 10251
+    }
+  }
+]
