@@ -11,7 +11,7 @@ const fs = require('fs');
 const axios = require('axios');
 const https = require('https');
 
-const TOTAL_REQUESTS = 1; // Количество запросов
+const TOTAL_REQUESTS = 103; // Количество запросов
 const BASE_URL = "https://api.nike.com/discover/product_wall/v1/marketplace/US/language/en/consumerChannelId/d9a5bc42-4b9c-4976-858a-f159cf99c647";
 
 const HEADERS = {
@@ -72,7 +72,9 @@ async function fetchNikeProducts() {
                         customization: product.customization,
                         badgeAttribute: product.badgeAttribute,
                         badgeLabel: product.badgeLabel,
-                        try: data 
+
+                        // try2: data
+
                     }));
 
                     allProducts = allProducts.concat(destructuredProducts);
