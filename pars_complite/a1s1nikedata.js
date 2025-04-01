@@ -128,8 +128,9 @@ async function fetchNikeProducts() {
         await new Promise(resolve => setTimeout(resolve, 1000));
     }
 
-    fs.writeFileSync('../JSON/b0f1_nike_predata.json', JSON.stringify(allProducts, null, 2));
-    console.log("Данные сохранены в b1f1nike_predata.json");
+  //  fs.writeFileSync('../JSON/b0f1_nike_predata.json', JSON.stringify(allProducts, null, 2));
+    
+    console.log(`Данные сохранены в ${outputFile}`);
 }
 
 fetchNikeProducts();
