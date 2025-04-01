@@ -20,7 +20,7 @@ async function fetchNikeProducts() {
   // Параметры запроса
   const path = '/w';
   const queryType = 'PRODUCTS';
-  const options = 'r:03';
+  const options = 'r:01';
   let anchor = 0;           // Начальная точка пагинации
   const count = 100;        // Количество продуктов за запрос
   let allProducts = [];     // Массив для хранения всех продуктов
@@ -47,7 +47,7 @@ async function fetchNikeProducts() {
   }
 
   // Сохраняем данные в файл
-  fs.writeFileSync('nike_products.json', JSON.stringify(allProducts, null, 2));
+  fs.writeFileSync('../JSON/f0f0_nike_fechInit.json', JSON.stringify(allProducts, null, 2));  // Первоначальный массив
   console.log('Всего получено продуктов:', allProducts.length);
 }
 

@@ -64,11 +64,11 @@ async function fetchNikeProducts() {
                         colorwayImages: product.colorwayImages,
                         featuredAttributes: product.featuredAttributes,
                         pdpUrl: product.pdpUrl,
-                        isNewUntil: products.isNewUntil,
-                        promotions: products.promotions,
-                        customization: products.customization,
-                        badgeAttribute: productjs.badgeAttribute,
-                        badgeLabel: products.badgeLabel
+                        isNewUntil: product.isNewUntil,
+                        promotions: product.promotions,
+                        customization: product.customization,
+                        badgeAttribute: product.badgeAttribute,
+                        badgeLabel: product.badgeLabel
                     }));
 
                     allProducts = allProducts.concat(destructuredProducts);
