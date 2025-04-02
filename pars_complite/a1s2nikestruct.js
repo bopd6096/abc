@@ -1,8 +1,19 @@
+////// реструктурирую данные из основного массива 
+//// дполнительна предварительня структуризация вложенных объектов 
+////  выстраиваю (почти) полную итоговую структуру ичитывая поля для данных которы будут заполнятся позже
+////// при необходимости (в случае затруднения) переключаю на плоский вариант 
+//// перерлбативать структуру не предвидиться 
+//при необходимости редактировать копию данного файла
+
+
+
+
+
 const fs = require('fs');
 const { hasUncaughtExceptionCaptureCallback } = require('process');
 
 // Читаем файл
-const rawData = fs.readFileSync('b1f1_nike_predata.json');
+const rawData = fs.readFileSync('../JSON/b0f1_nike_fetchData.json', 'utf8');
 const products = JSON.parse(rawData);
 
 function destructureNestedObjects(products) {
@@ -21,6 +32,12 @@ function destructureNestedObjects(products) {
             prices = {},           // Значение по умолчанию - пустой объект
             colorwayImages = {},   // Значение по умолчанию - пустой объект
             pdpUrl = {},           // Значение по умолчанию - пустой объект
+             isNewUntil = {},
+             promotions = {},
+             customization = {},
+             badgeAttribute = {},
+             badgeLabel = {},
+
         } = product;
 
         // Деструктурируем поля из вложенных объектов
@@ -58,6 +75,8 @@ function destructureNestedObjects(products) {
             url,
             path
         } = pdpUrl;
+
+
 
         const description = copy.description || '';
         // Возвращаем новый объект с плоской структурой
@@ -109,7 +128,15 @@ function destructureNestedObjects(products) {
                 url,
                 path,
             },
-            
+
+            someAdditionalData: { 
+                isNewUntil: isNewUntil || {},
+                        promotions: promotions || {}, 
+                        customization: customization || {},
+                        badgeAttribute: badgeAttribute || {}, 
+                        badgeLabel: badgeLabel || {},
+            },
+
 
 
 
@@ -150,5 +177,5 @@ function destructureNestedObjects(products) {
 const processedProducts = destructureNestedObjects(products);
 
 // Сохраняем результат в новый файл
-fs.writeFileSync('b1f2_nike_pre_proces.json', JSON.stringify(processedProducts, null, 2));
+fs.writeFileSync('../JSON/b0f2_nike_structData.json', JSON.stringify(processedProducts, null, 2));
 console.log('Обработанные данные сохранены в nike_processed.json');
