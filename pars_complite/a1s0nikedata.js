@@ -47,7 +47,7 @@ async function fetchNikeProducts() {
   }
 
   // Сохраняем данные в файл
-  fs.writeFileSync('../JSON/f0f0_nike_fechInit.json', JSON.stringify(allProducts, null, 2));  // Первоначальный массив
+  fs.writeFileSync('../JSON/b0f0_nike_fechInit.json', JSON.stringify(allProducts, null, 2));  // Первоначальный массив
   console.log('Всего получено продуктов:', allProducts.length);
 }
 
