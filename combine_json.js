@@ -4,12 +4,9 @@ async function mergeFiles() {
     try {
         // Список файлов для объединения
         const fileNames = [
-            './b3f1_nikeIMG.json',
-            './b3f2_nikeIMG.json',
-            './b3f3_nikeIMG.json',
-            './b3f4_nikeIMG.json',
-            './b3f5_nikeIMG.json',
-            './b3f6_nikeIMG.json'
+            // './test_b1f3_nike_discriptions.json',
+            // './test2_b1f3_nike_discriptions.json',
+            // './test3_b1f3_nike_discriptions.json'
         ];
 
         // Читаем все файлы параллельно
@@ -21,7 +18,7 @@ async function mergeFiles() {
         const combined = filesData.reduce((acc, curr) => [...acc, ...curr], []);
 
         // Записываем результат
-        await fs.promises.writeFile('nike_imgs.json', JSON.stringify(combined, null, 2));
+        // await fs.promises.writeFile('nike_discr_sizes.json', JSON.stringify(combined, null, 2));
         console.log('Все 5 файлов успешно объединены');
     } catch (error) {
         console.error('Ошибка при объединении файлов:', error);
