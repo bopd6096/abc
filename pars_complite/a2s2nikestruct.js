@@ -1,0 +1,166 @@
+////// реструктурирую данные из основного массива 
+//// дполнительна предварительня структуризация вложенных объектов 
+////  выстраиваю (почти) полную итоговую структуру ичитывая поля для данных которы будут заполнятся позже
+////// при необходимости (в случае затруднения) переключаю на плоский вариант 
+//// перерлбативать структуру не предвидиться 
+//при необходимости редактировать копию данного файла
+
+
+
+
+
+const fs = require('fs');
+
+// Читаем оба файла
+const rawData1 = fs.readFileSync('../JSON/b0f1_nike_fetchData.json', 'utf8');
+const rawData2 = fs.readFileSync('../JSON/b3f2_nikeIMG.json', 'utf8'); // Укажите путь ко второму файлу
+const rawData3 = fs.readFileSync('../JSON/b1f2_nike_discr_sizes.json', 'utf8'); // Укажите путь к третьему файлу
+const products = JSON.parse(rawData1);
+const secondData = JSON.parse(rawData2);
+const thirdData = JSON.parse(rawData3);
+
+function destructureNestedObjects(products, secondData, thirdData) {
+    const destructuredProducts = products.map(product => {
+        // Деструктурируем вложенные объекты
+        const {
+            groupKey,
+            productCode,
+            productType,
+            productSubType,
+            globalProductId,
+            internalPid,
+            merchProductId,
+            copy = {},
+            displayColors = [],
+            prices = {},
+            colorwayImages = {},
+            pdpUrl = {},
+            isNewUntil = {},
+            promotions = {},
+            customization = {},
+            badgeAttribute = {},
+            badgeLabel = {},
+        } = product;
+
+        const {
+            title: name,
+            subTitle: subtitle,
+        } = copy;
+
+        const {
+            simpleColor = {},
+            colorDescription,
+        } = displayColors;
+
+        const {
+            label: labelColor,
+            hex 
+        } = simpleColor;
+
+        const {
+            currency,
+            currentPrice,
+            initialPrice,
+        } = prices;
+
+        const {
+            portraitURL,
+            squarishURL,
+        } = colorwayImages;
+
+        const {
+            url,
+            path
+        } = pdpUrl;
+
+        // const description = copy.description || '';
+
+        // Находим соответствующий объект из второго файла по url
+        const matchingSecondItem = secondData.find(secondItem => 
+            secondItem.url === url
+        );
+        const matchingThirdItem = thirdData.find(thirdItem =>
+            thirdItem.url === url
+        );
+
+        const discriptionSizesData = {
+            ...(matchingThirdItem && {
+                discription: matchingThirdItem.content,
+            }),
+            ...(matchingThirdItem && {
+                sizes: matchingThirdItem.contentDivSizes,
+            }),
+        }
+
+
+        const { discription, sizes } = discriptionSizesData;
+            
+        
+        // Создаем объект image с учетом данных из второго файла
+        const imageData = {
+            portraitURL,
+            squarishURL,
+            ...(matchingSecondItem && {
+                imgMain: matchingSecondItem.imgMain,
+                images: matchingSecondItem.imgs
+            })
+        };
+
+        return {
+            links: {
+                url,
+                path,
+            },
+            pid: {
+                groupKey,
+                internalPid,
+                merchProductId,
+                productCode,
+                globalProductId,
+            },
+            data: {
+                productType,
+                productSubType,
+            },
+            info: {
+                name,
+                subtitle,
+                discription,
+                color: {
+                    labelColor,
+                    hex,
+                    colorDescription,
+                },
+            },
+            imageData: imageData,
+            price: {
+                origin: {
+                    currency,
+                    currentPrice,
+                    initialPrice,
+                },
+                self: {
+                    fullPrice: '',
+                    UAH: '',
+                },
+            },
+           sizes, 
+            someAdditionalData: { 
+                isNewUntil: isNewUntil || {},
+                promotions: promotions || {}, 
+                customization: customization || {},
+                badgeAttribute: badgeAttribute || {}, 
+                badgeLabel: badgeLabel || {},
+            },
+        };
+    });
+
+    return destructuredProducts;
+}
+
+// Выполняем деструктуризацию с учетом второго файла
+const processedProducts = destructureNestedObjects(products, secondData, thirdData);
+
+// Сохраняем результат в новый файл
+fs.writeFileSync('../JSON/b0f3_nike_structData.json', JSON.stringify(processedProducts, null, 2));
+console.log('Обработанные данные сохранены в b0f2_nike_structData.json');
