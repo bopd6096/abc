@@ -10,7 +10,7 @@ async function translateWithRetry(openai, text, retries = 3, delay = 1000) {
     for (let i = 0; i < retries; i++) {
         try {
             const response = await openai.chat.completions.create({
-                model: "gpt-3.5-turbo",
+                model: "gpt-4-turbo",
                 messages: [
                     {
                         role: "system",
@@ -61,7 +61,7 @@ async function translateContent(inputFilePath, outputFilePath) {
         apiKey: '', // Замените на ваш API ключ
     });
 
-    const limit = createLimiter(150); // Ограничиваем до 15 параллельных запросов
+    const limit = createLimiter(15); // Ограничиваем до 15 параллельных запросов
 
 
     // Считаем общее количество элементов в файле
@@ -138,7 +138,7 @@ async function translateContent(inputFilePath, outputFilePath) {
 }
 
 // Использование
-const inputFile = '../JSON/b1f3_nike_discription.json'; // Путь к вашему входному файлу
+const inputFile = '../JSON/b1f4_nike_discription.json'; // Путь к вашему входному файлу
 const outputFile = '../JSON/b1f3_nike_discription_translated.json'; // Путь к вашему выходному файлу
 
 translateContent(inputFile, outputFile)

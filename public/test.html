@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продукты</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    li {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    #loader {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Продукты</h1>
+  <ul id="product-list"></ul>
+  <div id="loader">Загрузка...</div>
+
+  <script>
+    let page = 1;
+    let hasMore = true;
+    const productList = document.getElementById('product-list');
+    const loader = document.getElementById('loader');
+
+    async function fetchProducts() {
+      try {
+        const response = await fetch(`/api/products?page=${page}&limit=10`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+
+        data.products.forEach(product => {
+          const li = document.createElement('li');
+          const img = document.createElement('img');
+          img.src = product.imageData.imgMain;
+          img.alt = product.info.name;
+
+          const name = document.createElement('p');
+          name.textContent = `${product.info.name} - ${product.info.subtitle}`;
+
+          const price = document.createElement('p');
+          price.textContent = `${product.price.self.UAH.currentPrice} UAH`;
+
+          li.appendChild(img);
+          li.appendChild(name);
+          li.appendChild(price);
+          productList.appendChild(li);
+        });
+
+        page += 1;
+
+        if (productList.children.length >= data.total) {
+          hasMore = false;
+          loader.textContent = 'Все продукты загружены!';
+        }
+      } catch (error) {
+        console.error('Ошибка:', error);
+        loader.textContent = `Ошибка загрузки: ${error.message}`;
+      }
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && hasMore) {
+        fetchProducts();
+      }
+    }, { threshold: 1.0 });
+
+    observer.observe(loader);
+    fetchProducts(); // Первая загрузка
+  </script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>DealZone</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="mmenu.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="orderForm.css">
+    <link rel="stylesheet" href="forTg.css">
+</head>
+<body>
+     <!-- Header -->
+        <div class="header">
+            
+        </div>
+    <header>
+        <a href="#" onclick="showSection('home'); return false;">
+            <img src="img/1.jpg" alt="logo" class="logo">
+        </a>
+
+        <button class="cart-button" onclick="showSection('cart')">
+            Корзина <!--(<span id="cart-count">0</span>)-->
+        </button>
+        <div class="cart-count">
+            <span id="cart-count">0</span>
+        </div>
+
+
+        <button class="burger" id="burgerButton">
+            <i class="fas fa-bars" id="burgerMenuIcon" ></i>
+        </button>
+        <div
+            class="menu" id="menu">
+
+            <div class="arket">
+                <button type="button" class="market" id="market"onclick="showSection('catalog')">
+                    Каталог
+                </button>
+            </div>
+
+            <a href="#home">Главная</a>
+            <a href="#about"> Инфо</a>
+            <a href="#services">Тех поддержка</a>
+            <a href="#" onclick="showSection('test-category')">test1</a>
+            <a href="#" onclick="showSection('Categorys-Preview')">test</a>
+            <a href="#" onclick="showSection('catalog')">Каталог</a>
+        </div>
+
+
+
+
+
+
+
+    </header>
+    <h1>DealZone</h1>
+    <!-- Navigation Bar -->
+ 
+    <div class="container">
+
+        <!-- Product Section -->
+
+
+
+
+        <section id="home" class="content-section">
+            <div class="welcome-banner">
+                <h2>Добро пожаловать в DealZone!</h2>
+                <p>
+                    Здесь вы найдете лучшие предложения и скидки!
+                </p>
+            </div>
+
+        </section>
+
+
+
+        <section id="catalog" class="content-section catalog" style="display: none;">
+            <h2>Каталог</h2>
+
+
+
+            <div id="catalog-ctg" class="categories">
+
+                <div class="category-card" data-bg="./img/relax.jpeg">
+                    <div class="category-header" onclick="toggleCategory(this, 'category1')">
+                        <h3>Для затишку</h3>
+                    </div>
+                    <div class="category-content" id="category1">
+                        <!-- Товары категории 1 -->
+                        <div class="products"></div>
+                    </div>
+                </div>
+                <div class="category-card" data-bg="./img/her.png">
+                    <div class="category-header" onclick="toggleCategory(this, 'category2')">
+                        <h3>Для Неї</h3>
+                    </div>
+                    <div class="category-content" id="category2">
+                        <div class="products2"></div>
+                        <!-- Товары категории 2 -->
+                    </div>
+                </div>
+                <!-- Добавьте больше категорий, если нужно -->
+                <div class="category-card" data-bg="./img/barber.jpeg">
+                    <div class="category-header" onclick="toggleCategory(this, 'category3')">
+                        <h3>Для Догляду за волллсям</h3>
+                    </div>
+                    <div class="category-content" id="category3">
+
+                        <div class="products3"></div>
+                   Товары категории
+                    </div>
+                </div>
+
+
+                <div class="category-card" data-bg="./img/kitchen.jpeg">
+                    <div class="category-header" onclick="toggleCategory(this, 'category4')">
+                        <h3>Для кухні</h3>
+                    </div>
+                    <div class="category-content" id="category4">
+
+                        <div class="products4"></div>
+                        Товары категории 4
+                    </div>
+                </div>
+
+
+
+                <div class="category-card" data-bg="./img/home.jpeg">
+                    <div class="category-header" onclick="toggleCategory(this, 'category5')">
+                        <h3>Для дому</h3>
+                    </div>
+                    <div class="category-content" id="category5">
+
+                        <div class="products5"></div>
+                        Товары категории 5 
+                    </div>
+                </div>
+                <div class="category-card" data-bg="./img/media.jpeg">
+                    <div class="category-header" onclick="toggleCategory(this, 'category6')">
+                        <h3>Media</h3>
+                    </div>
+                    <div class="category-content" id="category6">
+
+                        <div class="products6"></div>
+                        Товары категории 5 
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <div class="container">
+
+            <section id="about" class="content-section" style="display: none;">
+                <h2>O наc</h2>
+                <p>
+                    DealZone — интернет-магазин стоковых товаров с широким ассортиментом, низкими ценами и быстрой доставкой. У нас вы найдете качественную одежду, электронику, товары для дома и многое другое по сниженным ценам.<br> DealZone — экономьте с удовольствием!
+                </p>
+            </section>
+        </div>
+
+        <div class="container">
+
+            <section id="contacts" class="content-section" style="display: none;">
+                <h2>Контакты</h2>
+                <p>
+                    Свяжитесь с нами:
+                </p>
+                <ul>
+                    <li>Телео: +380 (95) 109-70-83</li>
+                    <li>Email: vtj.vlad@gmail.com</li>
+                    <li>Адрес: г.Хуст,
+                        Укаина</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="container">
+            <section id="user" class="content-section" style="display: none;">
+
+
+                <p>
+                    Добро пожаловать,
+                </p>
+                <p></p>
+
+                <!-- риме итории заказов -->
+                <div class="order-history">
+                    <h3>История заказов</h3>
+                    <p>
+                        Вы пока не сделали ни одного заказа.
+                    </p>
+                    <!-- де можно добави динамиеку итори заказов -->
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+
+            <section id="cart" class="content-section" style="display: none;">
+                <h2>Корзина</h2>
+                <div class="cart-items">
+                    <div class="pre-checkout">
+                         <div class="cart-total"></div>
+                         <button class="checkout-button" style="display: none;">Оплатить</button>
+                     </div>        
+                </div>
+                <div id="order-form" class="order-form" style="display: none;">
+                        <div class="order-form-content">
+                            
+                        <span class="close" onclick="hideOrderForm()">  <i class=" fa-regular fa-xmark"></i></span>   
+                    <h2>Оформление заказа</h2>
+
+                    <form id="checkout-form">
+                        <input type="text" id="name" name="name" placeholder="Имя" required>
+
+                        <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+
+                        <input type="email" id="email" name="email" placeholder="Emile" required>
+
+                        <input type="text" id="address" name="address" placeholder="Адрес доставки" required>
+
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="card">Карта</option>
+                            <option value="cash">Наличными при полчении</option>
+                            <option value="online">Онлайн</option>
+                        </select>
+
+                        <button type="submit">Подтвердить заказ</button>
+                    </form>
+                        </div>
+                </div>
+
+            </section>        
+
+        </div>
+
+
+
+
+
+        <div class="container">
+            <section id="payment" class="content-section" style="display: none;">
+                <h2>Оплат</h2>
+                <p>
+                    Информация о спообах оплаты.
+                </p>
+                            </section>
+        </div>
+
+        <div class="container">
+            <section id="delivery" class="content-section" style="display: none;">
+                <h2>Доставка</h2>
+                <p>
+                    Информация о доставке и вариантах получения товаров.
+                </p>
+            </section>
+        </div>
+
+
+        <div class="container">
+                <section id="order-history" class="content-section" style="display: none;">
+                    <h2>История заказов</h2>
+                    <p>
+                        Информация о заказах.
+                    </p> 
+                </section>    
+        </div>    
+
+
+        <div class="container">
+                <section id="users-tag-items" class="content-section" style="display: none;">
+                    <h2></h2>
+                    <p> 
+                        
+                    </p>
+                </section>    
+        </div>  
+
+        <div class="container">
+                <section id="top-sujestions" class="content-section" style="display: none;">
+                    <h2></h2>
+                    <p> 
+                        
+                    </p>
+                </section>    
+        </div>
+     
+
+        <div class="navbarbot">
+<div class="items-count">
+            <span id="items-count">0</span>
+        </div>
+            <a href="#" onclick="showSection('order-history')"><i class="fas fa-table-list"></i></a>
+            
+            <a href="#" onclick="showSection('catalog')"><i class="fas fa-shop"></i></a>
+                <a href="#" onclick="showSection('cart')"> <i class="fa-solid fa-cart-shopping fa-beat"></i></a>
+            <a href="#" onclick="showSection('top-sujestions')"><i class="fas fa-scale-unbalanced-flip"></i></a>
+            <a href="#" onclick="showSection('users-tag-items')"><i class="fas fa-heart"></i></a>
+        </div>
+
+<nav class="mini_menu">
+  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+  <label class="menu-open-button" for="menu-open">
+    <span class="hamb hamb-1"></span>
+    <span class="hamb hamb-2"></span>
+    <span class="hamb hamb-3"></span>
+  </label>
+  
+  <a href="#" class="menu-item" onclick="showSection('delivery')"> <i class="fa fa-truck fa-xl"></i> </a>
+  <a href="#" class="menu-item" onclick="showSection('payment')"> <i class="fa fa-credit-card fa-xl"></i> </a>
+  <a href="https://dzshop24.com" target="_blank" class="menu-item">  <i class="fa fa-globe fa-shake fa-xl"></i></a>
+  <a href="#" class="menu-item" onclick="showSection('user')"> <i class="fa fa-user fa-xl"></i> </a>
+  <a href="#" class="menu-item" onclick="showSection('home')"> <i class="fa fa-house fa-xl"></i> </a>
+
+</nav>
+            <button id="backToTop"> <i class="fa-solid fa-caret-up fa-beat fa-lg"></i> </button>
+
+            <script>
+                const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+      backToTopBtn.style.display = (window.scrollY > 300) ? 'block' : 'none';
+    });
+    backToTopBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+                </script>
+        <!-- Footer -->
+        <footer>
+            <div class="wrapper">
+                <a href="#" class="icon"><i class="fa-brands fa-tiktok fa-2xl"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-telegram fa-2xl"></i></a>
+                <a href="https://www.instagram.com/vtjvlad/" class="icon"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-pinterest fa-2xl"></i></a>
+            </div>
+            <p>
+                2024
+            </p>
+        </footer>
+
+<!-- Модальное окно -->
+
+<div id="product-modal" class="modal">
+   <div class="modal-content">
+            <span class="close" onclick="closeModal()">  <i class=" fa-regular fa-xmark  fa-lg"></i></span>
+        <img src="" alt="" class="modal-image" id="modal-img">
+        <h3 id="modal-title">название товара</h3>
+                        <p id="modal-description"></p>
+        <h6 id="modal-article">артикул товара:</h6>
+        <h6 id="modal-id-short">идентификатор товара:</h6>
+        <h6 id="modal-id">:</h6>
+        <h6 id="modal-count">количество товара:</h6>
+
+
+                        <button class="add-to-cart" id="modal-buy-btn" onclick=""><a id="modal-price"></a> грн. </button>
+            </div>
+
+
+
+
+        <script>
+         
+        </script>
+
+    <script src="auth3.js"></script>
+        <script src="script.js"></script>
+        <script src="cart.js"></script>
+
+    </body>
+</html>

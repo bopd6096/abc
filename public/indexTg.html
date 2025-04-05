@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.85">
+    <title>DealZone</title>
+    <link rel="stylesheet" href="authstyle.css">
+</head>
+<body>
+    <div>
+        <a class="gotoold" href="/main">main</a>
+    </div>
+
+    <div class="welcome-banner">
+        <h2>Добро пожаловать в DealZone!</h2>
+        <p>Здесь вы найдете лучшие предложения и скидки!</p>
+    </div>
+
+    <!-- Секция с авторизацией -->
+    <div class="container hidden" id="authSection">
+        <div class="auth" id="authcard">
+            <div class="side front">
+                <h2>Авторизация</h2>
+                    <form id="loginForm">
+                        <div class="group">
+        <input type="text" id="login-input" placeholder="Login или Email" required>
+                        </div>
+                        <div class="group">
+        <input type="password" id="login-password" placeholder="Пароль" required>
+                        </div>
+                <button type="submit">Войти</button>
+    </form>
+    <button class="flip" id="flipToRegister">Регистрация</button>
+                
+            </div>
+            <div class="side back">
+                <h2>Регистрация</h2>
+                <form id="registrationForm">
+        <input type="text" id="reg-username" placeholder="Имя пользователя" required>
+        <input type="email" id="reg-email" placeholder="Email" required>
+        <input type="password" id="reg-password" placeholder="Пароль" required>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+                    <button class="flip" id="flipToLogin">Login</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопка -->
+    <button class="authCard-btn" id="AuthBtn">Войти по Email</button>
+
+<button class="btn" id="telegramAuthButton">Начать</button>
+
+
+
+    <script src="auth2.js"></script>
+    <script src="auth.js"></script>
+        <script src="loadProducts.js"></script>
+</body>
+</html>

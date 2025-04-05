@@ -1,0 +1,167 @@
+/* Скрытие контейнера */
+.hidden {
+    display: none;
+}
+
+/* Общий стиль для контейнера */
+.container {
+    position: relative;
+    margin: 50px auto;
+    width: 300px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+background: linear-gradient(to bottom, #ffffff, #6B60DB);
+    color: #333;
+    font-family: Arial, sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 3000px;
+    touch-action: manipulation;
+}
+
+.gotoold {
+     position: absolute;
+    top: 75px;
+    left: 45%;
+}
+
+
+.welcome-banner {
+    border: 1px;
+    border-radius: 15px;
+    background-color: rgb(255 255 255 / 40%);
+    position: absolute;
+    bottom: 240px;
+    left: 5%;
+    padding: 10px;
+    box-shadow: 3px  4px 0.8em rgb(0 0 0 / 40%);
+
+}
+
+#AuthBtn {
+    font-size: 15px;
+    border: 0px;
+    border-radius: 15px;
+    background-color: #0055cc;
+    color: #ffffff;
+    position: absolute;
+    bottom: 170px;
+    left: 25%;
+    height: 30px;
+    width: 50%;
+box-shadow: 3px  4px 0.8em rgb(0 0 0 / 40%);
+}
+
+.btn {
+    font-size: 35px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #0055cc;
+    color: #ffffff;
+    position: absolute;
+    bottom: 70px;
+    left: 10%;
+    height: 70px;
+    width: 80%;
+box-shadow: 3px  4px 0.8em rgb(0 0 0 / 40%);
+}
+
+.auth {
+    width: 350px;
+    height: 450px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.8s;
+}
+
+.auth .side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.front {
+    background: #007bff;
+    color: #fff;
+}
+
+.back {
+    background: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.switch-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.switch-text span {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+

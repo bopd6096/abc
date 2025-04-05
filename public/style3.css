@@ -1,0 +1,54 @@
+/* style.css */
+
+body {
+	background: #02829C;
+	height: max;
+	width: max;
+	margin-top: 75px;
+	padding-top: 50px;
+	}
+#registration-form, #login-form {
+	
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+overflow: hiden;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.showRegistrBtn {
+font-size: 16px;
+ width: 250px;
+height: 100px;
+border-radius: 25px;
+			position: absolute;
+	top: 600px;
+	left: 100px;
+	}
+	
+	
+#userInfo {
+    background: white;
+    position: absolute;
+    top: 250px;
+    left: 25px;
+}
+
+/* Добавьте другие стили по вашему вкусу */
