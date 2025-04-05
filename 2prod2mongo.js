@@ -51,28 +51,28 @@ const productSchema = new mongoose.Schema({
   price: {
     origin: {
       currency: { type: String },
-      currentPrice: { type: Number },
       initialPrice: { type: Number },
+      currentPrice: { type: Number },
       self: { 
-                initial20: { type: Number },
-                current20: { type: Number },
+         initial20: { type: Number },
+         current20: { type: Number },
         }
     },
     self: {
       currency: { type: String, default: 'UAH' },
       UAH: { 
-                initialPrice: { type: Number },
-                currentPrice: { type: Number },
+        initialPrice: { type: Number },
+        currentPrice: { type: Number },
             },
 
       selfUAH: { 
-                initial20: { type: Number },
-                current20: { type: Number },
+        initial20: { type: Number },
+        current20: { type: Number },
             }
         },
     },
   
-  sizes: { type: [String] }, // Предполагаем, что это массив строк
+  sizes: { type: String }, // Предполагаем, что это массив строк
   
   someAdditionalData: {
     isNewUntil: {

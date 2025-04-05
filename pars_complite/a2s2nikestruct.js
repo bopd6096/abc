@@ -93,7 +93,7 @@ function destructureNestedObjects(products, secondData, thirdData, pricesData) {
             ...(matchingPricesItem && {
                 self: { 
                     initial20: matchingPricesItem.self.initial20,
-                    curent20: matchingPricesItem.self.curent20,
+                    current20: matchingPricesItem.self.current20,
                 },
                 UAH: {
                     initialPrice: matchingPricesItem.UAH.initialPrice,
@@ -101,7 +101,7 @@ function destructureNestedObjects(products, secondData, thirdData, pricesData) {
                 },
                 selfUAH: {
                     initial20: matchingPricesItem.selfUAH.initial20,
-                    curent20: matchingPricesItem.selfUAH.curent20,
+                    current20: matchingPricesItem.selfUAH.current20,
                 },
             }),
         }

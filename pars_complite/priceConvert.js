@@ -23,7 +23,7 @@ async function processJsonFile(inputFilePath, outputFilePath) {
                 ...item,
                 self: {
                     initial20: initial20,
-                    curent20: current20
+                    current20: current20
                 }
             };
 
@@ -36,7 +36,7 @@ async function processJsonFile(inputFilePath, outputFilePath) {
                 },
                 selfUAH: {
                     initial20: roundToTwo(initial20 * USD_TO_UAH_RATE),
-                    curent20: roundToTwo(current20 * USD_TO_UAH_RATE)
+                    current20: roundToTwo(current20 * USD_TO_UAH_RATE)
                 }
             };
         });
