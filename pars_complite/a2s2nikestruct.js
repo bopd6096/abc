@@ -40,7 +40,7 @@ function destructureNestedObjects(products, secondData, thirdData, pricesData) {
             pdpUrl = {},
             isNewUntil = {},
             promotions = {},
-            customization = {},
+          //  customization = {},
             badgeAttribute = {},
             badgeLabel = {},
         } = product;
@@ -175,7 +175,7 @@ function destructureNestedObjects(products, secondData, thirdData, pricesData) {
             someAdditionalData: { 
                 isNewUntil: isNewUntil || {},
                 promotions: promotions || {}, 
-                customization: customization || {},
+              //  customization: customization || {},
                 badgeAttribute: badgeAttribute || {}, 
                 badgeLabel: badgeLabel || {},
             },
