@@ -15,11 +15,14 @@ const fs = require('fs');
 const rawData1 = fs.readFileSync('../JSON/b0f1_nike_fetchData.json', 'utf8');
 const rawData2 = fs.readFileSync('../JSON/b3f2_nikeIMG.json', 'utf8'); // Укажите путь ко второму файлу
 const rawData3 = fs.readFileSync('../JSON/b1f2_nike_discr_sizes.json', 'utf8'); // Укажите путь к третьему файлу
+const rawData4 = fs.readFileSync('../JSON/b1f5_nike_prices_converted.json', 'utf8'); // Укажите путь к четвертому файлу
+
 const products = JSON.parse(rawData1);
 const secondData = JSON.parse(rawData2);
 const thirdData = JSON.parse(rawData3);
+const pricesData = JSON.parse(rawData4);
 
-function destructureNestedObjects(products, secondData, thirdData) {
+function destructureNestedObjects(products, secondData, thirdData, pricesData) {
     const destructuredProducts = products.map(product => {
         // Деструктурируем вложенные объекты
         const {
@@ -82,6 +85,26 @@ function destructureNestedObjects(products, secondData, thirdData) {
         const matchingThirdItem = thirdData.find(thirdItem =>
             thirdItem.url === url
         );
+        const matchingPricesItem = pricesData.find(pricesItem =>
+            pricesItem.url === url
+        );
+
+        const priceData = {
+            ...(matchingPricesItem && {
+                self: { 
+                    initial20: matchingPricesItem.self.initial20,
+                    curent20: matchingPricesItem.self.curent20,
+                },
+                UAH: {
+                    initialPrice: matchingPricesItem.UAH.initialPrice,
+                    currentPrice: matchingPricesItem.UAH.currentPrice,
+                },
+                selfUAH: {
+                    initial20: matchingPricesItem.selfUAH.initial20,
+                    curent20: matchingPricesItem.selfUAH.curent20,
+                },
+            }),
+        }
 
         const discriptionSizesData = {
             ...(matchingThirdItem && {
@@ -138,11 +161,15 @@ function destructureNestedObjects(products, secondData, thirdData) {
                     currency,
                     currentPrice,
                     initialPrice,
+                    self: priceData.self,
                 },
                 self: {
-                    fullPrice: '',
-                    UAH: '',
+                    currency: "UAH",
+                    UAH: priceData.UAH,
+                    selfUAH: priceData.selfUAH,
                 },
+
+                
             },
            sizes, 
             someAdditionalData: { 
@@ -159,7 +186,7 @@ function destructureNestedObjects(products, secondData, thirdData) {
 }
 
 // Выполняем деструктуризацию с учетом второго файла
-const processedProducts = destructureNestedObjects(products, secondData, thirdData);
+const processedProducts = destructureNestedObjects(products, secondData, thirdData, pricesData);
 
 // Сохраняем результат в новый файл
 fs.writeFileSync('../JSON/b0f3_nike_structData.json', JSON.stringify(processedProducts, null, 2));

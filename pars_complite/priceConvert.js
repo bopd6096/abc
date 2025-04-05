@@ -15,13 +15,13 @@ async function processJsonFile(inputFilePath, outputFilePath) {
         // 2. Process each object in the array
         const processedData = data.map(item => {
             // Step 1: Calculate prices with 20% increase and round
-            const initial20 = roundToTwo(item.prices.initialPrice * 1.20);
-            const current20 = roundToTwo(item.prices.currentPrice * 1.20);
+            const initial20 = roundToTwo(item.prices.initialPrice * 1.23);
+            const current20 = roundToTwo(item.prices.currentPrice * 1.23);
 
             // Step 2: Add selfprices structure
             const withSelfPrices = {
                 ...item,
-                selfprices: {
+                self: {
                     initial20: initial20,
                     curent20: current20
                 }
@@ -34,7 +34,7 @@ async function processJsonFile(inputFilePath, outputFilePath) {
                     initialPrice: roundToTwo(item.prices.initialPrice * USD_TO_UAH_RATE),
                     currentPrice: roundToTwo(item.prices.currentPrice * USD_TO_UAH_RATE)
                 },
-                selfpricesUAH: {
+                selfUAH: {
                     initial20: roundToTwo(initial20 * USD_TO_UAH_RATE),
                     curent20: roundToTwo(current20 * USD_TO_UAH_RATE)
                 }
@@ -59,7 +59,7 @@ async function processJsonFile(inputFilePath, outputFilePath) {
 
 // Example usage
 const inputFile = '../JSON/b1f3_nike_prices.json'; // Path to your input JSON file
-const outputFile = '../JSON/b1f3_nike_prices_converted.json'; // Path to your output JSON file
+const outputFile = '../JSON/b1f5_nike_prices_converted.json'; // Path to your output JSON file
 processJsonFile(inputFile, outputFile)
     .then(() => console.log('Processing complete'))
     .catch(err => console.error('Failed to process file:', err));
