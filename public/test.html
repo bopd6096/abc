@@ -45,7 +45,7 @@
 
     async function fetchProducts() {
       try {
-        const response = await fetch(`/api/products?page=${page}&limit=10`);
+        const response = await fetch(`/api/products?page=${page}&limit=100`);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -61,7 +61,7 @@
           name.textContent = `${product.info.name} - ${product.info.subtitle}`;
 
           const price = document.createElement('p');
-          price.textContent = `${product.price.self.UAH.currentPrice} UAH`;
+          price.textContent = `${product.price.self.selfUAH.initial20} UAH`;
 
           li.appendChild(img);
           li.appendChild(name);

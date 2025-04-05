@@ -33,7 +33,7 @@ app.get('/tg', (req, res) => {
 
 app.get('/home', (req, res) => {
   console.log('GET /home - Главная страница Telegram загружается');
-  res.sendFile(path.join(__dirname, 'public', 'test.html'));
+  res.sendFile(path.join(__dirname, 'public', 'test2.html'));
 }); 
 
 app.get('/main', (req, res) => {
@@ -469,23 +469,55 @@ app.put('/api/cart/update/:productId', authenticateToken, async (req, res) => {
 //         res.status(500).json({ message: 'Ошибка сервера', error: err.message });
 //     }
 // });
+// app.get('/api/products', async (req, res) => {
+//   const page = parseInt(req.query.page) || 1;
+//   const limit = parseInt(req.query.limit) || 100;
+//   const skip = (page - 1) * limit;
+//
+//   try {
+//     const products = await Products.find()
+//       .skip(skip)
+//       .limit(limit);
+//     const total = await Products.countDocuments();
+//     res.json({
+//       products,
+//       total,
+//       currentPage: page,
+//       totalPages: Math.ceil(total / limit)
+//     });
+//   } catch (error) {
+//     res.status(500).send(error.message);
+//   }
+// });
 app.get('/api/products', async (req, res) => {
   const page = parseInt(req.query.page) || 1;
-  const limit = parseInt(req.query.limit) || 100;
+  const limit = parseInt(req.query.limit) || 10;
   const skip = (page - 1) * limit;
 
   try {
-    const products = await Products.find()
+    // Получаем уникальные groupKey для текущей страницы
+    const groupKeys = await Products.distinct('pid.groupKey')
       .skip(skip)
       .limit(limit);
-    const total = await Products.countDocuments();
+
+    // Получаем все продукты для этих groupKey
+    const products = await Products.find({ 'pid.groupKey': { $in: groupKeys } })
+      .select('info.name info.subtitle info.color price.self.UAH.currentPrice price.self.UAH.initialPrice imageData.imgMain imageData.images links.url sizes pid.groupKey');
+    
+    // Группируем продукты по groupKey
+    const groupedProducts = groupKeys.map(groupKey => {
+      return products.filter(p => p.pid.groupKey === groupKey);
+    });
+
+    const totalGroups = await Products.distinct('pid.groupKey').countDocuments();
     res.json({
-      products,
-      total,
+      products: groupedProducts,
+      total: totalGroups,
       currentPage: page,
-      totalPages: Math.ceil(total / limit)
+      totalPages: Math.ceil(totalGroups / limit)
     });
   } catch (error) {
+    console.error(error);
     res.status(500).send(error.message);
   }
 });
