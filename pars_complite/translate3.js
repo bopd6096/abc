@@ -24,7 +24,7 @@ async function translateBatchWithRetry(openai, texts, retries = 3, delay = 1000)
                 messages: [
                     {
                         role: "system",
-                        content: "Ты профессиональный маркетинговый копирайтер и переводчик. Твоя задача — переводить рекламные и промо-тексты с английского на русский язык не дословно, а адаптированно, в маркетинговом стиле.\n\nСохраняй ключевые смыслы и преимущества продукта, но переформулируй фразы так, чтобы они звучали естественно, живо и привлекательно для русскоязычной аудитории.\n\nСтиль — современный, лёгкий, вдохновляющий, с эмоциональным акцентом на свободу, комфорт, стиль и качество.\n\nИзбегай канцеляризмов и дословных конструкций. Используй короткие, выразительные предложения, подходящие для рекламы. Допускается лёгкое переосмысление текста для усиления привлекательности.\n\nДобавляй заголовок (если его нет) и делай текст пригодным для карточки товара, баннера или рекламной вставки.\n\nТы получаешь массив текстов. Переведи каждый элемент массива и верни массив переводов в том же порядке.",
+                        content: "Ты профессиональный маркетинговый копирайтер и переводчик. Твоя задача — переводить рекламные и промо-тексты с английского на Украинский язык не дословно, а адаптированно, в маркетинговом стиле.\n\nСохраняй ключевые смыслы и преимущества продукта, но переформулируй фразы так, чтобы они звучали естественно, живо и привлекательно для Украиноязычной аудитории.\n\nСтиль — современный, лёгкий, вдохновляющий, с эмоциональным акцентом на свободу, комфорт, стиль и качество.\n\nИзбегай канцеляризмов и дословных конструкций. Используй короткие, выразительные предложения, подходящие для рекламы. Допускается лёгкое переосмысление текста для усиления привлекательности.\n\nДобавляй заголовок (если его нет) и делай текст пригодным для карточки товара, баннера или рекламной вставки.\n\nТы получаешь массив текстов. Переведи каждый элемент массива и верни массив переводов в том же порядке.",
                     },
                     {
                         role: "user",
@@ -74,11 +74,11 @@ function createLimiter(maxConcurrent) {
 async function translateContent(inputFilePath, outputFilePath) {
     const openai = new OpenAI({
         
-        apiKey: '', // Замените на ваш API ключ
+        apiKey: 'dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd', // Замените на ваш API ключ
     });
 
     const limit = createLimiter(50); // Увеличиваем до 50 параллельных задач
-    const batchSize = 10; // Обрабатываем по 10 текстов за раз
+    const batchSize = 5; // Обрабатываем по 10 текстов за раз
 
     // Подсчитываем общее количество элементов
     const fileContent = await fs.readFile(inputFilePath, 'utf8');
@@ -88,9 +88,9 @@ async function translateContent(inputFilePath, outputFilePath) {
     // Инициализируем прогресс-бар
     const bar = new ProgressBar('Перевод [:bar] :percent (:current/:total) ETA: :etas', {
         total: totalItems,
-        width: 40,
-        complete: '=',
-        incomplete: ' ',
+        width: 60,
+        complete: '█',
+        incomplete: '…',
         clear: true
     });
 
@@ -172,7 +172,7 @@ async function translateContent(inputFilePath, outputFilePath) {
 }
 
 // Использование
-const inputFile = '../JSON/b1f3_nike_discription.json';
+const inputFile = '../JSON/b1f4_nike_discription.json';
 const outputFile = '../JSON/b1f3_nike_discription_translated.json';
 
 translateContent(inputFile, outputFile)

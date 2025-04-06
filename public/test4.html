@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продукты</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .filters {
+      max-width: 1200px;
+      margin: 0 auto 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .filters input, .filters button {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .filters button {
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+    .filters button:hover {
+      background-color: #0056b3;
+    }
+    ul#product-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    li.product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    li.product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .product-carousel {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .carousel-images {
+      display: flex;
+      transition: transform 0.3s ease;
+      height: 100%;
+    }
+    .carousel-images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .carousel-btn.prev {
+      left: 10px;
+    }
+    .carousel-btn.next {
+      right: 10px;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .product-name {
+      font-size: 1.2em;
+      margin: 0 0 5px;
+      color: #333;
+    }
+    .product-subtitle {
+      font-size: 0.9em;
+      color: #777;
+      margin: 0 0 10px;
+    }
+    .product-price {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 10px;
+    }
+    .current-price {
+      font-size: 1.1em;
+      color: #e91e63;
+      font-weight: bold;
+    }
+    .initial-price {
+      font-size: 0.9em;
+      color: #999;
+      text-decoration: line-through;
+    }
+    .discount {
+      font-size: 0.8em;
+      color: #fff;
+      background-color: #ff5722;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+    .product-color {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .color-swatch {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid #ddd;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .color-swatch.selected {
+      border-color: #007bff;
+    }
+    .product-sizes {
+      margin-bottom: 10px;
+    }
+    .size-select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .product-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .product-button:hover {
+      background-color: #0056b3;
+    }
+    #loader {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 1.1em;
+    }
+    /* Стили для модального окна */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 700px;
+      width: 90%;
+      max-height: 85vh;
+      overflow-y: auto;
+      position: relative;
+    }
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #333;
+    }
+    .modal-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .modal-images img {
+      max-width: 48%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .modal-info p {
+      margin: 8px 0;
+    }
+    .modal-info h2 {
+      margin-top: 0;
+    }
+    .modal-info ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Продукты</h1>
+  <div class="filters">
+    <input id="colorFilter" type="text" placeholder="Цвет (например, White)">
+    <input id="categoryFilter" type="text" placeholder="Категория (например, Shoes)">
+    <input id="searchFilter" type="text" placeholder="Поиск (например, Nike)">
+    <button onclick="resetAndFetch()">Применить фильтры</button>
+  </div>
+  <ul id="product-list"></ul>
+  <div id="loader">Загрузка...</div>
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">×</span>
+      <div id="modalImages" class="modal-images"></div>
+      <div id="modalInfo" class="modal-info"></div>
+    </div>
+  </div>
+
+  <script>
+    let page = 1;
+    let hasMore = true;
+    const productList = document.getElementById('product-list');
+    const loader = document.getElementById('loader');
+    const modal = document.getElementById('productModal');
+    const modalImages = document.getElementById('modalImages');
+    const modalInfo = document.getElementById('modalInfo');
+    const modalClose = document.querySelector('.modal-close');
+
+    // Закрытие модального окна
+    modalClose.addEventListener('click', () => modal.style.display = 'none');
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.style.display = 'none';
+    });
+
+    async function fetchProducts() {
+      try {
+        const color = document.getElementById('colorFilter').value;
+        const category = document.getElementById('categoryFilter').value;
+        const search = document.getElementById('searchFilter').value;
+
+        const query = new URLSearchParams({
+          page: page,
+          limit: 10,
+          ...(color && { color }),
+          ...(category && { category }),
+          ...(search && { search })
+        }).toString();
+
+        const response = await fetch(`/api/products?${query}`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+
+        data.products.forEach(group => {
+          const li = document.createElement('li');
+          li.className = 'product-card';
+
+          let currentProduct = group[0];
+
+          // Карусель
+          const carouselDiv = document.createElement('div');
+          carouselDiv.className = 'product-carousel';
+          const imagesDiv = document.createElement('div');
+          imagesDiv.className = 'carousel-images';
+          const prevBtn = document.createElement('button');
+          prevBtn.textContent = '<';
+          prevBtn.className = 'carousel-btn prev';
+          const nextBtn = document.createElement('button');
+          nextBtn.textContent = '>';
+          nextBtn.className = 'carousel-btn next';
+
+          function updateCarousel() {
+            imagesDiv.innerHTML = '';
+            currentProduct.imageData.images.forEach((imgUrl, index) => {
+              const img = document.createElement('img');
+              img.src = imgUrl;
+              img.alt = `${currentProduct.info.name} - ${index + 1}`;
+              img.loading = 'lazy';
+              imagesDiv.appendChild(img);
+            });
+            imagesDiv.style.transform = `translateX(-${currentIndex * 100}%)`;
+          }
+
+          let currentIndex = 0;
+          const totalImages = () => currentProduct.imageData.images.length;
+          prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages() - 1;
+            updateCarousel();
+          });
+          nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex < totalImages() - 1) ? currentIndex + 1 : 0;
+            updateCarousel();
+          });
+
+          // Открытие модального окна с подробной информацией
+          carouselDiv.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            modalImages.innerHTML = '';
+            currentProduct.imageData.images.forEach(imgUrl => {
+              const img = document.createElement('img');
+              img.src = imgUrl;
+              img.alt = currentProduct.info.name;
+              modalImages.appendChild(img);
+            });
+
+            const sizes = Array.from(new DOMParser().parseFromString(currentProduct.sizes, 'text/html').body.querySelectorAll('label')).map(label => label.textContent.trim()).join(', ');
+            const discount = currentProduct.price.self.UAH.initialPrice > currentProduct.price.self.UAH.currentPrice 
+              ? Math.round(((currentProduct.price.self.UAH.initialPrice - currentProduct.price.self.UAH.currentPrice) / currentProduct.price.self.UAH.initialPrice) * 100) 
+              : 0;
+
+            modalInfo.innerHTML = `
+              <h2>${currentProduct.info.name}</h2>
+              <p><strong>Подзаголовок:</strong> ${currentProduct.info.subtitle || 'Нет данных'}</p>
+              <p><strong>Описание:</strong> ${currentProduct.info.description || 'Описание отсутствует'}</p>
+              <p><strong>Тип продукта:</strong> ${currentProduct.data.productType || 'Не указан'} (${currentProduct.data.productSubType || 'Нет подтипа'})</p>
+              <p><strong>Цвет:</strong> ${currentProduct.info.color.labelColor} (#${currentProduct.info.color.hex})${currentProduct.info.color.colorDescription ? ` - ${currentProduct.info.color.colorDescription}` : ''}</p>
+              <p><strong>Цена (UAH):</strong> ${currentProduct.price.self.UAH.currentPrice} UAH 
+                ${discount ? `(было ${currentProduct.price.self.UAH.initialPrice} UAH, скидка ${discount}%)` : ''}</p>
+              ${currentProduct.price.origin ? `
+                <p><strong>Оригинальная цена (${currentProduct.price.origin.currency}):</strong> 
+                  ${currentProduct.price.origin.currentPrice} ${currentProduct.price.origin.currency}
+                  ${currentProduct.price.origin.initialPrice > currentProduct.price.origin.currentPrice ? `(было ${currentProduct.price.origin.initialPrice} ${currentProduct.price.origin.currency})` : ''}</p>
+              ` : ''}
+              <p><strong>Размеры:</strong> ${sizes || 'Нет данных'}</p>
+              <p><strong>Ссылка:</strong> <a href="${currentProduct.links.url}" target="_blank">${currentProduct.links.url}</a></p>
+              ${currentProduct.someAdditionalData.promotions && currentProduct.someAdditionalData.promotions.promotionId ? `
+                <p><strong>Промоакции:</strong></p>
+                <ul>
+                  ${Object.keys(currentProduct.someAdditionalData.promotions.promotionId).map(key => `<li>${key}: ${currentProduct.someAdditionalData.promotions.promotionId[key]}</li>`).join('')}
+                </ul>
+              ` : ''}
+              ${currentProduct.someAdditionalData.isNewUntil && Object.keys(currentProduct.someAdditionalData.isNewUntil).length ? `
+                <p><strong>Новинка до:</strong> ${new Date(currentProduct.someAdditionalData.isNewUntil).toLocaleDateString()}</p>
+              ` : ''}
+            `;
+          });
+
+          carouselDiv.appendChild(imagesDiv);
+          carouselDiv.appendChild(prevBtn);
+          carouselDiv.appendChild(nextBtn);
+
+          // Информация
+          const infoDiv = document.createElement('div');
+          infoDiv.className = 'product-info';
+
+          const name = document.createElement('h3');
+          name.className = 'product-name';
+
+          const subtitle = document.createElement('p');
+          subtitle.className = 'product-subtitle';
+
+          const priceDiv = document.createElement('div');
+          priceDiv.className = 'product-price';
+          const currentPrice = document.createElement('span');
+          currentPrice.className = 'current-price';
+          const initialPrice = document.createElement('span');
+          initialPrice.className = 'initial-price';
+          const discount = document.createElement('span');
+          discount.className = 'discount';
+
+          const colorDiv = document.createElement('div');
+          colorDiv.className = 'product-color';
+
+          const sizesDiv = document.createElement('div');
+          sizesDiv.className = 'product-sizes';
+          const sizeSelect = document.createElement('select');
+          sizeSelect.className = 'size-select';
+
+          const button = document.createElement('a');
+          button.className = 'product-button';
+          button.textContent = 'Подробнее';
+          button.target = '_blank';
+
+          function updateCard(product) {
+            currentProduct = product;
+            name.textContent = product.info.name;
+            subtitle.textContent = product.info.subtitle;
+
+            currentPrice.textContent = `${product.price.self.UAH.currentPrice} UAH`;
+            priceDiv.innerHTML = '';
+            priceDiv.appendChild(currentPrice);
+            if (product.price.self.UAH.initialPrice > product.price.self.UAH.currentPrice) {
+              initialPrice.textContent = `${product.price.self.UAH.initialPrice} UAH`;
+ ION             const discountPercent = Math.round(
+                ((product.price.self.UAH.initialPrice - product.price.self.UAH.currentPrice) / product.price.self.UAH.initialPrice) * 100
+              );
+              discount.textContent = `-${discountPercent}%`;
+              priceDiv.appendChild(initialPrice);
+              priceDiv.appendChild(discount);
+            }
+
+            updateCarousel();
+
+            sizeSelect.innerHTML = '';
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = product.sizes;
+            const sizeLabels = Array.from(tempDiv.querySelectorAll('label')).map(label => label.textContent.trim());
+            sizeLabels.forEach(size => {
+              const option = document.createElement('option');
+              option.value = size;
+              option.textContent = size;
+              sizeSelect.appendChild(option);
+            });
+
+            button.href = product.links.url;
+          }
+
+          // Цвета
+          group.forEach((variant, index) => {
+            const colorSwatch = document.createElement('span');
+            colorSwatch.className = 'color-swatch' + (index === 0 ? ' selected' : '');
+            colorSwatch.style.backgroundColor = `#${variant.info.color.hex}`;
+            colorSwatch.dataset.color = variant.info.color.labelColor;
+            colorSwatch.addEventListener('click', () => {
+              colorDiv.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('selected'));
+              colorSwatch.classList.add('selected');
+              updateCard(variant);
+            });
+            colorDiv.appendChild(colorSwatch);
+          });
+
+          updateCard(currentProduct);
+
+          infoDiv.appendChild(name);
+          infoDiv.appendChild(subtitle);
+          infoDiv.appendChild(priceDiv);
+          infoDiv.appendChild(colorDiv);
+          infoDiv.appendChild(sizesDiv);
+          sizesDiv.appendChild(sizeSelect);
+          infoDiv.appendChild(button);
+          li.appendChild(carouselDiv);
+          li.appendChild(infoDiv);
+          productList.appendChild(li);
+        });
+
+        page += 1;
+
+        if (productList.children.length >= data.total) {
+          hasMore = false;
+          loader.textContent = 'Все продукты загружены!';
+        }
+      } catch (error) {
+        console.error('Ошибка:', error);
+        loader.textContent = `Ошибка загрузки: ${error.message}`;
+      }
+    }
+
+    // Сброс и повторная загрузка при применении фильтров
+    function resetAndFetch() {
+      page = 1;
+      hasMore = true;
+      productList.innerHTML = '';
+      loader.textContent = 'Загрузка...';
+      fetchProducts();
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && hasMore) {
+        fetchProducts();
+      }
+    }, { threshold: 1.0 });
+
+    observer.observe(loader);
+    fetchProducts(); // Первая загрузка
+  </script>
+</body>
+</html>
