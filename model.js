@@ -1,3 +1,11 @@
+const mongoose = require('mongoose');
+require('dotenv').config();
+const MONGO_URI = process.env.MONGO_URI;
+
+// Подключение к MongoDB
+mongoose.connect(MONGO_URI)
+.then(() => console.log('Connected to MongoDB'))
+.catch(err => console.error('MongoDB connection error:', err));
 
 // Определение схемы для товара
 const productSchema = new mongoose.Schema({
@@ -73,9 +81,9 @@ const productSchema = new mongoose.Schema({
     },
     { timestamps: true });
     // Создание модели товара
-    const Products = mongoose.model('Products', productSchema);
+    // const Products = mongoose.model('Products', productSchema);
 
 
     module.exports = productSchema;
-    module.exports = Products;
+    // module.exports = Products;
 
