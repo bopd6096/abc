@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продукты</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    ul#product-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    li.product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    li.product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .product-name {
+      font-size: 1.2em;
+      margin: 0 0 5px;
+      color: #333;
+    }
+    .product-subtitle {
+      font-size: 0.9em;
+      color: #777;
+      margin: 0 0 10px;
+    }
+    .product-price {
+      font-size: 1.1em;
+      color: #e91e63;
+      font-weight: bold;
+    }
+    #loader {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Продукты</h1>
+  <ul id="product-list"></ul>
+  <div id="loader">Загрузка...</div>
+
+  <script>
+    let page = 1;
+    let hasMore = true;
+    const productList = document.getElementById('product-list');
+    const loader = document.getElementById('loader');
+
+    async function fetchProducts() {
+      if (!hasMore) return;
+
+      try {
+        const response = await fetch(`/api/products?page=${page}&limit=10`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+
+        data.products.forEach(group => {
+          // Берем первый продукт из группы для отображения
+          const product = group[0];
+          const li = document.createElement('li');
+          li.className = 'product-card';
+
+          const img = document.createElement('img');
+          img.className = 'product-image';
+          img.src = product.imageData.images?.[0] || product.imageData.imgMain || 'https://via.placeholder.com/300x200';
+          img.alt = product.info.name;
+          img.loading = 'lazy';
+
+          const infoDiv = document.createElement('div');
+          infoDiv.className = 'product-info';
+
+          const name = document.createElement('h2');
+          name.className = 'product-name';
+          name.textContent = product.info.name || 'Без названия';
+
+          const subtitle = document.createElement('p');
+          subtitle.className = 'product-subtitle';
+          subtitle.textContent = product.info.subtitle || 'Нет подзаголовка';
+
+          const price = document.createElement('p');
+          price.className = 'product-price';
+          price.textContent = `${product.price.self.UAH.currentPrice || 'N/A'} UAH`;
+
+          infoDiv.appendChild(name);
+          infoDiv.appendChild(subtitle);
+          infoDiv.appendChild(price);
+          li.appendChild(img);
+          li.appendChild(infoDiv);
+          productList.appendChild(li);
+        });
+
+        page += 1;
+        if (productList.children.length >= data.total) {
+          hasMore = false;
+          loader.textContent = 'Все продукты загружены!';
+        }
+      } catch (error) {
+        console.error('Ошибка:', error);
+        loader.textContent = `Ошибка загрузки: ${error.message}`;
+      }
+    }
+
+    // Бесконечная прокрутка
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && hasMore) {
+        fetchProducts();
+      }
+    }, { threshold: 1.0 });
+
+    observer.observe(loader);
+    fetchProducts(); // Первая загрузка
+  </script>
+</body>
+</html>

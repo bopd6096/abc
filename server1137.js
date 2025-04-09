@@ -35,7 +35,7 @@ app.get('/tg', (req, res) => {
 
 app.get('/home', (req, res) => {
     console.log('GET /home - Главная страница Telegram загружается');
-    res.sendFile(path.join(__dirname, 'public', 'products.html'));
+    res.sendFile(path.join(__dirname, 'public', 'test5.html'));
 });
 
 app.get('/main', (req, res) => {
@@ -468,71 +468,7 @@ const Products = mongoose.model('Products', productSchema);
     });
 
     // ##### Конец корзины #####
-// Улучшенный маршрут /api/products
-app.get('/api/products', async (req, res) => {
-  const page = parseInt(req.query.page) || 1;
-  const limit = parseInt(req.query.limit) || 10;
-  const skip = (page - 1) * limit;
 
-  console.log(`GET /api/products - Page: ${page}, Limit: ${limit}, Skip: ${skip}`);
-
-  try {
-    // Проверка подключения к MongoDB
-    if (mongoose.connection.readyState !== 1) {
-      throw new Error('MongoDB not connected');
-    }
-    console.log('MongoDB connection is active');
-
-    // Получение уникальных groupKey с пагинацией через агрегацию
-    console.log('Fetching distinct groupKeys...');
-    const groupKeysResult = await Products.aggregate([
-      { $match: { 'pid.groupKey': { $exists: true } } }, // Убеждаемся, что поле существует
-      { $group: { _id: '$pid.groupKey' } }, // Группируем по groupKey
-      { $sort: { _id: 1 } }, // Сортировка для стабильности
-      { $skip: skip }, // Пропускаем элементы
-      { $limit: limit } // Ограничиваем количество
-    ]);
-    const groupKeys = groupKeysResult.map(result => result._id);
-    console.log(`Found ${groupKeys.length} groupKeys:`, groupKeys);
-
-    if (!groupKeys.length) {
-      console.log('No groupKeys found');
-      return res.json({
-        products: [],
-        total: 0,
-        currentPage: page,
-        totalPages: 0
-      });
-    }
-
-    // Получение продуктов для этих groupKeys
-    console.log('Fetching products...');
-    const products = await Products.find({ 'pid.groupKey': { $in: groupKeys } });
-    console.log(`Found ${products.length} products`);
-
-    // Группировка продуктов по groupKey
-    console.log('Grouping products...');
-    const groupedProducts = groupKeys.map(groupKey => {
-      return products.filter(p => p.pid && p.pid.groupKey === groupKey);
-    });
-
-    // Подсчет общего количества уникальных groupKey
-    console.log('Counting total groupKeys...');
-    const totalGroups = await Products.distinct('pid.groupKey', { 'pid.groupKey': { $exists: true } }).then(keys => keys.length);
-    console.log(`Total groups: ${totalGroups}`);
-
-    console.log('Sending response...');
-    res.json({
-      products: groupedProducts,
-      total: totalGroups,
-      currentPage: page,
-      totalPages: Math.ceil(totalGroups / limit)
-    });
-  } catch (error) {
-    console.error('Error in /api/products:', error.stack);
-    res.status(500).json({ message: 'Server error', error: error.message });
-  }
-});
     // // API для получения всех товаров
     // app.get('/api/products', async (req, res) => {
     //     try {
@@ -543,121 +479,121 @@ app.get('/api/products', async (req, res) => {
     //         res.status(500).json({ message: 'Ошибка сервера', error: err.message });
     //     }
     // });
-   // app.get('/api/products', async (req, res) => {
-   //      const page = parseInt(req.query.page) || 1;
-   //      const limit = parseInt(req.query.limit) || 100;
-   //      const skip = (page - 1) * limit;
-   //      const color = req.query.color; // Фильтр по цвету
-   //      const category = req.query.category; // Фильтр по категории
-   //      const search = req.query.search; // Поиск по названию
-   //
-   //      console.log(`GET /api/products - Page: ${page}, Limit: ${limit}, Skip: ${skip}, Color: ${color}, Category: ${category}, Search: ${search}`);
-   //
-   //      try {
-   //          console.log('Checking MongoDB connection...');
-   //          if (mongoose.connection.readyState !== 1) {
-   //              throw new Error('MongoDB not connected');
-   //          }
-   //          console.log('MongoDB connection is active');
-   //
-   //          // Формируем объект фильтра
-   //          const filter = {
-   //              'pid.groupKey': {
-   //                  $exists: true
-   //              }
-   //          };
-   //          if (color) {
-   //              filter['info.color.labelColor'] = color;
-   //          }
-   //          if (category) {
-   //              filter['data.productType'] = category; // Предполагаем, что категория хранится в data.productType
-   //          }
-   //          if (search) {
-   //              filter['info.name'] = {
-   //                  $regex: search,
-   //                  $options: 'i'
-   //              }; // Регистронезависимый поиск
-   //          }
-   //
-   //          console.log('Filter applied:', filter);
-   //
-   //          // Шаг 1: Получаем уникальные groupKey с учетом фильтров и пагинации
-   //          console.log('Fetching distinct groupKeys with aggregation...');
-   //          const groupKeysResult = await Products.aggregate([{
-   //              $match: filter
-   //          }, // Применяем фильтры
-   //              {
-   //                  $group: {
-   //                      _id: '$pid.groupKey'
-   //                  }
-   //              }, // Группируем по groupKey
-   //              {
-   //                  $sort: {
-   //                      _id: 1
-   //                  }
-   //              }, // Сортировка для стабильности
-   //              {
-   //                  $skip: skip
-   //              }, // Пропускаем элементы
-   //              {
-   //                  $limit: limit
-   //              } // Ограничиваем количество
-   //          ]);
-   //          const groupKeys = groupKeysResult.map(result => result._id);
-   //          console.log(`Found ${groupKeys.length} groupKeys:`, groupKeys);
-   //
-   //          if (!groupKeys.length) {
-   //              console.log('No groupKeys found, returning empty response');
-   //              return res.json({
-   //                  products: [],
-   //                  total: 0,
-   //                  currentPage: page,
-   //                  totalPages: 0
-   //              });
-   //          }
-   //
-   //          // Шаг 2: Получаем продукты для этих groupKey
-   //          console.log('Fetching products for groupKeys...');
-   //          const products = await Products.find({
-   //              'pid.groupKey': {
-   //                  $in: groupKeys
-   //              }
-   //          })
-   //          .select('info.name info.subtitle info.color price.self.UAH.currentPrice price.self.UAH.initialPrice imageData.imgMain imageData.images links.url sizes pid.groupKey');
-   //          console.log(`Found ${products.length} products`);
-   //
-   //          // Шаг 3: Группируем продукты по groupKey
-   //          console.log('Grouping products...');
-   //          const groupedProducts = groupKeys.map(groupKey => {
-   //              return products.filter(p => p.pid && p.pid.groupKey === groupKey);
-   //          });
-   //          console.log('Products grouped successfully');
-   //
-   //          // Шаг 4: Подсчитываем общее количество уникальных groupKey с учетом фильтров
-   //          console.log('Counting total distinct groupKeys...');
-   //          const totalGroupsResult = await Products.aggregate([{
-   //              $match: filter
-   //          }, // Применяем те же фильтры
-   //              {
-   //                  $group: {
-   //                      _id: '$pid.groupKey'
-   //                  }
-   //              }]);
-   //          const totalGroups = totalGroupsResult.length;
-   //          console.log(`Total groups: ${totalGroups}`);
-   //
-   //          console.log('Sending response...');
-   //          res.json({
-   //              products: groupedProducts,
-   //              total: totalGroups,
-   //              currentPage: page,
-   //              totalPages: Math.ceil(totalGroups / limit)
-   //          });
-   //      } catch (error) {
-   //          console.error('Error in /api/products:', error.stack);
-   //          res.status(500).send(`Server error: ${error.message}`);
-   //      }
-   //  });
+   app.get('/api/products', async (req, res) => {
+        const page = parseInt(req.query.page) || 1;
+        const limit = parseInt(req.query.limit) || 100;
+        const skip = (page - 1) * limit;
+        const color = req.query.color; // Фильтр по цвету
+        const category = req.query.category; // Фильтр по категории
+        const search = req.query.search; // Поиск по названию
+
+        console.log(`GET /api/products - Page: ${page}, Limit: ${limit}, Skip: ${skip}, Color: ${color}, Category: ${category}, Search: ${search}`);
+
+        try {
+            console.log('Checking MongoDB connection...');
+            if (mongoose.connection.readyState !== 1) {
+                throw new Error('MongoDB not connected');
+            }
+            console.log('MongoDB connection is active');
+
+            // Формируем объект фильтра
+            const filter = {
+                'pid.groupKey': {
+                    $exists: true
+                }
+            };
+            if (color) {
+                filter['info.color.labelColor'] = color;
+            }
+            if (category) {
+                filter['data.productType'] = category; // Предполагаем, что категория хранится в data.productType
+            }
+            if (search) {
+                filter['info.name'] = {
+                    $regex: search,
+                    $options: 'i'
+                }; // Регистронезависимый поиск
+            }
+
+            console.log('Filter applied:', filter);
+
+            // Шаг 1: Получаем уникальные groupKey с учетом фильтров и пагинации
+            console.log('Fetching distinct groupKeys with aggregation...');
+            const groupKeysResult = await Products.aggregate([{
+                $match: filter
+            }, // Применяем фильтры
+                {
+                    $group: {
+                        _id: '$pid.groupKey'
+                    }
+                }, // Группируем по groupKey
+                {
+                    $sort: {
+                        _id: 1
+                    }
+                }, // Сортировка для стабильности
+                {
+                    $skip: skip
+                }, // Пропускаем элементы
+                {
+                    $limit: limit
+                } // Ограничиваем количество
+            ]);
+            const groupKeys = groupKeysResult.map(result => result._id);
+            console.log(`Found ${groupKeys.length} groupKeys:`, groupKeys);
+
+            if (!groupKeys.length) {
+                console.log('No groupKeys found, returning empty response');
+                return res.json({
+                    products: [],
+                    total: 0,
+                    currentPage: page,
+                    totalPages: 0
+                });
+            }
+
+            // Шаг 2: Получаем продукты для этих groupKey
+            console.log('Fetching products for groupKeys...');
+            const products = await Products.find({
+                'pid.groupKey': {
+                    $in: groupKeys
+                }
+            })
+            .select('info.name info.subtitle info.color price.self.UAH.currentPrice price.self.UAH.initialPrice imageData.imgMain imageData.images links.url sizes pid.groupKey');
+            console.log(`Found ${products.length} products`);
+
+            // Шаг 3: Группируем продукты по groupKey
+            console.log('Grouping products...');
+            const groupedProducts = groupKeys.map(groupKey => {
+                return products.filter(p => p.pid && p.pid.groupKey === groupKey);
+            });
+            console.log('Products grouped successfully');
+
+            // Шаг 4: Подсчитываем общее количество уникальных groupKey с учетом фильтров
+            console.log('Counting total distinct groupKeys...');
+            const totalGroupsResult = await Products.aggregate([{
+                $match: filter
+            }, // Применяем те же фильтры
+                {
+                    $group: {
+                        _id: '$pid.groupKey'
+                    }
+                }]);
+            const totalGroups = totalGroupsResult.length;
+            console.log(`Total groups: ${totalGroups}`);
+
+            console.log('Sending response...');
+            res.json({
+                products: groupedProducts,
+                total: totalGroups,
+                currentPage: page,
+                totalPages: Math.ceil(totalGroups / limit)
+            });
+        } catch (error) {
+            console.error('Error in /api/products:', error.stack);
+            res.status(500).send(`Server error: ${error.message}`);
+        }
+    });
     // API для получения товара по ID
     app.get('/api/products/:id', async (req, res) => {
         try {

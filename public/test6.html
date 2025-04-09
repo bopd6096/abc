@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <style>
+        /* Стили для карточек, карусели и модального окна */
+        .product-card { display: inline-block; width: 300px; margin: 10px; }
+        .carousel { position: relative; overflow: hidden; }
+        .carousel img { width: 100%; cursor: pointer; }
+        .modal { 
+            display: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0,0,0,0.8); 
+            justify-content: center; 
+            align-items: center; 
+        }
+        .modal-content { 
+            background: white; 
+            padding: 20px; 
+            max-width: 500px; 
+            max-height: 80vh; 
+            overflow-y: auto; 
+            border-radius: 8px; 
+        }
+        .modal-content img { max-width: 100%; }
+        .close-btn { float: right; cursor: pointer; font-size: 20px; }
+        .filters { margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="filters">
+        <input type="text" id="search" placeholder="Search...">
+        <select id="colorFilter">
+            <option value="">All Colors</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <!-- Добавить другие цвета -->
+        </select>
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="clothing">Clothing</option>
+            <option value="accessories">Accessories</option>
+            <!-- Добавить другие категории -->
+        </select>
+    </div>
+
+    <div id="products-container"></div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-image" src="" alt="Product Image">
+            <h2 id="modal-name"></h2>
+            <p id="modal-subtitle"></p>
+            <p><strong>Description:</strong> <span id="modal-description"></span></p>
+            <p><strong>Color:</strong> <span id="modal-color"></span></p>
+            <p><strong>Type:</strong> <span id="modal-productType"></span></p>
+            <p><strong>Subtype:</strong> <span id="modal-productSubType"></span></p>
+            <p><strong>Price:</strong> <span id="modal-price"></span> UAH 
+                <span id="modal-origin-price" style="text-decoration: line-through; color: gray;"></span></p>
+            <p><strong>Sizes:</strong> <span id="modal-sizes"></span></p>
+            <p><strong>Promotions:</strong> <span id="modal-promotions"></span></p>
+            <p><strong>New Until:</strong> <span id="modal-isNewUntil"></span></p>
+            <p><strong>Link:</strong> <a id="modal-link" href="" target="_blank"></a></p>
+        </div>
+    </div>
+
+    <script>
+        const productsContainer = document.getElementById('products-container');
+        const modal = document.getElementById('modal');
+        const closeBtn = document.querySelector('.close-btn');
+        let page = 1;
+        const limit = 10;
+
+        // Функция загрузки продуктов
+        async function loadProducts() {
+            const search = document.getElementById('search').value;
+            const color = document.getElementById('colorFilter').value;
+            const category = document.getElementById('categoryFilter').value;
+
+            const response = await fetch(`/api/products?page=${page}&limit=${limit}&search=${search}&color=${color}&category=${category}`);
+            const groupedProducts = await response.json();
+
+            groupedProducts.forEach(group => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    <div class="carousel">
+                        ${group.imageData.images.map(img => `<img src="${img}" alt="${group.info.name}">`).join('')}
+                    </div>
+                    <h3>${group.info.name}</h3>
+                    <p>${group.info.subtitle}</p>
+                    <p>${group.price.self.UAH} UAH</p>
+                `;
+                productsContainer.appendChild(card);
+
+                // Открытие модального окна при клике на фото
+                card.querySelectorAll('.carousel img').forEach(img => {
+                    img.addEventListener('click', () => openModal(group));
+                });
+            });
+
+            page++;
+            observer.observe(productsContainer.lastElementChild);
+        }
+
+        // Открытие модального окна с полной информацией
+        function openModal(product) {
+            document.getElementById('modal-image').src = product.imageData.images[0];
+            document.getElementById('modal-name').textContent = product.info.name;
+            document.getElementById('modal-subtitle').textContent = product.info.subtitle;
+            document.getElementById('modal-description').textContent = product.info.description || 'No description available';
+            document.getElementById('modal-color').textContent = product.info.color;
+            document.getElementById('modal-productType').textContent = product.data.productType;
+            document.getElementById('modal-productSubType').textContent = product.data.productSubType || 'N/A';
+            document.getElementById('modal-price').textContent = product.price.self.UAH;
+            document.getElementById('modal-origin-price').textContent = product.price.origin ? `${product.price.origin} UAH` : '';
+            document.getElementById('modal-sizes').textContent = product.sizes.join(', ') || 'N/A';
+            document.getElementById('modal-promotions').textContent = product.someAdditionalData.promotions || 'No promotions';
+            document.getElementById('modal-isNewUntil').textContent = product.someAdditionalData.isNewUntil || 'N/A';
+            document.getElementById('modal-link').href = product.links.url;
+            document.getElementById('modal-link').textContent = product.links.url || 'No link available';
+
+            modal.style.display = 'flex';
+        }
+
+        // Закрытие модального окна
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Фильтры
+        document.querySelectorAll('.filters input, .filters select').forEach(el => {
+            el.addEventListener('change', () => {
+                page = 1;
+                productsContainer.innerHTML = '';
+                loadProducts();
+            });
+        });
+
+        // Бесконечная прокрутка
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                observer.unobserve(entries[0].target);
+                loadProducts();
+            }
+        }, { threshold: 0.1 });
+
+        // Инициализация
+        loadProducts();
+    </script>
+</body>
+</html>
