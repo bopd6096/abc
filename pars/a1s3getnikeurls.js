@@ -44,6 +44,6 @@ function extractUrlsFromJson(jsonFilePath, objectKey, urlKey, outputFilePath) {
 // }
 
 // Пример использования
-extractUrlsFromJson('../JSON/b0f2_nike_structData.json', 'links', 'url', '../JSON/b0f0_nike_urls.txt');
+extractUrlsFromJson('../JSON/b0f3_nike_structData.json', 'links', 'url', '../JSON/b0f0_nike_urls.txt');
 // или
 // extractUrlsFromJsonAsync('input.json', 'data', 'url', 'output.txt');

@@ -11,7 +11,7 @@ const fs = require('fs');
 const axios = require('axios');
 const https = require('https');
 
-const TOTAL_REQUESTS = 103; // Количество запросов
+const TOTAL_REQUESTS = 102; // Количество запросов
 const BASE_URL = "https://api.nike.com/discover/product_wall/v1/marketplace/US/language/en/consumerChannelId/d9a5bc42-4b9c-4976-858a-f159cf99c647";
 
 const HEADERS = {
@@ -25,7 +25,7 @@ const HEADERS = {
 // Отключаем валидацию SSL (если проблемы с сертификатами)
 const agent = new https.Agent({ rejectUnauthorized: false });
 
-const outputFile = "../JSON/b0f1_nike_fetchData.json";
+const outputFile = "../JSON/b0f2_nike_fetchData.json";
 
 
 async function fetchNikeProducts() {

@@ -177,5 +177,5 @@ function destructureNestedObjects(products) {
 const processedProducts = destructureNestedObjects(products);
 
 // Сохраняем результат в новый файл
-fs.writeFileSync('../JSON/b0f2_nike_structData.json', JSON.stringify(processedProducts, null, 2));
+fs.writeFileSync('../JSON/b0f3_nike_structData.json', JSON.stringify(processedProducts, null, 2));
 console.log('Обработанные данные сохранены в nike_processed.json');
