@@ -59,7 +59,7 @@ async function parseWebsites() {
     });
 
     const results = [];
-    const concurrencyLimit = 20; // Лимит параллельных запросов
+    const concurrencyLimit = 20;
     const urlChunks = chunkArray(urls, concurrencyLimit);
 
     for (const chunk of urlChunks) {
@@ -74,54 +74,39 @@ async function parseWebsites() {
                     timeout: 67000 
                 });
 
-                // const siteData = await page.evaluate(() => {
-                //     const imgContainer = document.querySelector('div.css-1vt9b1c');
-                //     const imgMainElement = imgContainer ? imgContainer.querySelector('img') : null;
-                //     const imgMain = imgMainElement ? imgMainElement.getAttribute('src') : null;
-                //
-                //     const mainContainer = document.querySelector('div.css-1wg28dk');
-                //     const inputContainers = mainContainer 
-                //         ? mainContainer.querySelectorAll('div.css-6ftarl') 
-                //         : [];
-                //     
-                //     const imgs = {};
-                //     inputContainers.forEach((container, index) => {
-                //         const input = container.querySelector('input');
-                //         if (input && input.id) {
-                //             imgs[`input_${index}`] = input.id;
-                //         }
-                //     });
-                //
-                //     return { imgMain, imgs };
-                // });
+                const siteData = await page.evaluate(() => {
+                    const imgContainer = document.querySelector('div.css-1vt9b1c');
+                    const imgMainElement = imgContainer ? imgContainer.querySelector('img') : null;
+                    const imgMain = imgMainElement ? imgMainElement.getAttribute('src') : null;
 
-                    const content = await page.evaluate(() => {
-                    const selector = 'body #experience-wrapper #__next[data-reactroot] main.d-sm-flx.flx-dir-sm-c.flx-jc-sm-c.flx-ai-sm-c .nds-grid.pdp-grid.css-qqclnk.ehf3nt20 .grid-item.price.pl6-lg.z1.css-1jk6ulu.nds-grid-item #product-description-container.pt7-sm[data-testid="product-description-container"] p.nds-text.css-pxxozx.e1yhcai00.text-align-start.appearance-body1.color-primary.weight-regular';
-                    const element = document.querySelector(selector);
-                    const discription =  element ? element.innerText.trim() : null;
-                    return { discription };
-      });
+                    const mainContainer = document.querySelector('div.css-1wg28dk');
+                    const inputContainers = mainContainer 
+                        ? mainContainer.querySelectorAll('div.css-1cv5ztv') 
+                        : [];
+                    
+                    const imgs = {};
+                    inputContainers.forEach((container, index) => {
+                        const input = container.querySelector('input');
+                        if (input && input.id) {
+                            imgs[`input_${index}`] = input.id;
+                        }
+                    });
 
-                    const contentDivSizes = await page.evaluate(() => {
-                    const element = document.querySelector('div.d-sm-flx.flx-dir-sm-c.flx-dir-lg-cr');
-                    const sizes =  element ? element.innerHTML : null;
-                    return { sizes };
-      });
-
-
+                    return { imgMain, imgs };
+                });
 
                 console.log(`Успешно обработан: ${url}`);
                 return {
                     url,
-                    content: content.discription,
-                    contentDivSizes: contentDivSizes.sizes
+                    imgMain: siteData.imgMain,
+                    imgs: siteData.imgs
                 };
             } catch (error) {
                 console.error(`Ошибка при обработке ${url}: ${error.message}`);
                 return {
                     url,
-                    content: null,
-                    contentDivSizes: null,
+                    imgMain: null,
+                    imgs: {},
                     error: error.message
                 };
             } finally {
@@ -138,7 +123,7 @@ async function parseWebsites() {
         results.push(...chunkResults);
 
         await fs.writeFile(
-            'b4f6_nikeIMG.json',
+            'b3f6_nikeIMG.json',
             JSON.stringify(results, null, 2),
             'utf-8'
         );
