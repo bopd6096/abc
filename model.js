@@ -28,7 +28,7 @@ const productSchema = new mongoose.Schema({
     info: {
         name: { type: String },
         subtitle: { type: String },
-        description: { type: String },
+        discription: { type: String },
         color: {
             labelColor: { type: String },
             hex: { type: String },

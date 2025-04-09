@@ -35,7 +35,7 @@ app.get('/tg', (req, res) => {
 
 app.get('/home', (req, res) => {
     console.log('GET /home - Главная страница Telegram загружается');
-    res.sendFile(path.join(__dirname, 'public', 'test7.html'));
+    res.sendFile(path.join(__dirname, 'public', 'test8.html'));
 });
 
 app.get('/main', (req, res) => {
@@ -294,19 +294,26 @@ const Products = mongoose.model('Products', productSchema);
 
     // ##### Корзина #####
 
+
+const cartItemSchema = new mongoose.Schema({
+  productId: { type: mongoose.Schema.Types.ObjectId, ref: 'Products', required: true },
+  quantity: { type: Number, required: true, default: 1 },
+  size: { type: String } // Добавлено поле размера
+});
+
     // Схема элемента корзины (то же самое, что и раньше)
-    const cartItemSchema = new mongoose.Schema({
-        productId: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'Products',
-            required: true
-        },
-        quantity: {
-            type: Number,
-            required: true,
-        default: 1
-        },
-    });
+    // const cartItemSchema = new mongoose.Schema({
+    //     productId: {
+    //         type: mongoose.Schema.Types.ObjectId,
+    //         ref: 'Products',
+    //         required: true
+    //     },
+    //     quantity: {
+    //         type: Number,
+    //         required: true,
+    //     default: 1
+    //     },
+    // });
 
     // Схема корзины
     const cartSchema = new mongoose.Schema({
@@ -346,53 +353,86 @@ const Products = mongoose.model('Products', productSchema);
         }
     });
 
+
+
+app.post('/api/cart/add/:productId', authenticateToken, async (req, res) => {
+  const productId = req.params.productId;
+  const userId = req.user.userId;
+  const { quantity, size } = req.body;
+
+  try {
+    let cart = await Cart.findOne({ userId: userId });
+    if (!cart) {
+      cart = new Cart({ userId: userId, items: [] });
+    }
+
+    const product = await Products.findById(productId);
+    if (!product) {
+      return res.status(404).json({ message: 'Товар не найден' });
+    }
+
+    const existingItem = cart.items.find(item => item.productId.equals(productId) && item.size === size);
+    if (existingItem) {
+      existingItem.quantity += quantity || 1;
+    } else {
+      cart.items.push({ productId: productId, quantity: quantity || 1, size });
+    }
+
+    await cart.save();
+    await cart.populate('items.productId');
+    res.status(201).json(cart);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: 'Ошибка сервера', error: err.message });
+  }
+});
     // API для добавления товара в корзину
-    app.post('/api/cart/add/:productId', authenticateToken, async (req, res) => {
-        const productId = req.params.productId;
-        const userId = req.user.userId;
-        const quantity = parseInt(req.body.quantity) || 1;
-
-        try {
-            console.log("Попытка добавить в корзину");
-            let cart = await Cart.findOne({
-                userId: userId
-            });
-            console.log('Existing cart match');
-            if (!cart) {
-                cart = new Cart({
-                    userId: userId, items: []
-                });
-                console.log('New cart compleet');
-            }
-
-            const product = await Products.findById(productId);
-            if (!product) {
-                return res.status(404).json({
-                    message: 'Товар не найден'
-                });
-            }
-
-            // Проверяем, есть ли уже товар в корзине
-            const existingItem = cart.items.find(item => item.productId.equals(productId));
-
-            if (existingItem) {
-                existingItem.quantity += quantity; // Если товар уже есть, увеличиваем количество
-            } else {
-                cart.items.push({
-                    productId: productId, quantity: quantity
-                }); // Иначе добавляем новый элемент
-            }
-
-            await cart.save();
-            await cart.populate('items.productId'); // Заполняем информацию о продукте
-            res.status(201).json(cart);
-        } catch (err) {
-            console.error(err);
-            res.status(500).json({
-                message: 'Ошибка сервера при добавлении в корзину', error: err.message
-            });
-        }
-    });
+    // app.post('/api/cart/add/:productId', authenticateToken, async (req, res) => {
+    //     const productId = req.params.productId;
+    //     const userId = req.user.userId;
+    //     const quantity = parseInt(req.body.quantity) || 1;
+    //
+    //     try {
+    //         console.log("Попытка добавить в корзину");
+    //         let cart = await Cart.findOne({
+    //             userId: userId
+    //         });
+    //         console.log('Existing cart match');
+    //         if (!cart) {
+    //             cart = new Cart({
+    //                 userId: userId, items: []
+    //             });
+    //             console.log('New cart compleet');
+    //         }
+    //
+    //         const product = await Products.findById(productId);
+    //         if (!product) {
+    //             return res.status(404).json({
+    //                 message: 'Товар не найден'
+    //             });
+    //         }
+    //
+    //         // Проверяем, есть ли уже товар в корзине
+    //         const existingItem = cart.items.find(item => item.productId.equals(productId));
+    //
+    //         if (existingItem) {
+    //             existingItem.quantity += quantity; // Если товар уже есть, увеличиваем количество
+    //         } else {
+    //             cart.items.push({
+    //                 productId: productId, quantity: quantity
+    //             }); // Иначе добавляем новый элемент
+    //         }
+    //
+    //         await cart.save();
+    //         await cart.populate('items.productId'); // Заполняем информацию о продукте
+    //         res.status(201).json(cart);
+    //     } catch (err) {
+    //         console.error(err);
+    //         res.status(500).json({
+    //             message: 'Ошибка сервера при добавлении в корзину', error: err.message
+    //         });
+    //     }
+    // });
 
     // API для удаления товара из корзины
     app.delete('/api/cart/remove/:productId', authenticateToken, async (req, res) => {
@@ -658,6 +698,34 @@ const Products = mongoose.model('Products', productSchema);
    //          res.status(500).send(`Server error: ${error.message}`);
    //      }
    //  });
+
+app.get('/api/filters/colors', async (req, res) => {
+  try {
+    const colors = await Products.distinct('info.color.labelColor', { 'info.color.labelColor': { $exists: true } });
+    res.json(colors.filter(Boolean));
+  } catch (error) {
+    res.status(500).json({ message: 'Ошибка сервера', error: error.message });
+  }
+});
+
+app.get('/api/filters/categories', async (req, res) => {
+  try {
+    const categories = await Products.distinct('data.productType', { 'data.productType': { $exists: true } });
+    res.json(categories.filter(Boolean));
+  } catch (error) {
+    res.status(500).json({ message: 'Ошибка сервера', error: error.message });
+  }
+});
+
+app.get('/api/filters/names', async (req, res) => {
+  try {
+    const names = await Products.distinct('info.name', { 'info.name': { $exists: true } });
+    res.json(names.filter(Boolean));
+  } catch (error) {
+    res.status(500).json({ message: 'Ошибка сервера', error: error.message });
+  }
+});
+
 
 app.get('/api/products', async (req, res) => {
   const page = parseInt(req.query.page) || 1;
