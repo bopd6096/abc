@@ -19,7 +19,7 @@ const puppeteer = require('puppeteer');
     .filter(url => url.length > 0);
 
   const totalCount = websites.length; // Общее количество всех URL-ов
-  const batchSize = 20;
+  const batchSize = 15;
   let results = fs.existsSync(outputFile) ? JSON.parse(fs.readFileSync(outputFile, 'utf8')) : [];
   const processedUrls = new Set(results.map(r => r.url));
   const websitesToProcess = websites.filter(url => !processedUrls.has(url));
@@ -61,7 +61,7 @@ const puppeteer = require('puppeteer');
   const browser = await puppeteer.launch({
     executablePath: "/snap/bin/chromium",
     headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+        args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
   });
 
   const batches = [];
