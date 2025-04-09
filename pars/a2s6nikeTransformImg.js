@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const rawData = fs.readFileSync('../JSON/b1f1_nikeIMG.json', 'utf8');
+const rawData = fs.readFileSync('../JSON/b7f7_nike_images.json', 'utf8');
 const data = JSON.parse(rawData);
 
 
@@ -31,5 +31,5 @@ function transformArray(inputArray) {
 
 const result = transformArray(data);
 
-fs.writeFileSync('../JSON/b3f2_nikeIMG.json', JSON.stringify(result, null, 2));
+fs.writeFileSync('../JSON/b7f7_nikeIMG.json', JSON.stringify(result, null, 2));
 console.log('Done!');

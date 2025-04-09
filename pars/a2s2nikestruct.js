@@ -13,8 +13,8 @@ const fs = require('fs');
 
 // Читаем оба файла
 const rawData1 = fs.readFileSync('../JSON/b0f1_nike_fetchData.json', 'utf8');
-const rawData2 = fs.readFileSync('../JSON/b3f2_nikeIMG.json', 'utf8'); // Укажите путь ко второму файлу
-const rawData3 = fs.readFileSync('../JSON/b1f2_nike_discr_sizes.json', 'utf8'); // Укажите путь к третьему файлу
+const rawData2 = fs.readFileSync('../JSON/b7f7_nikeIMG.json', 'utf8'); // Укажите путь ко второму файлу
+const rawData3 = fs.readFileSync('../JSON/b7f7_nike_discr_sizes.json', 'utf8'); // Укажите путь к третьему файлу
 const rawData4 = fs.readFileSync('../JSON/b1f5_nike_prices_converted.json', 'utf8'); // Укажите путь к четвертому файлу
 
 const products = JSON.parse(rawData1);
@@ -189,5 +189,5 @@ function destructureNestedObjects(products, secondData, thirdData, pricesData) {
 const processedProducts = destructureNestedObjects(products, secondData, thirdData, pricesData);
 
 // Сохраняем результат в новый файл
-fs.writeFileSync('../JSON/b0f3_nike_structData.json', JSON.stringify(processedProducts, null, 2));
-console.log('Обработанные данные сохранены в b0f2_nike_structData.json');
+fs.writeFileSync('../JSON/b0f7_nike_structData.json', JSON.stringify(processedProducts, null, 2));
+console.log('Обработанные данные сохранены в b0f7_nike_structData.json');

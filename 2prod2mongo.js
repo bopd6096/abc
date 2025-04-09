@@ -101,7 +101,7 @@ const productSchema = new mongoose.Schema({
 const Products = mongoose.model('Products', productSchema);
 
 // Чтение JSON-файла
-const jsonFilePath = './JSON/b0f3_nike_structData.json';
+const jsonFilePath = './JSON/b0f7_nike_structData.json';
 const jsonData = JSON.parse(fs.readFileSync(jsonFilePath, 'utf8'));
 
 // Функция для сохранения данных в MongoDB
