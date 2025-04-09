@@ -85,8 +85,7 @@
         const data = await response.json();
 
         data.products.forEach(group => {
-          // Берем первый продукт из группы для отображения
-          const product = group[0];
+          const product = group[0]; // Берем первый продукт из группы
           const li = document.createElement('li');
           li.className = 'product-card';
 
@@ -130,7 +129,6 @@
       }
     }
 
-    // Бесконечная прокрутка
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting && hasMore) {
         fetchProducts();
@@ -138,7 +136,7 @@
     }, { threshold: 1.0 });
 
     observer.observe(loader);
-    fetchProducts(); // Первая загрузка
+    fetchProducts();
   </script>
 </body>
 </html>
