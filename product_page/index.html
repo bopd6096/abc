@@ -1,88 +1,211 @@
-<!-- public/index.html -->
+<!-- product_page/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product List</title>
-    <style>
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-        .product-card {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: center;
-        }
-        .product-card img {
-            max-width: 100%;
-            height: auto;
-        }
-        #load-more {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-        }
-        .error-message {
-            color: red;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <div class="product-grid" id="product-grid"></div>
-    <button id="load-more">Load More</button>
-    <div id="error-message" class="error-message"></div>
+    <div class="container">
+        <form id="filter-form" class="filter-form">
+            <input type="text" id="search" placeholder="Поиск по названию">
+            <input type="number" id="minPrice" placeholder="Мин. цена" min="0">
+            <input type="number" id="maxPrice" placeholder="Макс. цена" min="0">
+            <select id="productType">
+                <option value="">Все типы</option>
+                <option value="Clothing">Одежда</option>
+                <option value="Accessories">Аксессуары</option>
+                <option value="Shoes">Обувь</option>
+            </select>
+            <select id="color">
+                <option value="">Все цвета</option>
+                <option value="Red">Красный</option>
+                <option value="Blue">Синий</option>
+                <option value="Black">Черный</option>
+                <option value="White">Белый</option>
+            </select>
+            <label><input type="checkbox" id="isNew"> Только новинки</label>
+            <button type="submit">Применить</button>
+            <button type="button" id="reset-filters">Сбросить</button>
+        </form>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="loading" id="loading">Загрузка...</div>
+        <div id="error-message" class="error-message"></div>
+    </div>
 
     <script>
-        let currentPage = 1;
-        let totalPages = 1;
-        const limit = 10;
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentPage = 1;
+            let totalPages = 1;
+            const limit = 10;
+            let isLoading = false;
+            let searchTimeout;
 
-        async function loadProducts(page) {
-            try {
-                const response = await fetch(`/api/products?page=${page}&limit=${limit}`);
-                if (!response.ok) throw new Error('Network response was not ok');
-                
-                const data = await response.json();
-                totalPages = data.totalPages;
-                const grid = document.getElementById('product-grid');
-                const errorDiv = document.getElementById('error-message');
+            const grid = document.getElementById('product-grid');
+            const loading = document.getElementById('loading');
+            const errorDiv = document.getElementById('error-message');
+            const filterForm = document.getElementById('filter-form');
+            const searchInput = document.getElementById('search');
+            const productTypeSelect = document.getElementById('productType');
+            const colorSelect = document.getElementById('color');
+            const isNewCheckbox = document.getElementById('isNew');
+            const resetButton = document.getElementById('reset-filters');
+
+            // Инициализация фильтров из URL
+            function initFiltersFromURL() {
+                const params = new URLSearchParams(window.location.search);
+                searchInput.value = params.get('search') || '';
+                document.getElementById('minPrice').value = params.get('minPrice') || '';
+                document.getElementById('maxPrice').value = params.get('maxPrice') || '';
+                productTypeSelect.value = params.get('productType') || '';
+                colorSelect.value = params.get('color') || '';
+                isNewCheckbox.checked = params.get('isNew') === 'true';
+            }
+
+            // Получение фильтров
+            function getFilters() {
+                const minPrice = parseFloat(document.getElementById('minPrice').value);
+                const maxPrice = parseFloat(document.getElementById('maxPrice').value);
+                const filters = {
+                    search: searchInput.value.trim(),
+                    minPrice: isNaN(minPrice) ? '' : minPrice,
+                    maxPrice: isNaN(maxPrice) ? '' : maxPrice,
+                    productType: productTypeSelect.value,
+                    color: colorSelect.value,
+                    isNew: isNewCheckbox.checked ? 'true' : ''
+                };
+
+                // Проверка minPrice <= maxPrice
+                if (filters.minPrice && filters.maxPrice && filters.minPrice > filters.maxPrice) {
+                    [filters.minPrice, filters.maxPrice] = [filters.maxPrice, filters.minPrice];
+                    document.getElementById('minPrice').value = filters.minPrice;
+                    document.getElementById('maxPrice').value = filters.maxPrice;
+                }
+
+                return filters;
+            }
+
+            // Загрузка продуктов
+            async function loadProducts(page, filters = {}) {
+                if (isLoading || currentPage > totalPages) return;
+
+                const cacheKey = `products_page_${page}_${JSON.stringify(filters)}`;
+                const cached = localStorage.getItem(cacheKey);
+                if (cached) {
+                    const data = JSON.parse(cached);
+                    renderProducts(data.products);
+                    totalPages = data.totalPages;
+                    currentPage++;
+                    return;
+                }
+
+                isLoading = true;
+                loading.style.display = 'block';
                 errorDiv.textContent = '';
 
-                data.products.forEach(product => {
+                try {
+                    const query = new URLSearchParams({ page, limit });
+                    if (filters.search) query.append('search', filters.search);
+                    if (filters.minPrice) query.append('minPrice', filters.minPrice);
+                    if (filters.maxPrice) query.append('maxPrice', filters.maxPrice);
+                    if (filters.productType) query.append('productType', filters.productType);
+                    if (filters.color) query.append('color', filters.color);
+                    if (filters.isNew) query.append('isNew', filters.isNew);
+
+                    // Обновляем URL
+                    window.history.replaceState({}, '', `${window.location.pathname}?${query}`);
+
+                    const response = await fetch(`/api/products?${query}`);
+                    if (!response.ok) throw new Error(`HTTP error ${response.status}`);
+
+                    const data = await response.json();
+                    if (!data.products || !Array.isArray(data.products)) {
+                        throw new Error('Invalid products data');
+                    }
+
+                    totalPages = data.totalPages || 1;
+                    renderProducts(data.products);
+                    localStorage.setItem(cacheKey, JSON.stringify(data));
+
+                    currentPage++;
+                } catch (error) {
+                    console.error('Ошибка загрузки товаров:', error);
+                    errorDiv.textContent = 'Ошибка при загрузке товаров. Пожалуйста, попробуйте позже.';
+                } finally {
+                    isLoading = false;
+                    loading.style.display = 'none';
+                }
+            }
+
+            // Рендеринг продуктов
+            function renderProducts(products) {
+                products.forEach((product, index) => {
                     const card = document.createElement('div');
                     card.className = 'product-card';
+                    card.style.animationDelay = `${index * 0.1}s`;
                     card.innerHTML = `
-                        <img src="${product.imageData.portraitURL}" alt="${product.info.name}">
-                        <h3>${product.info.name}</h3>
+                        <img loading="lazy" src="${product.imageData.portraitURL || 'https://via.placeholder.com/250'}" alt="${product.info.name || 'Без названия'}">
+                        <h3>${product.info.name || 'Без названия'}</h3>
                         <p>${product.info.subtitle || ''}</p>
-                        <p>${product.price.self.selfUAH.initial20} UAH</p>
+                        <p>${product.price.self.selfUAH.current20 || 0} UAH</p>
+                        <p>Тип: ${product.data.productType || 'Не указан'}</p>
+                        <p>Цвет: ${product.info.color.labelColor || 'Не указан'}</p>
                     `;
                     grid.appendChild(card);
                 });
-
-                if (currentPage >= totalPages) {
-                    document.getElementById('load-more').style.display = 'none';
-                }
-            } catch (error) {
-                console.error('Error loading products:', error);
-                document.getElementById('error-message').textContent = 
-                    'Ошибка при загрузке товаров. Пожалуйста, попробуйте позже.';
             }
-        }
 
-        // Загрузка первой страницы
-        loadProducts(currentPage);
+            // Применение фильтров
+            function applyFilters() {
+                currentPage = 1;
+                grid.innerHTML = '';
+                totalPages = 1;
+                localStorage.clear();
+                loadProducts(currentPage, getFilters());
+            }
 
-        // Обработчик кнопки "Load More"
-        document.getElementById('load-more').addEventListener('click', () => {
-            currentPage++;
-            loadProducts(currentPage);
+            // Debounce для поиска
+            function debounce(func, wait) {
+                let timeout;
+                return function (...args) {
+                    clearTimeout(timeout);
+                    timeout = setTimeout(() => func(...args), wait);
+                };
+            }
+
+            // Обработчики событий
+            filterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                applyFilters();
+            });
+
+            searchInput.addEventListener('input', debounce(applyFilters, 500));
+            productTypeSelect.addEventListener('change', applyFilters);
+            colorSelect.addEventListener('change', applyFilters);
+            isNewCheckbox.addEventListener('change', applyFilters);
+
+            resetButton.addEventListener('click', () => {
+                filterForm.reset();
+                applyFilters();
+            });
+
+            // Бесконечный скролл
+            window.onscroll = () => {
+                if (isLoading || currentPage > totalPages) return;
+
+                const scrollPosition = window.scrollY + window.innerHeight;
+                const pageHeight = document.documentElement.scrollHeight;
+
+                if (scrollPosition >= pageHeight - 400) {
+                    loadProducts(currentPage, getFilters());
+                }
+            };
+
+            // Инициализация
+            initFiltersFromURL();
+            loadProducts(currentPage, getFilters());
         });
     </script>
 </body>
