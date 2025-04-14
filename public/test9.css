@@ -1,0 +1,211 @@
+/* Общие стили для карточки */
+li.product-card {
+    list-style: none; /* Убираем маркер списка */
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden; /* Обрезаем все, что выходит за рамки */
+    max-width: 360px; /* Максимальная ширина карточки */
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif; /* Базовый шрифт */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+li.product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для карусели изображений */
+.product-carousel {
+    position: relative; /* Для позиционирования кнопок */
+    overflow: hidden; /* Скрываем изображения, которые выходят за границы */
+    background-color: #f8f8f8; /* Фон, если изображения не загрузятся */
+}
+
+.carousel-images {
+    display: flex; /* Располагаем изображения в ряд */
+    transition: transform 0.5s ease-in-out; /* Плавный переход при смене слайда */
+    /* transform: translateX(0%); будет изменяться через JS */
+}
+
+.carousel-images img {
+    width: 100%; /* Каждое изображение занимает всю ширину контейнера */
+    display: block; /* Убирает лишние отступы под изображением */
+    flex-shrink: 0; /* Предотвращает сжатие изображений */
+    aspect-ratio: 1 / 1; /* Сохраняем квадратные пропорции, можно изменить */
+    object-fit: cover; /* Масштабирует изображение с сохранением пропорций */
+}
+
+/* Стили для кнопок управления каруселью */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Отступ слева */
+    right: 10px; /* Отступ справа */
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none; /* Позволяет кликать сквозь контейнер */
+    opacity: 0; /* Скрываем кнопки по умолчанию */
+    transition: opacity 0.3s ease;
+}
+
+.product-carousel:hover .carousel-controls {
+    opacity: 1; /* Показываем кнопки при наведении на карусель */
+}
+
+.carousel-btn {
+    pointer-events: auto; /* Включаем клики для самих кнопок */
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: background-color 0.2s ease;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Стили для информации о товаре */
+.product-info {
+    padding: 15px;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+    margin: 0 0 4px 0;
+}
+
+.product-subtitle {
+    font-size: 0.9rem;
+    color: #757575;
+    margin: 0 0 12px 0;
+}
+
+.product-price {
+    margin-bottom: 15px;
+}
+
+.current-price {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #111;
+}
+
+/* Стили для выбора цвета */
+/* ВАЖНО: HTML структура для цветов некорректна (span внутри span).
+   CSS ниже предполагает, что все .color-swatch являются прямыми потомками .product-color,
+   например: <div class="product-color"><span class="color-swatch"></span>...</div> */
+.product-color {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет переносить цвета на новую строку */
+    gap: 8px; /* Пространство между кружками */
+    margin-bottom: 15px;
+}
+
+.product-color .color-swatch { /* Применяем стили к прямым потомкам */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent; /* Прозрачная рамка для выравнивания */
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset; /* Тонкая внутренняя рамка для светлых цветов */
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.product-color .color-swatch:hover {
+    transform: scale(1.1); /* Немного увеличить при наведении */
+}
+
+.product-color .color-swatch.selected {
+    border-color: #111; /* Черная рамка для выбранного цвета */
+    /* Дополнительный эффект обводки */
+    box-shadow: 0 0 0 1px white, 0 0 0 3px #111;
+}
+
+/* Стили для выбора размера */
+.product-sizes {
+    margin-bottom: 20px;
+}
+
+.size-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    appearance: none; /* Убираем стандартный вид */
+    background-color: white;
+    /* Добавляем свою стрелку */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 9px auto;
+    padding-right: 35px; /* Место для стрелки */
+}
+
+.size-select:focus {
+    outline: none;
+    border-color: #111; /* Выделение при фокусе */
+    box-shadow: 0 0 0 2px rgba(17, 17, 17, 0.2);
+}
+
+/* Стили для кнопок действий */
+.product-actions {
+    display: flex;
+    gap: 10px; /* Пространство между кнопками */
+}
+
+.product-button,
+.cart-button {
+    flex-grow: 1; /* Занимают доступное пространство поровну */
+    padding: 10px 15px;
+    border-radius: 20px; /* Скругленные кнопки */
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    border: 1px solid transparent; /* Базовая рамка */
+}
+
+/* Стилизация кнопки "Подробнее" (ссылка) */
+.product-button {
+    background-color: #fff;
+    border-color: #ccc;
+    color: #333;
+}
+
+.product-button:hover {
+    background-color: #f5f5f5;
+    border-color: #aaa;
+}
+
+/* Стилизация кнопки "В корзину" */
+.cart-button {
+    background-color: #111; /* Черный фон */
+    border-color: #111;
+    color: #fff; /* Белый текст */
+}
+
+.cart-button:hover {
+    background-color: #555; /* Темно-серый при наведении */
+    border-color: #555;
+}
+

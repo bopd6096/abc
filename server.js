@@ -35,7 +35,7 @@ app.get('/tg', (req, res) => {
 
 app.get('/home', (req, res) => {
     console.log('GET /home - Главная страница Telegram загружается');
-    res.sendFile(path.join(__dirname, 'public', 'test8.html'));
+    res.sendFile(path.join(__dirname, 'public', 'test9.html'));
 });
 
 app.get('/main', (req, res) => {
